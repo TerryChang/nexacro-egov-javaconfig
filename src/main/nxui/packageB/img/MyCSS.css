@@ -1,0 +1,37 @@
+﻿Static
+{
+	background : darkgray;
+}
+
+Static:mouseover
+{
+	background : blue;
+}
+
+#sta_title
+{
+	font : 굴림,14,bold;
+}
+
+Div>Static
+{
+	background :lavender;
+}
+
+Static.val_chk1
+{
+	color : red;
+}
+
+
+.val_chk2
+{
+	background : URL('theme://images/edit.png') left top;
+}
+
+Combo>#comboedit:mouseover
+{
+	background : yellow;
+}
+
+

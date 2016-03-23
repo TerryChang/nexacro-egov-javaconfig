@@ -1,0 +1,18 @@
+﻿{
+	"name": "IjectJS",
+	"version": "0.0.0.1",
+	"description": "IjectJS for nexacro platform frame",
+	"license": "",
+	"scripts": [        
+        "IjectJS/Iject.js",      //main context
+		"IjectJS/Controll.js",      //controller
+        "IjectJS/Mdi.js",        //mdi frame open js
+        "IjectJS/Runtime.js",    //runtime js
+        "IjectJS/Html5.js",      //html5 js
+		"IjectJS/Util.js",       // interface js
+	    "IjectJS/ExtApi/jquery-1.10.2.js"  //jquery
+
+	]
+}
+//@ sourceURL=ExLib.json
+

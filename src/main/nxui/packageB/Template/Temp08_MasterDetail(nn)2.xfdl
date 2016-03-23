@@ -1,0 +1,590 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Temp01_SingleDetail" classname="Temp01_SingleDetail" left="0" top="0" width="1030" height="876" titletext="New Form" onload="form_onload">
+    <Layouts>
+      <Layout>
+        <Div id="div_Search" taborder="0" top="0" height="43" left="0" right="20" cssclass="div_WF_SearchBg">
+          <Layouts>
+            <Layout>
+              <Edit id="Edit04" taborder="1" cssclass="edt_WF_Search" left="104" top="10" width="132" height="21"/>
+              <Button id="Button06" taborder="2" cssclass="btn_WF_SearchSmall" left="235" top="10" width="21" height="21"/>
+              <Combo id="Combo00" taborder="3" left="371" top="10" width="152" height="21"/>
+              <Calendar id="Calendar00" taborder="4" left="638" top="10" width="152" height="21"/>
+              <Button id="Button05" taborder="6" text="조회" cssclass="btn_WF_Search" top="8" width="60" height="25" right="11"/>
+              <Static id="Static01" taborder="7" text="조회라벨01" cssclass="sta_WF_SearchLabel" left="19" top="10" width="85" height="21"/>
+              <Static id="Static02" taborder="8" text="조회라벨02" cssclass="sta_WF_SearchLabel" left="286" top="10" width="85" height="21"/>
+              <Static id="Static04" taborder="10" text="조회라벨03" cssclass="sta_WF_SearchLabel" left="553" top="10" width="85" height="21"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static51" taborder="1" text="리스트 그리드" cssclass="sta_WF_SubTitle1" left="2" top="60" height="21" width="250"/>
+        <Static id="Static00" taborder="13" text="리스트 그리드" cssclass="sta_WF_SubTitle1" left="517" top="60" height="21" width="312"/>
+        <Button id="Button12" taborder="22" text="Custom Button" cssclass="btn_WF_Custom" top="64" right="319" width="100" height="12"/>
+        <Button id="Button13" taborder="23" text="행추가" cssclass="btn_WF_Add" top="64" right="254" width="65" height="12"/>
+        <Button id="Button14" taborder="24" text="행삭제" cssclass="btn_WF_Delete" top="64" right="189" width="65" height="12"/>
+        <Button id="Button15" taborder="25" text="다운로드" cssclass="btn_WF_Download" top="60" right="109" width="79" height="21"/>
+        <Button id="Button16" taborder="26" text="업로드" cssclass="btn_WF_Upload" top="60" right="43" width="67" height="21"/>
+        <Button id="Button17" taborder="27" cssclass="btn_WF_Extend" top="60" right="20" width="21" height="21"/>
+        <Button id="Button01" taborder="29" text="행추가" cssclass="btn_WF_Add" top="64" width="65" height="12" left="196"/>
+        <Button id="Button02" taborder="30" text="행삭제" cssclass="btn_WF_Delete" top="64" width="65" height="12" left="261"/>
+        <Button id="Button03" taborder="31" text="다운로드" cssclass="btn_WF_Download" top="60" width="79" height="21" left="327"/>
+        <Button id="Button04" taborder="32" text="업로드" cssclass="btn_WF_Upload" top="60" width="67" height="21" left="405"/>
+        <Button id="Button05" taborder="33" cssclass="btn_WF_Extend" top="60" width="21" height="21" left="474"/>
+        <Grid id="Grid01" taborder="34" binddataset="Grid" scrollbars="autovert" useinputpanel="false" autofittype="none" left="0" top="86" bottom="20" width="495">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="28"/>
+                <Column size="48"/>
+                <Column size="153"/>
+                <Column size="150"/>
+                <Column size="152"/>
+                <Column size="138"/>
+                <Column size="143"/>
+                <Column size="104"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="32" band="head"/>
+                <Row size="28"/>
+                <Row size="28" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="Column0"/>
+                <Cell col="1" text="No."/>
+                <Cell col="2" cssclass="CellEssential" text="Essential Edit"/>
+                <Cell col="3" text="Combo"/>
+                <Cell col="4" text="Calendar"/>
+                <Cell col="5" text="Expand"/>
+                <Cell col="6" text="Text"/>
+                <Cell col="7" text="Number"/>
+                <Cell col="8" text="Button"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="bind:Column0"/>
+                <Cell col="1" style="align:center middle;" text="bind:순번"/>
+                <Cell col="2" displaytype="text" edittype="text" style="padding:3 3 3 3;" text="bind:Column01" editdisplay="display"/>
+                <Cell col="3" displaytype="combo" edittype="combo" style="padding:3 3 3 3;" text="bind:Column02" combodisplay="display"/>
+                <Cell col="4" displaytype="date" edittype="date" style="padding:3 3 3 3;" text="bind:Column03" calendardisplay="display" calendardisplaynulltype="default"/>
+                <Cell col="5" displaytype="text" edittype="expand" style="padding:3 3 3 3;" text="bind:Column04" expandshow="show" expandsize="21" expandimage="URL('img::btn_WF_SearchSmall.png')"/>
+                <Cell col="6" style="padding:3 3 3 3;" text="bind:Column05"/>
+                <Cell col="7" style="align:right middle;padding:3 3 3 3;" text="bind:Column06"/>
+                <Cell col="8" displaytype="button" edittype="button" style="align:center middle;padding:3 3 3 3;" text="bind:Column07"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="7" style="align:center middl;" text="합계"/>
+                <Cell col="7" colspan="2" style="align:right middle;padding:0 11 0 0;" text="321456789" mask="###,###,###"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Grid id="Grid02" taborder="36" binddataset="Grid" scrollbars="autovert" useinputpanel="false" left="515" top="86" right="20" bottom="20">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="28"/>
+                <Column size="48"/>
+                <Column size="153"/>
+                <Column size="150"/>
+                <Column size="152"/>
+                <Column size="138"/>
+                <Column size="143"/>
+                <Column size="104"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="32" band="head"/>
+                <Row size="28"/>
+                <Row size="28" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="Column0"/>
+                <Cell col="1" text="No."/>
+                <Cell col="2" cssclass="CellEssential" text="Essential Edit"/>
+                <Cell col="3" text="Combo"/>
+                <Cell col="4" text="Calendar"/>
+                <Cell col="5" text="Expand"/>
+                <Cell col="6" text="Text"/>
+                <Cell col="7" text="Number"/>
+                <Cell col="8" text="Button"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="bind:Column0"/>
+                <Cell col="1" style="align:center middle;" text="bind:순번"/>
+                <Cell col="2" displaytype="text" edittype="text" style="padding:3 3 3 3;" text="bind:Column01" editdisplay="display"/>
+                <Cell col="3" displaytype="combo" edittype="combo" style="padding:3 3 3 3;" text="bind:Column02" combodisplay="display"/>
+                <Cell col="4" displaytype="date" edittype="date" style="padding:3 3 3 3;" text="bind:Column03" calendardisplay="display" calendardisplaynulltype="default"/>
+                <Cell col="5" displaytype="text" edittype="expand" style="padding:3 3 3 3;" text="bind:Column04" expandshow="show" expandsize="21" expandimage="URL('img::btn_WF_SearchSmall.png')"/>
+                <Cell col="6" style="padding:3 3 3 3;" text="bind:Column05"/>
+                <Cell col="7" style="align:right middle;padding:3 3 3 3;" text="bind:Column06"/>
+                <Cell col="8" displaytype="button" edittype="button" style="align:center middle;padding:3 3 3 3;" text="bind:Column07"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="7" style="align:center middle;" text="합계"/>
+                <Cell col="7" colspan="2" style="align:right middle;padding:0 11 0 0;" text="321456789" mask="###,###,###"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static02" taborder="37" visible="false" left="1010" top="0" width="20" height="876" style="background:#ff7272ff;"/>
+        <Static id="Static04" taborder="38" visible="false" left="0" top="856" width="1010" height="20" style="background:#ff7272ff;"/>
+        <Static id="Static01" taborder="39" text="w20" visible="false" left="1010" top="881" width="33" height="22" style="color:red;"/>
+        <Static id="Static03" taborder="40" text="h20" visible="false" left="1037" top="858" width="33" height="22" style="color:red;"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Grid" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="순번" type="STRING" size="256"/>
+          <Column id="Column01" type="STRING" size="256"/>
+          <Column id="Column02" type="STRING" size="256"/>
+          <Column id="Column03" type="STRING" size="256"/>
+          <Column id="Column04" type="STRING" size="256"/>
+          <Column id="Column05" type="STRING" size="256"/>
+          <Column id="Column06" type="STRING" size="256"/>
+          <Column id="Column07" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="순번">1</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">2</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">3</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">4</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">5</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">6</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">7</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">8</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">9</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">10</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">11</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">12</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">13</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">14</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">15</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">16</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">17</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">18</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">19</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">20</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">21</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">22</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">23</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">24</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">25</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">26</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="Column0"/>
+            <Col id="순번">27</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">28</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">29</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">30</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">31</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">32</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">33</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">34</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">35</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+          <Row>
+            <Col id="순번">36</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="Column03">2015-00-00</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column07">버튼</Col>
+            <Col id="Column0"/>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : 
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.form_onload = function(obj,e)
+{
+  Iject.formOnload(obj);
+
+}]]></Script>
+  </Form>
+</FDL>

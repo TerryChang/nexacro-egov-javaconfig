@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="LargeData">
+
+    <resultMap id="data" class="java.util.HashMap">
+        <result property="largeId" column="LARGE_ID" javaType="int"/>
+        <result property="name" column="NAME" javaType="java.lang.String"/>
+    </resultMap>
+    
+     <select id="largeDataDAO.selectLargeData"  resultMap="data">
+            SELECT
+                LARGE_ID, NAME 
+            FROM TB_LARGE
+    </select>
+    
+    <insert id="largeDataDAO.initData" parameterClass="String">
+            INSERT INTO TB_LARGE (
+                NAME
+            ) VALUES (
+                #name#
+            )
+    </insert>
+    
+</sqlMap>

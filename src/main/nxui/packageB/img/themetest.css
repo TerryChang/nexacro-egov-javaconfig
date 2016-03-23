@@ -1,0 +1,133 @@
+﻿Grid>#head.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	cellcolor 	: yellow ;
+	cellalign       : center top;
+}
+
+Grid>#body.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	cellcolor 	: yellow ;
+	cellalign       : center top;
+}
+
+.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+ListBox.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+
+Radio.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	buttonsize      : 200 ;
+}
+
+
+FileUpload.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	buttonsize      : 200 ;
+}
+Div.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+
+Calendar.themetest
+{
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+
+Button.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+
+Combo.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+CheckBox.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+FileDownload.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+Edit.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid blue ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+Form.themetest
+{ 
+	background      : blue;
+	border 		: 3px solid green ;
+	bordertype      : round 3 3;
+	color 		: yellow ;
+	align           : center top;
+}
+
+WebBrowser.themetest
+{ 
+	border      : 3 dashed blue;
+	shadow      : drop 20,20 10 yellowgreen;
+}

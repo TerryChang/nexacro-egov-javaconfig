@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="test001" classname="test001" left="0" top="0" width="1024" height="768" titletext="New Form">
+    <Layouts>
+      <Layout>
+        <Button id="Button00" taborder="0" text="Button00" left="3.13%" top="49" right="78.81%" height="40" onclick="Button00_onclick"/>
+        <Button id="Button01" taborder="1" text="Button01" left="10.84%" top="173" right="68.16%" height="71" onclick="Button01_onclick"/>
+        <Button id="Button02" taborder="2" text="Button02" left="5.47%" top="104" right="79.69%" height="42" onclick="Button02_onclick"/>
+        <Button id="Button03" taborder="3" text="Button03" left="41.8%" top="100" right="40.43%" height="67" onclick="Button03_onclick"/>
+        <Button id="Button04" taborder="4" text="Button03" left="42.77%" top="199" right="39.45%" height="67" onclick="Button04_onclick"/>
+        <Div id="Div00" taborder="5" text="Div00" left="19.34%" top="294" right="5.57%" height="72" style="background:#888888ff;color:#46463dff;">
+          <Layouts>
+            <Layout/>
+          </Layouts>
+        </Div>
+        <Button id="Button05" taborder="6" text="Button05" left="3.22%" top="305" right="83.59%" height="51" onclick="Button05_onclick"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsList">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">1</Col>
+            <Col id="Column1">2</Col>
+            <Col id="Column2">3</Col>
+            <Col id="Column3">4</Col>
+            <Col id="Column4">5</Col>
+          </Row>
+          <Row>
+            <Col id="Column4">6</Col>
+            <Col id="Column0">3</Col>
+            <Col id="Column1">3</Col>
+            <Col id="Column2">2</Col>
+            <Col id="Column3">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column3">3</Col>
+            <Col id="Column2">4</Col>
+            <Col id="Column1">5</Col>
+            <Col id="Column0">6</Col>
+            <Col id="Column4">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">7</Col>
+            <Col id="Column2">8</Col>
+            <Col id="Column1">8</Col>
+            <Col id="Column3">2</Col>
+            <Col id="Column4">2</Col>
+          </Row>
+          <Row>
+            <Col id="Column1">8</Col>
+            <Col id="Column3">2</Col>
+            <Col id="Column4">2</Col>
+            <Col id="Column2">2</Col>
+            <Col id="Column0">2</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[this.FIRST_GAP = 1;
+this.BTN_GAP = 0;
+this.MARGIN_WIDTH = 38;
+this.TAB_WIDTH = 90;
+this.TAB_HEIGHT = 36;
+this.TAB_EXTRA_RIGHT_GAP = 18;
+this.EXTRA_WIDTH = 7;
+this.EXTRA_TOP = 15;
+this.EXTRA_HEIGHT = 7;
+this.EXTRA_BTN_PREFIX = "EXTRA_";
+this.TAB_BTN_PREFIX = "TAB_";
+this.Button00_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+
+	            
+	    this.fn_getObj();        
+	
+	
+}
+
+
+
+this.fn_getObj = function(oArgs)
+{
+     var oData ={
+         sId  : "login2",             //callback id
+         sUrl : "frame::Login.xfdl",   //url
+         bshowtitlebar : true,     //title bar
+         bAutoSize  : true,       //autosize
+         bResize    : false,       //resize
+         bShowtatusbar : false,     //statusbar
+         sOpenalign    : "center middle",  //align
+        oArgs :  {arg1:'1111111111111111111',
+                 arg2:'2222222222222222222222222'         
+               }    
+     };
+   
+     
+     
+      //팝업 테스트
+      Iject.showModal(this,oData,function(){
+      
+              /* 
+              * popup calllback
+              *@param {object}this.fobj
+              *@param {string} this.svcid 
+              *@param {string} this.variant
+              */
+             
+             var pThis= this.fobj;             
+             trace(" pThis.name : " + pThis.name);
+             trace(" pThis.svcid : " + this.svcid);
+             trace(" pThis.variant : " + this.variant);
+             
+             var sPerson = JSON.stringify(this.variant);
+             trace(" sPerson2222222 : " + sPerson);
+            var oPerson = JSON.parse(sPerson);
+
+      
+      });
+    //var oArg2;
+//     
+//     oArg2 = oArgs;
+//     trace(" oArgs : " +oArgs.length);
+//     trace(" oArg2 : " +oArg2.length);
+//     if (!Eco.isEmpty(oArgs) && typeof oArgs =="object" )
+// 	{
+// 			for ( var key in oArgs )
+// 			{
+// 			   
+// 				if ( oArgs.hasOwnProperty(key) )
+// 				{
+// 
+// 
+// 				trace(" oArgs[key] : " + oArgs[key] );
+// 				}
+// 			}
+// 	}
+
+
+}
+this.Button01_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var oData = {
+	Name: "SooYoung"
+	, Age: "29"
+}
+
+var sPerson = JSON.stringify(oData);
+var oPerson = JSON.parse(sPerson);
+
+alert(sPerson);
+/* Output: "{"Name":"SooYoung","Age":"29"}" */
+alert(oPerson.Name);
+}
+
+
+this.jsonTest = function()
+{
+   var oJson =  {'name':'James', 'address':"Seoul, Korea" ,oarg:{
+         a1 : "aaaaa"
+   
+   }};
+   
+      trace(oJson.oarg['a1']);
+}
+
+this.Button02_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.jsonTest();
+}
+
+this.Button03_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.alert("aaa","알림");
+}
+
+this.Button04_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+		this.confirm("aaa","확인");
+}
+
+this.Button05_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+      var tabObj = new Button();
+	    tabObj.init("aaaa", "absolute", 0, 0,0,this.TAB_HEIGHT,null,null);
+	    this.Div00.addChild(tabObj.name, tabObj);
+	    	
+	    tabObj.set_text("Aaaaaa");
+	  //  tabObj.set_cssclass("");
+	//tabObj.style.set_align("left");
+	//tabObj.set_cssclass("btn_MDI_02");	
+//    tabObj.style.set_cursor("hand"); // set  
+	//tabObj.style.set_padding_left("5");
+	//tabObj.set_text("Aaaaaa");
+	tabObj.set_tooltiptext(tabName);
+//	tabObj.style.set_font("bold 9 Dotum");
+//tabObj.style.set_font_type("bold");
+	//tabObj.setEventHandler("onclick", this.btn_Tab_OnClick, this);
+	tabObj.set_visible(true);	
+	tabObj.show();
+   trace(" tabObj.style.font : " + tabObj.style.font);
+   trace(" cssclass : " + tabObj.cssclass);
+	var nCompWidth = this.fn_getWidth(tabObj,"Aaaaaa")+25;	
+	tabObj.set_width(nCompWidth+this.TAB_EXTRA_RIGHT_GAP);
+tabObj.set_cssclass("btn_MDI_02");
+}
+
+
+/**
+ * width size조정 
+ * @public
+ * @param {object} 버튼
+ * @param {name}   버튼명
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fn_getWidth = function (obj, name)
+{
+    var tabID = obj.name;
+	//var curRow = this.ds_Tab.findRow("TAB_ID", tabID);
+	//var TabObj = this.fn_findObj(this.ds_Tab.getColumn(curRow, "TAB_ID"));
+    var objFont =  Iject.Util.getObjFont(obj,10);
+	var objSize = nexacro._getTextSize2(name, objFont);
+
+	return objSize[0];
+
+}
+]]></Script>
+  </Form>
+</FDL>

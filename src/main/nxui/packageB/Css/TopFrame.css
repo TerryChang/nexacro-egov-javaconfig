@@ -1,0 +1,560 @@
+﻿/************************************ B ************************************/
+
+/* Button */
+Button.btn_TF_LeftMenuOpen
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_N.png') left top;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuOpen:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuOpen:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuOpen:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuOpen:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_P.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuOpen:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Open_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_P.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_LeftMenuClose:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_TF_Close_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0077db URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0096e4 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0096e4 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0096e4 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: #005fba URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #bacbd9;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Logout:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: #9d9d9d URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #d3d3d3;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0068bf URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #bcddf9;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0083d0 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #bcddf9;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0083d0 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #bcddf9;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0083d0 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #bcddf9;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: #0053a2 URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #89b0d4;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_TF_Admin:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: #9d9d9d URL('img::btn_TF_Logout.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #cfcfcf;
+	cursor			: hand;
+	font			: 8 Tahoma, Dotum;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+
+
+/************************************ S ************************************/
+
+/*Static*/
+Static.sta_TF_Admin
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_TF_Admin.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 2 0 0 25;
+	shadow			: ;
+}
+Static.sta_TF_Admin:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_TF_Admin.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 2 0 0 25;
+	shadow			: ;
+}
+Static.sta_TF_Admin:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_TF_Admin.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 2 0 0 25;
+	shadow			: ;
+}
+Static.sta_TF_TopBg
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #e2e2e2;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_TF_TopBg:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #e2e2e2;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_TF_TopBg:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #e2e2e2;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_TF_TopBg2
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #0068bf;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_TF_TopBg2:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #0068bf;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_TF_TopBg2:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #0068bf;
+	border			: 0 none, 0 none, 1 solid #ffffff, 0 none;
+	bordertype		: normal 0 0;
+	color			: #000000;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}

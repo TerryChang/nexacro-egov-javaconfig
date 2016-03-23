@@ -1,0 +1,35 @@
+﻿{
+	"name": "EcoLibrary",
+	"version": "1.0.0.0",
+	"description": "Eco Library for nexacro platform",
+	"license": "",
+	"scripts": [
+        "EcoLibrary/Namespace.js",
+        "EcoLibrary/Eco.js",
+        "EcoLibrary/array.js",
+        "EcoLibrary/date.js",
+        "EcoLibrary/number.js",
+        "EcoLibrary/string.js",
+        "EcoLibrary/object.js",
+        "EcoLibrary/Style.js",
+        "EcoLibrary/Logger.js",
+        "EcoLibrary/Color.js",
+        "EcoLibrary/XComp.js",
+        "EcoLibrary/PositionSize.js",
+        "EcoLibrary/Json.js",
+        "EcoLibrary/Event.js",
+        "EcoLibrary/LocalStorage.js",
+        "EcoLibrary/Factory.js",
+        "EcoLibrary/class/DataUtil.js",
+        "EcoLibrary/class/MathUtil.js",
+        "EcoLibrary/class/ClassUtils.js",
+        "EcoLibrary/class/History.js",
+        "EcoLibrary/class/Point.js",
+        "EcoLibrary/class/Size.js",
+        "EcoLibrary/class/Rectangle.js",
+        "EcoLibrary/class/Matrix.js",
+        "EcoLibrary/class/XpCompEvent.js",
+        "EcoLibrary/class/XpCompFactory.js"      
+	]
+}
+//@ sourceURL=EcoLibrary.json

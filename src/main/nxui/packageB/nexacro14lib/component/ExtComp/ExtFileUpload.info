@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaInfo version="1.0">
+	<Object id="nexacro.ExtFileUpload">
+		<ObjectInfo
+			inheritance=""
+			typename="nexacro.ExtFileUpload"
+			csstypename="ExtFileUpload"
+			csscontrolname="ExtFileUpload"
+			group="UIComponent"
+			csspseudo="true"
+			container="false"
+			composite="true"
+			tabstop="true"
+			cssstyle="true"
+			contents="true"
+			formats="false"
+			contentseditor="auto"
+			defaultwidth="100"
+			defaultheight="100"
+			requirement="Runtime,HTML5"
+			description="ExtFileUpload"/>
+			
+			
+		<PseudoInfo>
+			<Pseudo name="disabled" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="focused" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="mouseover" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="selected" control="true" deprecated="false" unused="true"/>
+		</PseudoInfo>			
+		
+		<PropertyInfo>
+			<Property
+			name="uploadurl"
+			group="Appearance"
+			type="String"
+			defaultvalue=""
+			readonly="false"
+			initonly="false"
+			hidden="false"
+			control="false"
+			style="false"
+			expr="false"
+			deprecated="false"
+			unused="false"
+			objectinfo=""
+			enuminfo=""
+			unitinfo=""
+			requirement="Runtime,HTML5"
+			description="파일을 업로드하기 위한 url을 지정하는 속성입니다."
+			/>		
+			<Property
+			name="multiselect"
+			group="Action"
+			type="Boolean"
+			defaultvalue="true"
+			readonly="false"
+			initonly="false"
+			hidden="false"
+			control="false"
+			style="false"
+			expr="false"
+			deprecated="false"
+			unused="false"
+			objectinfo=""
+			enuminfo=""
+			unitinfo=""
+			requirement="Runtime,HTML5"
+			description="Multiselect Property."
+			/>			
+
+			<Property
+			name="visible"
+			group="Action"
+			type="Boolean"
+			defaultvalue="false"
+			readonly="false"
+			initonly="false"
+			hidden="true"
+			control="false"
+			style="false"
+			expr="false"
+			deprecated="false"
+			unused="false"
+			objectinfo=""
+			enuminfo=""
+			unitinfo=""
+			requirement="Runtime,HTML5"
+			description="화면에 보여질지 여부를 설정하는 속성입니다."
+			/>					
+			
+			<Property name="hotkey" group="Action" unused="true"/>
+			<Property name="tooltiptext" group="Action" unused="true"/>
+			<Property name="tooltiptype" group="Action" unused="true"/>
+			<Property name="cssclass" group="" unused="true"/>
+			
+	
+		</PropertyInfo>	
+		
+		
+		<MethodInfo>
+			<Method
+			name="set_multiselect"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="Multiselect Property."
+			>
+				<Syntax
+				text = "set_multiselect(value)"
+				>
+					<Return/>
+					<Arguments>
+						<Argument
+						name="value"
+						type="Boolean"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="file 다중 선택 가능여부"
+						/>					
+					</Arguments>
+				</Syntax>
+			</Method>		
+		
+			<Method
+			name="addFiles"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 선택창 표시."
+			>
+				<Syntax
+				text = "addFiles()"
+				>
+					<Return/>
+				</Syntax>
+			</Method>	
+
+			<Method
+			name="removeFile"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 삭제."
+			>
+				<Syntax
+				text = "removeFile(fileId)"
+				>
+					<Return/>
+					<Arguments>
+						<Argument
+						name="fileId"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="삭제할 file id"
+						/>					
+					</Arguments>					
+				</Syntax>
+			</Method>
+			
+			<Method
+			name="removeAll"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 전체 삭제."
+			>
+				<Syntax
+				text = "removeAll()"
+				>
+					<Return/>
+				</Syntax>
+			</Method>			
+			
+			
+			<Method
+			name="getAddedFileLength"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="첨부된 file 개수 반환."
+			>
+				<Syntax
+				text = "getAddedFileLength()"
+				>
+					<Return/>
+				</Syntax>
+			</Method>
+			
+			<Method
+			name="getAddedFile"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="HTML5"
+			description="첨부된 file 반환."
+			>
+				<Syntax
+				text = "getAddedFile()"
+				>
+					<Return/>
+				</Syntax>
+			</Method>			
+			
+			<Method
+			name="upload"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 삭제."
+			>
+				<Syntax
+				text = "upload(url, inputdatasets, outputdatasets, transferType, sendDataType)"
+				>
+					<Return/>
+					<Arguments>
+						<Argument
+						name="url"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="업로드 url"
+						/>					
+
+						<Argument
+						name="inputdatasets"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="input dataset 정보"
+						/>					
+
+						<Argument
+						name="outputdatasets"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="output dataset 정보"
+						/>					
+						
+						<Argument
+						name="transferType"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="전송유형.(all: 대상파일을 한번에 전송(defalut), each: 개별 전송)"
+						/>					
+
+						<Argument
+						name="sendDataType"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="전송방식. 0:XML, 1:Binary(Runtime only), 2:SSV"
+						/>					
+					</Arguments>					
+				</Syntax>
+			</Method>			
+		
+			<Method
+			name="setResponseZone"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="특정 컴포넌트에 Drag 중인 마우스가 들어왔을 때 Drop 가능영역을 표시하기 위한 컴포넌트를 등록하는 함수"
+			>
+				<Syntax
+				text = "setResponseZone(responseComp, helpMessageComp, fileListComp)"
+				>
+					<Return/>
+					<Arguments>
+						<Argument
+						name="responseComp"
+						type="Object"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="Drag 중인 마우스이벤트를 캐치할 컴포넌트(ex. Form)"
+						/>					
+						<Argument
+						name="helpMessageComp"
+						type="Object"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="Drop 가능 영역을 표시하기 위한 컴포넌트"
+						/>
+						<Argument
+						name="fileListComp"
+						type="Object"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="file 목록을 표시하는 컴포넌트"
+
+						/>
+					</Arguments>
+				</Syntax>
+			</Method>
+		
+			
+			
+		</MethodInfo>
+			
+		<EventHandlerInfo>
+			<!-- define event -->
+			<EventHandler
+			name="onchange"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="첨부파일이 추가되었을 때 발생하는 event"
+			>
+				<Syntax
+				text="onchange(obj:nexacro.ExtFileUpload, e:nexacro.ExtFileUploadChangeEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileUpload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileUploadChangeEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>
+			
+			<EventHandler
+			name="onsuccess"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 업로드 성공시 발생하는 event"
+			>
+				<Syntax
+				text="onsuccess(obj:nexacro.ExtFileUpload, e:nexacro.ExtFileLoadEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileUpload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileLoadEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>		
+
+			<EventHandler
+			name="onerror"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 업로드 실패시 발생하는 event"
+			>
+				<Syntax
+				text="onerror(obj:nexacro.ExtFileUpload, e:nexacro.ExtFileErrorEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileUpload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileErrorEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>
+			
+			<EventHandler
+			name="onprogress"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="HTML5"
+			description="file 전송시 progress event."
+			>
+				<Syntax
+				text="onprogress(obj:nexacro.ExtFileUpload, e:nexacro.ExtFileProgress)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileUpload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileProgress"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>			
+			
+			<EventHandler
+			name="onreadystatechange"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="HTML5"
+			description="XMLHttpRequest 통신시 readystate 속성 변경 event."
+			>
+				<Syntax
+				text="onreadystatechange(obj:nexacro.ExtFileUpload, e:nexacro.ExtFileReadystateChangEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileUpload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileReadystateChangEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>				
+
+
+			<EventHandler name="ondragenter" unused="true"/>
+			<EventHandler name="ondragleave" unused="true"/>
+			<EventHandler name="ondragmove" unused="true"/>
+			<EventHandler name="ondrag" unused="true"/>
+			<EventHandler name="ondrop" unused="true"/>
+			
+			<EventHandler name="onfling" unused="true"/>
+			<EventHandler name="onflingend" unused="true"/>
+			<EventHandler name="onflingstart" unused="true"/>
+			
+			<EventHandler name="onlbuttondown" unused="true"/>
+			<EventHandler name="onlbuttonup" unused="true"/>
+			<EventHandler name="onlongpress" unused="true"/>
+			
+			<EventHandler name="onmouseenter" unused="true"/>
+			<EventHandler name="onmouseleave" unused="true"/>
+			<EventHandler name="onmousemove" unused="true"/>
+			<EventHandler name="onmove" unused="true"/>
+			<EventHandler name="onpinch" unused="true"/>
+			
+			<EventHandler name="onpinchend" unused="true"/>
+			<EventHandler name="onpinchstart" unused="true"/>
+			<EventHandler name="onsize" unused="true"/>
+			<EventHandler name="onslide" unused="true"/>
+			<EventHandler name="onslideend" unused="true"/>			
+			<EventHandler name="onslidestart" unused="true"/>
+			<EventHandler name="ontouchend" unused="true"/>
+			<EventHandler name="ontouchmove" unused="true"/>			
+			<EventHandler name="ontouchstart" unused="true"/>
+
+		</EventHandlerInfo>			
+			
+	</Object>
+</MetaInfo>

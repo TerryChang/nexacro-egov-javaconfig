@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<!-- 
+	/**
+	 *
+	 * WARNING: Auto create
+	 * Template File Version : 1.0
+	 * Create : Tue Jul 07 11:48:58 KST 2009
+	 *
+	 **/
+-->
+
+<sqlMap namespace="Code">
+
+    <typeAlias  alias="groupCodeVo" type="nexacro.sample.vo.GroupCodeVO"/>
+    <typeAlias  alias="codeVo" type="nexacro.sample.vo.CodeVO"/>
+
+    <resultMap id="groupCode" class="groupCodeVo">
+        <result property="groupCd" column="GROUP_CD" />
+        <result property="groupNm" column="GROUP_NM" />
+        <result property="useFg" column="USE_FG" />
+        <result property="createUser" column="CREATE_USER" />
+        <result property="createDt" column="CREATE_DT" />
+        <result property="updateUser" column="UPDATE_USER" />
+        <result property="updateDt" column="UPDATE_DT" />
+        <result property="groupDesc" column="GROUP_DESC" />
+    </resultMap>
+    
+    <resultMap id="code" class="codeVo">
+        <result property="codeCd" column="CODE_CD" />
+        <result property="codeNm" column="CODE_NM" />
+        <result property="codeSeq" column="CODE_SEQ" />
+        <result property="groupCd" column="GROUP_CD" />
+        <result property="useFg" column="USE_FG" />
+        <result property="createUser" column="CREATE_USER" />
+        <result property="createDt" column="CREATE_DT" />
+        <result property="updateUser" column="UPDATE_USER" />
+        <result property="updateDt" column="UPDATE_DT" />
+        <result property="codeGbn" column="CODE_GBN" />
+        <result property="codeDesc" column="CODE_DESC" />
+    </resultMap>
+    
+	<!-- code -->
+	<select id="codeDAO.selectCodeGroupList" parameterClass="groupCodeVo" resultMap="groupCode">
+            SELECT 
+                A.GROUP_CD AS GROUP_CD, 
+                A.GROUP_NM AS GROUP_NM, 
+                A.GROUP_DESC AS GROUP_DESC, 
+                A.USE_FG AS USE_FG, 
+                A.CREATE_USER AS CREATE_USER, 
+                A.CREATE_DT AS CREATE_DT, 
+                A.UPDATE_USER AS UPDATE_USER,
+                A.UPDATE_DT AS UPDATE_DT  
+            FROM TB_CODEGROUP A
+            WHERE 1=1
+            <dynamic>
+                <isNotNull property="groupNm" prepend=" AND ">
+                    GROUP_NM LIKE '%' || #groupNm# || '%'
+                </isNotNull>
+                <isNotNull property="groupCd" prepend=" AND ">
+                    GROUP_CD LIKE '%' || #groupCd# || '%'
+                </isNotNull>
+      		</dynamic>
+    </select>  
+    
+    <select id="codeDAO.selectCodeList"  resultMap="code">
+            SELECT 
+                A.CODE_CD AS CODE_CD, 
+                A.GROUP_CD AS GROUP_CD,
+                A.CODE_NM AS CODE_NM, 
+                A.CODE_DESC AS CODE_DESC, 
+                A.CODE_GBN AS CODE_GBN, 
+                A.CODE_SEQ AS CODE_SEQ, 
+                A.USE_FG AS USE_FG, 
+                A.CREATE_USER AS CREATE_USER, 
+                A.CREATE_DT AS CREATE_DT, 
+                A.UPDATE_USER AS UPDATE_USER,
+                A.UPDATE_DT AS UPDATE_DT  
+            FROM TB_CODE A
+    </select>
+    <statement id="codeDAO.insertCode" parameterClass="codeVo" remapResults="true">
+    <![CDATA[
+       insert into TB_CODE (CODE_CD, GROUP_CD, CODE_NM, CODE_DESC, CODE_GBN, CODE_SEQ, USE_FG, CREATE_DT, CREATE_USER) values(#codeCd#,#groupCd#,#codeNm#,#codeDesc#,#codeGbn#,#codeSeq#,#useFg#,#createDt#,#createUser#);
+    ]]>
+    </statement>
+    
+    <statement id="codeDAO.updateCode" parameterClass="codeVo" remapResults="true">
+    <![CDATA[
+      	UPDATE TB_CODE 
+		SET CODE_NM=#codeNm#
+			, GROUP_CD=#groupCd#
+			, CODE_DESC=#codeDesc#
+			, CODE_GBN=#codeGbn#
+			, CODE_SEQ=#codeSeq#
+			, USE_FG=#useFg#
+			, UPDATE_DT=now()
+			, UPDATE_USER=#updateUser#
+		WHERE CODE_CD=#codeCd#
+    ]]>
+    </statement>
+    
+     <statement id="codeDAO.deleteCode" parameterClass="codeVo" remapResults="true">
+    <![CDATA[
+      	DELETE FROM TB_CODE 
+			WHERE CODE_CD=#codeCd#
+    ]]>
+    </statement>  
+    
+    <statement id="codeDAO.insertGroupCode" parameterClass="groupCodeVo" remapResults="true">
+    <![CDATA[
+       insert into TB_CODEGROUP (GROUP_CD, GROUP_NM, GROUP_DESC, USE_FG, CREATE_DT, CREATE_USER) values(#groupCd#,#groupNm#,#groupDesc#,#useFg#,#createDt#,#createUser#);
+    ]]>
+    </statement>
+    
+    <statement id="codeDAO.updateGroupCode" parameterClass="groupCodeVo" remapResults="true">
+    <![CDATA[
+      	UPDATE TB_CODEGROUP 
+		SET GROUP_NM=#groupNm#
+			, GROUP_DESC=#groupDesc#
+			, USE_FG=#useFg#
+			, UPDATE_DT=now()
+			, UPDATE_USER='test'
+		WHERE GROUP_CD=#groupCd#
+    ]]>
+    </statement>
+    
+     <statement id="codeDAO.deleteGroupCode" parameterClass="groupCodeVo" remapResults="true">
+    <![CDATA[
+      	DELETE FROM TB_CODEGROUP
+			WHERE GROUP_CD=#groupCd#
+    ]]>
+    </statement>  
+</sqlMap>

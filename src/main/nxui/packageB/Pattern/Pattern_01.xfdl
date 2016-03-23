@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Pattern_01" classname="Work" inheritanceid="" position="absolute" titletext="SingleDetail" left="0" width="800" top="0" height="369" onload="form_onload">
+    <Layouts>
+      <Layout>
+        <Div id="div_search" taborder="16" left="0" top="0" right="0" height="41" scrollbars="none" cssclass="div_WF_searchBg">
+          <Layouts>
+            <Layout>
+              <Static id="st_searchCondition" taborder="24" text="사용자" cssclass="sta_WF_schTitle" left="20" top="0" width="64" height="41" domainId="nexa.s_condition"/>
+              <Edit id="edt_searchKeyword" taborder="29" onkeyup="div_search_btn_search_onclick" left="9.52%" top="10" right="57.89%" height="20" value="홍길동"/>
+              <Button id="Button05" taborder="30" text="조회" onclick="fn_search" cssclass="btn_WF_Search" top="3" right="4" width="58" height="25"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="div_grid_top" taborder="17" left="0" top="31" right="0" height="23" scrollbars="none">
+          <Layouts>
+            <Layout>
+              <Button id="btn_add" taborder="27" text="추가" cssclass="btn_WF_CRUD" top="0" right="160" width="50" height="23" domainId="nexa.add" onclick="fn_add"/>
+              <Button id="btn_delete" taborder="28" text="삭제" cssclass="btn_WF_CRUD" top="0" right="107" width="50" height="23" domainId="nexa.delete" onclick="fn_delete"/>
+              <Button id="btn_save" taborder="29" text="저장" cssclass="btn_WF_CRUD" top="0" right="1" width="50" height="23" domainId="nexa.save" onclick="div_grid_top_btn_save_onclick"/>
+              <Button id="btn_reset" taborder="30" text="리셋" cssclass="btn_WF_CRUD" top="0" right="54" height="23" domainId="nexa.reset" width="50" onclick="fn_reset"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="divInput" taborder="18" left="0" top="63" right="0" style="border:1 solid #808080ff ;" bottom="0">
+          <Layouts>
+            <Layout>
+              <Static id="stc_id" taborder="25" text="ID" left="27" top="14" height="30" style="background:lavender URL('img::ico_bullet.gif') left middle;padding:1px 1px 1px 10;font:9 Dotum;" class="sub_title" width="164"/>
+              <Static id="Static01" taborder="26" text="EngName" left="52.58%" top="59" right="27.02%" height="30" style="background:lavender;padding:0 0 0 10;font:9 Dotum;"/>
+              <Static id="Static07" taborder="32" text="Phone" left="3.18%" top="145" right="76.29%" height="30" style="background:lavender;padding:0 0 0 10;font:9 Dotum;"/>
+              <Edit id="edt_id" taborder="33" left="201" top="15" right="50%" height="34" oneditclick="divInput_edt_id_oneditclick"/>
+              <Edit id="edtEngName" taborder="41" left="74.51%" top="56" right="0.78%" height="34"/>
+              <Static id="stc_name" taborder="42" text="FullName" left="3.18%" top="58" right="76.29%" height="30" style="background:lavender URL('img::ico_bullet.gif') left middle;padding:1px 1px 1px 10;font:9 Dotum;" class="sub_title"/>
+              <Edit id="edt_fullName" taborder="43" left="25.3%" top="59" right="50.07%" height="34"/>
+              <Static id="stc_password" taborder="44" text="PASSWORD" left="51.5%" top="16" height="30" style="background:lavender URL('img::ico_bullet.gif') left middle;padding:1px 1px 1px 10;font:9 Dotum;" class="sub_title" width="164"/>
+              <Edit id="edt_password" taborder="45" left="74.56%" top="15" right="6" height="34" password="true"/>
+              <Edit id="edt_phone" taborder="46" left="25.3%" top="141" right="50.07%" height="34"/>
+              <Static id="Static00" taborder="47" text="CellPhone" left="52.45%" top="145" right="27.02%" height="30" style="background:lavender;padding:0 0 0 10;font:9 Dotum;"/>
+              <Edit id="edt_cellPhone" taborder="48" left="74.57%" top="141" right="0.79%" height="34"/>
+              <Static id="Static02" taborder="49" text="Email" left="3.18%" top="104" right="76.29%" height="30" style="background:lavender;padding:0 0 0 10;font:9 Dotum;"/>
+              <Edit id="edt_email" taborder="50" left="25.3%" top="100" right="0.79%" height="34"/>
+              <Static id="Static03" taborder="51" text="ZipCode" left="3.18%" top="184" right="76.29%" height="30" style="background:lavender;padding:0 0 0 10;font:9 Dotum;"/>
+              <Edit id="edt_zipCode" taborder="52" left="25.3%" top="180" right="50.07%" height="34"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="stc_detail" taborder="21" text="상세정보" left="2.13%" top="36" right="77%" height="20" cssclass="sta_WF_title"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_search" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <ConstColumn id="PageIndex" type="INT" size="30" value="1"/>
+          <ConstColumn id="PageSize" type="INT" size="30" value="5"/>
+          <ConstColumn id="PageUnit" type="INT" size="30" value="5"/>
+          <Column id="searchCondition" type="STRING" size="100"/>
+          <Column id="searchKeyword" type="STRING" size="100"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="searchKeyword">홍길동</Col>
+            <Col id="searchCondition"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_user" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="userId" type="STRING" size="256"/>
+          <Column id="password" type="STRING" size="256"/>
+          <Column id="userName" type="STRING" size="256"/>
+          <Column id="enName" type="STRING" size="256"/>
+          <Column id="email" type="STRING" size="256"/>
+          <Column id="phone" type="DATE" size="256"/>
+          <Column id="cellPhone" type="STRING" size="256"/>
+          <Column id="zipCode" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Bind>
+      <BindItem id="item18" compid="div_search.edt_searchKeyword" propid="value" datasetid="ds_search" columnid="searchKeyword"/>
+      <BindItem id="item0" compid="divInput.edt_id" propid="value" datasetid="ds_user" columnid="userId"/>
+      <BindItem id="item3" compid="divInput.edtEngName" propid="value" datasetid="ds_user" columnid="enName"/>
+      <BindItem id="item1" compid="divInput.edt_fullName" propid="value" datasetid="ds_user" columnid="userName"/>
+      <BindItem id="item2" compid="divInput.edt_password" propid="value" datasetid="ds_user" columnid="password"/>
+      <BindItem id="item4" compid="divInput.edt_phone" propid="value" datasetid="ds_user" columnid="phone"/>
+      <BindItem id="item5" compid="divInput.edt_cellPhone" propid="value" datasetid="ds_user" columnid="cellPhone"/>
+      <BindItem id="item6" compid="divInput.edt_email" propid="value" datasetid="ds_user" columnid="email"/>
+      <BindItem id="item7" compid="divInput.edt_zipCode" propid="value" datasetid="ds_user" columnid="zipCode"/>
+    </Bind>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : Pattern_01
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : SingleDetail
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.form_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+	//기본 공통  함수 초기화
+	Iject.formOnload(obj);	
+    //this.fn_search();
+   
+} 
+
+
+/**
+ * 조회처리
+ * @return 
+ * @example
+ *
+ * @memberOf Iject
+ */
+this.fn_search = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+  
+   var searchCondition =  "NAME";
+    var searchKeyword = this.div_search.edt_searchKeyword.value;       
+    
+
+	this.ds_search.setColumn(0, "searchCondition", "NAME");
+	this.ds_search.setColumn(0, "searchKeyword", searchKeyword);
+   
+   var oDatas =  {
+			  svcid : "search",
+			  sController : "userSelectVO.do",			 
+			  inds :["ds_search=ds_search"],
+			  outds :[
+				 "ds_user=output1"
+			     ],			     
+			  args  : [				
+			  ],
+			  bAsync : true,    // 비동기여부 (true : async  false: sync)
+			  nDataType : 0,   // (0: XML타입, 1: 이진 타입, 2: SSV 타입)
+			  bCompress :false,	 //			  
+			}; 
+	 trace(" this.ds_search : " + this.ds_search.saveXML());
+    //공통 transaction 함수 호츨   //function callback 
+	Iject.transaction(this,oDatas,function(){   
+		
+		//alert(" this.errorcode : " + this.errorcode);
+		
+		/*  
+		*   callback argument
+		*   @param : {string}    this.svcid      : 서비스 ID
+		*   @param : {object}    this.fobj       : 현재 form object
+		*   @param : {number}    this.errorcode  : 서비스 에러 코드
+		*   @param : {string}    this.errormsg   : 서비스 에러 메세지
+		*/   
+		if(this.errorcode < 0)
+		{
+		   Iject.alert(this.errorMsg);			
+		   return;
+		} 
+	      
+	       var pThis = this.fobj;   //form object	      
+	       trace(" ds_user : " + pThis.ds_user.saveXML());
+	});
+}
+
+
+
+//추가
+this.fn_add = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_user.addRow();
+	this.div_search.edt_searchKeyword.set_value("");
+}
+
+//삭제
+this.fn_delete = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	var nRow = this.ds_user.rowposition;
+	this.ds_user.deleteRow(nRow);
+	var rtnValue = Iject.confirm("삭제 하시겠습니까?");
+	
+	if(rtnValue)
+	{
+	
+		this.fn_save("delete");
+	}
+	else
+	{
+		this.fn_search();
+	}
+}
+
+//리셋
+this.fn_reset = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.ds_user.reset();
+}
+
+
+//저장
+this.fn_save = function(strid)
+{
+     
+	var oDatas =  {
+			  svcid : strid,
+			  sController : "userModifyVO.do",			 
+			  inds :["input1=ds_user:U"],
+			  outds :[
+				 "ds_user=output1"
+			     ],			     
+			  args  : [				
+			  ],
+			  bAsync : true,    // 비동기여부 (true : async  false: sync)
+			  nDataType : 0,   // (0: XML타입, 1: 이진 타입, 2: SSV 타입)
+			  bCompress :false,	 //			  
+			}; 
+			
+    //공통 transaction 함수 호츨   //function callback 
+	Iject.transaction(this,oDatas,function(){   
+		/*  
+		*   callback argument
+		*   @param : {string}    this.svcid       서비스 ID
+		*   @param : {object}    this.fobj        : 현재 form object
+		*   @param : {number}    this.errorcode  : 서비스 에러 코드
+		*   @param : {string}    this.errormsg   : 서비스 에러 메세지
+		*/    
+		if(this.errorcode < 0)
+		{
+		   Iject.alert(this.errorMsg,"알림");			
+		   return;
+		}			
+	      
+	       var pThis = this.fobj;   //form object
+	       
+	      switch(this.svcid)
+	      {
+	         case "save" : 
+				Iject.alert("저장완료");
+				break;
+				
+	         case "dlete" : 
+	            Iject.alert("삭제완료");
+				break; 
+	      }
+	      
+	      pThis.div_search.edt_searchKeyword.set_value(pThis.edt_fullName.value);
+		  pThis.fn_search();
+	});
+}
+
+
+/**********************************************************************
+* User Function
+***********************************************************************/
+
+//저장버튼 클릭시 
+this.div_grid_top_btn_save_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	this.fn_save("save");
+}
+
+//검색  Enter키
+this.div_search_btn_search_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	if ( e.keycode == 13 )
+	{
+		this.fn_search();
+	}
+}
+]]></Script>
+  </Form>
+</FDL>

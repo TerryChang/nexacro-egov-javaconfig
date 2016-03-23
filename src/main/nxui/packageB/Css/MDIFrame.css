@@ -1,0 +1,969 @@
+﻿/************************************ B ************************************/
+
+/* Button */
+Button.btn_MDI_TabSpinup
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_N.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpinup:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpinup:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpinup:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpinup:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpinup:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpinup_N.png');
+	imagealign		: center middle;
+	opacity			: 50%;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_N.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_O.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_P.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_TabSpindown:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabSpindown_N.png');
+	imagealign		: center middle;
+	opacity			: 50%;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_N.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_P.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Extend:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Extend_N.png');
+	imagealign		: left middle;
+	opacity			: 50%;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_N.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_P.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_Cascade:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_Cascade_N.png');
+	imagealign		: left middle;
+	opacity			: 50%;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_N.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_P.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_O.png');
+	imagealign		: left middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_MDI_AllClose:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_AllClose_N.png');
+	imagealign		: left middle;
+	opacity			: 50%;
+	padding			: ;
+	shadow			: ;
+}
+
+
+/************************************ S ************************************/
+
+/*Static*/
+Static.sta_MDI_Bg
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_MDI_Bg.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_MDI_Bg:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_MDI_Bg.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_MDI_Bg:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_MDI_Bg.png') repeat-x;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_MDI_Logo
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #272f39 URL('img::sta_MDI_Logo.png') center middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_MDI_Logo:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #272f39 URL('img::sta_MDI_Logo.png') center middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_MDI_Logo:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #272f39 URL('img::sta_MDI_Logo.png') center middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+
+
+/************************************ T ************************************/
+
+/*Tab*/
+Tab.tab_MDI
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_N.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 10 12 12;
+	buttonmargin		: 0 -1 0 0;
+	color			: #c9ccd0;
+	cursor			: ;
+	focusborder		: ;
+	font			: 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+Tab.tab_MDI:mouseover
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_N.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 10 12 12;
+	buttonmargin		: 0 -1 0 0;
+	color			: #c9ccd0;
+	cursor			: ;
+	focusborder		: ;
+	font			: 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+Tab.tab_MDI:pushed
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_N.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 10 12 12;
+	buttonmargin		: 0 -1 0 0;
+	color			: #c9ccd0;
+	cursor			: ;
+	focusborder		: ;
+	font			: 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+Tab.tab_MDI:selected
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_S.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 0 12 0;
+	buttonmargin		: 0 -1 0 0;
+	color			: #383838;
+	cursor			: ;
+	focusborder		: ;
+	font			: bold 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+
+Tab.tab_MDI:focused
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_N.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 10 12 12;
+	buttonmargin		: 0 -1 0 0;
+	color			: #c9ccd0;
+	cursor			: ;
+	focusborder		: ;
+	font			: 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+Tab.tab_MDI:disabled
+{
+	accessibility		: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	buttonbackground	: transparent URL('img::tab_MDI_Bg_N.png') stretch 5,5;
+	buttonborder		: 0 none;
+	buttonbordertype	: normal 0 0;
+	buttongradation		: ;
+	buttonpadding		: 15 0 12 0;
+	buttonmargin		: 0 -1 0 0;
+	color			: #5c6066;
+	cursor			: ;
+	focusborder		: ;
+	font			: 9 Dotum;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	showextrabutton		: true;
+	stepalign		: ;
+	stepshowtype		: ;
+}
+Tab.tab_MDI>#extrabutton
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+Tab.tab_MDI>#extrabutton:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+Tab.tab_MDI>#extrabutton:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+Tab.tab_MDI>#extrabutton:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+Tab.tab_MDI>#extrabutton:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+Tab.tab_MDI>#extrabutton:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_MDI_TabExtra.png');
+	imagealign		: ;
+	opacity			: 50%;
+	padding			: 0 0 2 0;
+	shadow			: ;
+}
+
+/*Button*/
+Button.btn_WF_MDI,
+Button.btn_WF_MDI:mouseover,Button.btn_WF_MDI:pushed,Button.btn_WF_MDI:selected,
+Button.btn_WF_MDI:focused,Button.btn_WF_MDI:disabled
+{
+	align			: left middle;
+	background 		: transparent URL('img::tab_MDI_Bg_N.png') stretch 0,0;
+	border			: 0 none,0 solid #e1dedb,0 none,0 none;
+	bordertype		: normal;
+	padding			: 0 5 0 5;
+	font			: bold 9 Dotum;
+	color			: #6d6d6c;
+	cursor			: hand;
+}
+Button.btn_WF_MDI:mouseover
+{
+	background 		: @gradation;
+	gradation		: linear 0,0 #ffffff 0,100 #f7f5f4;
+	color			: #585756;
+}
+Button.btn_WF_MDI:pushed,Button.btn_WF_MDI:focused,Button.btn_WF_MDI:selected
+{
+	background 		: #ffffff;
+	color			: #333333;
+	font			: bold underline 9 Dotum;
+}
+Button.btn_WF_MDI:disabled
+{
+	background 		: #f2f0ef;
+	font			: bold 9 Dotum;
+	color			: #afaead;
+}
+
+Button.btn_MDI_close,
+Button.btn_MDI_close:mouseover,Button.btn_MDI_close:pushed,
+Button.btn_MDI_close:focused,Button.btn_MDI_close:selected,Button.btn_MDI_close:disabled
+{
+	background		: URL('img::btn_WF_TabExtra.png')center middle ;
+	border			: 0 none;
+	bordertype		: normal;
+}
+
+Button.btn_MDI_close:mouseover, Button.btn_MDI_close:pushed, Button.btn_MDI_close:focused, Button.btn_MDI_close:selected
+{
+	background		: URL('img::btn_WF_TabExtra.png') center middle ;
+}
+Button.btn_MDI_close, Button.btn_MDI_close:disabled
+{
+	background		: URL('img::btn_WF_TabExtra.png') center middle ;
+}
+
+Button.btn_MDI_close:mouseover, Button.btn_MDI_close:pushed, Button.btn_MDI_close:focused, Button.btn_MDI_close:selected
+{
+	background		: URL('img::btn_WF_TabExtra.png') center middle ;
+	border			: 2 dot #e1dedb;
+}
+
+
+
+
+Button.btn_MDI_01,Button.btn_MDI_01:disabled
+{
+	background		: URL('img::MDI_btnN.png') stretch 2,0;
+	border			: 0 none;
+	bordertype		: normal;
+	font			: 9 Dotum;
+	color			: #c9ccd0;
+	padding			: 0 0 0 13;
+	align			: left middle;
+}
+Button.btn_MDI_01:mouseover,Button.btn_MDI_01:pushed,
+Button.btn_MDI_01:focused,Button.btn_MDI_01:selected
+{
+	background		: URL('img::MDI_btnO.png') stretch 2,0;
+	border			: 0 none;
+	bordertype		: normal;
+	font			: 9 Dotum;
+	color			: #c9ccd0;
+	padding			: 0 0 0 13;
+	align			: left middle;
+}
+
+
+Button.btn_MDI_02,Button.btn_MDI_02:disabled, Button.btn_MDI_02:mouseover,Button.btn_MDI_02:pushed,
+Button.btn_MDI_02:focused,Button.btn_MDI_02:selected
+{
+	background		: #ffffff;
+	border			: 0 none;
+	bordertype		: normal;
+	font			: bold 9 Dotum;
+	color			: #373737;
+	padding			: 0 0 0 13;
+	align			: left middle;
+}
+
+Button.btn_MDI_03,Button.btn_MDI_03:disabled, Button.btn_MDI_03:mouseover,Button.btn_MDI_03:pushed,
+Button.btn_MDI_03:focused,Button.btn_MDI_03:selected
+{
+	background		: URL('img::MDI_btnE.png');
+	border			: 0 none;
+	bordertype		: normal;
+}

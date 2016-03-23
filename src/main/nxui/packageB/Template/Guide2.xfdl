@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Guide2" classname="Guide2" left="0" top="0" width="1024" height="768" titletext="New Form" style="background:#888888ff;" onload="form_onload">
+    <Layouts>
+      <Layout>
+        <Button id="Button24" taborder="0" text="Tab_normal" cssclass="btn_MDI_01" left="256" top="51" width="188" height="36"/>
+        <Button id="Button25" taborder="1" text="Tab_selceted" cssclass="btn_MDI_02" left="32" top="51" width="188" height="36"/>
+        <Button id="Button26" taborder="2" cssclass="btn_MDI_03" left="202" top="66" width="7" height="7"/>
+        <Button id="Button27" taborder="3" cssclass="btn_MDI_03" left="427" top="66" width="7" height="7"/>
+        <Button id="Button00" taborder="4" text="Button00" left="7.23%" top="225" right="75.49%" height="58" cssclass="btn_MDI_02"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : 
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.form_onload = function(obj,e)
+{
+  Iject.formOnload(obj);
+
+}]]></Script>
+  </Form>
+</FDL>

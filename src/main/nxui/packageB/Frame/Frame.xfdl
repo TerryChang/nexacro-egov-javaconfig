@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="WorkFrame" classname="WorkFrame" left="0" top="0" width="1280" height="1000" titletext="New Form">
+    <Layouts>
+      <Layout>
+        <Static id="Static00" taborder="1" left="230" top="0" width="1050" height="30" cssclass="sta_TF_TopBg2"/>
+        <Div id="Div00" taborder="0" left="230" top="0" height="30" url="Frame::TopFrame.xfdl" width="1050"/>
+        <Div id="Div01" taborder="2" text="Div01" left="0" top="0" width="230" url="Frame::LeftFrame.xfdl" bottom="42"/>
+        <Div id="Div02" taborder="3" text="Div02" left="0" height="42" url="Frame::MDIFrame.xfdl" bottom="0" right="0"/>
+        <Div id="Div03" taborder="4" text="Div03" left="230" top="30" url="Frame::WorkFrame.xfdl" width="1050" cssclass="div_WF_WFBg" bottom="42"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : Frame
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : frame tgemplate
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+]]></Script>
+  </Form>
+</FDL>

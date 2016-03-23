@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+
+    <!--
+        - The component are autodetected POJOs labeled with the @Service, @Repository.. annotation.
+    -->
+    <context:component-scan base-package="nexacro.sample"> 
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+	<!-- message properties -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basenames">
+			<list>
+				<!-- 메시지 properties 파일을 등록한다. 등록 하지 않은 경우의 기본값은 message.properties 이다.-->
+				<value>classpath:/message/message-common</value>
+				<value>classpath:/message/message-user</value>
+			</list>
+		</property>
+		<property name="cacheSeconds">
+			<value>60</value>
+		</property>
+	</bean>
+
+
+	<!-- EgovFramework EgovAbstractServiceImpl dependency.. -->
+	<bean class="egovframework.rte.fdl.cmmn.trace.LeaveaTrace" id="leaveaTrace">
+		<property name="traceHandlerServices">
+			<list>
+				<ref bean="traceHandlerService"/>
+				<!-- <ref bean="egov.traceHandlerService"/> -->
+			</list>
+		</property>
+	</bean>
+	<bean class="egovframework.rte.fdl.cmmn.trace.manager.DefaultTraceHandleManager" id="traceHandlerService">
+		<property name="reqExpMatcher">
+			<ref bean="antPathMater"/>
+		</property>
+		<property name="patterns">
+			<list>
+				<value>*</value>
+			</list>
+		</property>
+		<property name="handlers">
+			<list>
+				<ref bean="defaultTraceHandler"/>
+			</list>
+		</property>
+	</bean>
+	<bean class="org.springframework.util.AntPathMatcher" id="antPathMater"/>
+	<bean class="egovframework.rte.fdl.cmmn.trace.handler.DefaultTraceHandler" id="defaultTraceHandler"/>
+	<!-- EgovFramework EgovAbstractServiceImpl dependency.. -->
+
+</beans>

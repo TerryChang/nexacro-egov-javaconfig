@@ -1,0 +1,145 @@
+﻿/************************************ B ************************************/
+
+/* Button */
+Button.btn_Login_Login, Button.btn_Login_Login:disabed
+{
+	background		: URL('img::Login_btnN.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}
+Button.btn_Login_Login:mouseover, Button.btn_Login_Login:focused
+{
+	background		: URL('img::Login_btnO.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}
+Button.btn_Login_Login:pushed
+{
+	background		: URL('img::Login_btnP.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}
+
+
+Button.btn_Login_Close, Button.btn_Login_Close:disabed
+{
+	background		: URL('img::login_closebtnN.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}
+Button.btn_Login_Close:mouseover, Button.btn_Login_Close:focused, Button.btn_Login_Close:pushed
+{
+	background		: URL('img::login_closebtnO.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}
+
+
+
+/************************************ C ************************************/
+
+/* CheckBox */
+CheckBox.chk_Login_Id
+{
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	font			: 9,Gulim;
+	color			: #e0e4ef;
+	aling			: left middle;
+	buttonbackground	: #ffffff;
+	buttonborder		: 1 solid #525252;
+	buttonbordertype	: round 1 1;
+	buttonimage		: URL('img::chk_img.png');
+	buttonsize		: 14;
+	textpadding		: 2 0 0 5;
+	
+}
+
+CheckBox.chk_Login_Id:mouseover, CheckBox.chk_Login_Id:pushed
+{
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	font			: 9,Gulim;
+	color			: #e0e4ef;
+	aling			: left middle;
+	buttonbackground	: #ffffff;
+	buttonborder		: 1 solid #ff6600;
+	buttonbordertype	: round 1 1;
+	buttonimage		: URL('img::chk_img.png');
+	buttonsize		: 14;
+	textpadding		: 2 0 0 5;
+	
+}
+CheckBox.chk_Login_Id:focused
+{
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	font			: 9,Gulim;
+	color			: #e0e4ef;
+	aling			: left middle;
+	buttonbackground	: #ffffff;
+	buttonborder		: 1 solid #043688 ;
+	buttonbordertype	: round 1 1;
+	buttonimage		:;
+	buttonsize		: 14;
+	textpadding		: 2 0 0 5;
+	
+}
+
+
+
+/************************************ D ************************************/
+
+/* Div */
+Div.div_Login_Bg, Div.div_Login_Bg:mouseover, Div.div_Login_Bg:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::Login_bg.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+
+/************************************ E ************************************/
+
+/* Edit */
+Edit.edi_Login_Id, Edit.edi_Login_Id:diabled
+{
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	font			: 9, Verdana;
+	color			: #c9c9c9;
+	padding			: 0 0 0 12;
+}
+Edit.edi_Login_Id:mouseover, Edit.edi_Login_Id:focused
+{
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	font			: 9, Verdana;
+	color			: #222222;
+	padding			: 0 0 0 12;
+}
+
+
+/************************************ S ************************************/
+
+/* Static */
+Static.sta_Login_Inputbg, Static.sta_Login_Inputbg:mouseover
+{
+	background		: URL('img::Login_Input.png') stretch 5,0;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+}

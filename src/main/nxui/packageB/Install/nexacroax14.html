@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>nexacroax14(TOBESOFT) Test Page </TITLE>
+
+<SCRIPT LANGUAGE="javascript">
+var pKey = "packageB";
+var Server_Path = "http://" + window.location.host + "/nexacro-sample/" + pKey;	//사용하는 서버 주소
+
+function fn_onload()
+{
+
+  nexacroax14.key = pKey;
+  //alert(Server_Path+"/nexacro/nexacro.xadl.js");
+  //nexacroax14.xadl = Server_Path+"/nexacro/nexacro.xadl.js";
+  nexacroax14.bjson = Server_Path+"/nexacro/start.json";
+  //alert(nexacroax14.set_xadl);
+  nexacroax14.run();
+}
+		
+		
+</SCRIPT>	
+
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="addlog(strMsg)">		
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="beforeexit(bCloseFlag, bHandledFlag)">		
+	</SCRIPT>	
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="communication(bStart)">	
+	</SCRIPT>	
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="error(nError, strErrMsg)">		
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="exit()">		
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="load(strURL)">			
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="loadingglobalvariables(strURL)">		
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="loadtypedefinition(strURL)">		
+	</SCRIPT>
+	<SCRIPT LANGUAGE=javascript FOR=nexacroax14 EVENT="usernotify(nNotifyID, strMsg)">		
+	</SCRIPT>
+
+</HEAD>
+
+<BODY onload ="fn_onload()">
+<OBJECT ID="nexacroax14" CLASSID="CLSID:6DB5422D-536F-4B80-B32C-16BEA0971512" width="1000" height="800"></OBJECT>
+</BODY>
+</HTML>

@@ -1,0 +1,2094 @@
+﻿/************************************ B ************************************/
+
+/* Button */
+Button.btn_WF_CRUD
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 1,100 #f9f9f9;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_CRUD:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_CRUD:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_CRUD:selected
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_CRUD:pushed
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #dfdfdf 0,100 #ffffff;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_CRUD:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #9e9e9e, 1 solid #9e9e9e, 1 solid #7a7a7a, 1 solid #9e9e9e;
+	bordertype		: round 3 3;
+	color			: #444444;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 1,100 #f9f9f9;
+	image			: ;
+	imagealign		: ;
+	opacity			: 30%;
+	padding			: 1 0 0 0;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #2c4898;
+	border			: 1 solid #21367e;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: ;
+	image			: URL('img::btn_WF_Search.png');
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search:mouseover
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation;
+	border			: 1 solid #21367e;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: linear 0,0 #2c4898 0,100 #213a80;
+	image			: URL('img::btn_WF_Search.png');
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search:selected
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation;
+	border			: 1 solid #21367e;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: linear 0,0 #2c4898 0,100 #213a80;
+	image			: URL('img::btn_WF_Search.png');
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search:focused
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: linear 0,0 #2c4898 0,100 #213a80;
+	image			: URL('img::btn_WF_Search.png') ;
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search:pushed
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation;
+	border			: 1 solid #21367e;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: linear 0,0 #041e65 0,100 #213571;
+	image			: URL('img::btn_WF_Search.png') ;
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_Search:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #92a0c8;
+	border			: 1 solid #8c97bb;
+	bordertype		: round 3 3;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 9 Gulim; 
+	gradation		: ;
+	image			: URL('img::btn_WF_Search.png') ;
+	imagealign		: lefttext middle;
+	opacity			: ;
+	padding			: 0 7 0 7;
+	shadow			: outer 0,1 1 #00000019;
+}
+Button.btn_WF_SearchSmall
+{
+	accessibility		: ;
+	align			: ;
+	background		: #ffffff;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_WF_SearchSmall.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_SearchSmall:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: URL('img::btn_WF_SearchSmall.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_SearchSmall:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: URL('img::btn_WF_SearchSmall.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_SearchSmall:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #dfdfdf;
+	image			: URL('img::btn_WF_SearchSmall.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_SearchSmall:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #dfdfdf 0,100 #ffffff;
+	image			: URL('img::btn_WF_SearchSmall.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_SearchSmall:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: #ffffff;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: ;
+	image			: URL('img::btn_WF_SearchSmall_D.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleL.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleL.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleL.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #dad9da 0,100 #fdfcfd;
+	image			: URL('img::btn_WF_ShuttleL_P.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleL.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleL:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #ececed;
+	image			: URL('img::btn_WF_ShuttleL_D.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleR.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleR.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleR.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #dad9da 0,100 #fdfcfd;
+	image			: URL('img::btn_WF_ShuttleR_P.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleR.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleR:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #ececed;
+	image			: URL('img::btn_WF_ShuttleR_D.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleT.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleT.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleT.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #dad9da 0,100 #fdfcfd;
+	image			: URL('img::btn_WF_ShuttleT_P.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleT.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleT:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #ececed;
+	image			: URL('img::btn_WF_ShuttleT_D.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleB.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleB.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleB.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #dad9da 0,100 #fdfcfd;
+	image			: URL('img::btn_WF_ShuttleB_P.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #fefefe 0,100 #ecedec;
+	image			: URL('img::btn_WF_ShuttleB.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_ShuttleB:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: @gradation;
+	border			: 1 solid #bdbdbd;
+	bordertype		: round 3 3;
+	color			: ;
+	cursor			: hand;
+	font			: ;
+	gradation		: linear 0,0 #ffffff 0,100 #ececed;
+	image			: URL('img::btn_WF_ShuttleB_D.png');
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Custom
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Custom:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Custom:selected
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Custom:pushed
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+
+Button.btn_WF_Custom:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 1 dotted #777777;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Custom:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #b5b5b5;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_WF_Add
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Add:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Add:selected
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Add:pushed
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Add:focused
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 1 dotted #777777;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Add:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::btn_WF_Add.png') left middle;
+	border			: 0 none, 1 solid #c9c9c9, 0 none, 0 none;
+	bordertype		: normal 0 0;
+	color			: #b5b5b5;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete:selected
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete:pushed
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: underline 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 1 dotted #777777;
+	bordertype		: normal 0 0;
+	color			: #2c4898;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+Button.btn_WF_Delete:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent URL('img::btn_WF_Delete.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #b5b5b5;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 0 0 0 20;
+	shadow			: ;
+}
+
+Button.btn_WF_Download
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Download:mouseover
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Download:selected
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Download:pushed
+{	
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Download:focused
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Download:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Download.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 lefttop leftbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload:selected
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload:pushed
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload:focused
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Upload:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: @gradation URL('img::btn_WF_Upload.png') left middle;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3 righttop rightbottom;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: 1 0 0 25;
+	shadow			: ;
+}
+Button.btn_WF_Extend
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Extend:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Extend:selected
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Extend:pushed
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Extend:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 dotted #777777;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Extend:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Extend.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Downsize
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Downsize.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Downsize:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Downsize.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Downsize:selected
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Downsize.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Downsize:pushed
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Downsize.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+Button.btn_WF_Downsize:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: @gradation;
+	border			: 1 solid #c2c2c2;
+	bordertype		: round 3 3;
+	color			: #555555;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: linear 0,0 #ffffff 0,100 #f8f8f8;
+	image			: URL('img::btn_WF_Downsize.png');
+	imagealign		: center middle;
+	opacity			: ;
+	padding			: 1 0 0 0;
+	shadow			: ;
+}
+
+
+/************************************ D ************************************/
+
+/*Div*/
+Div.div_WF_SearchBg
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f2f7f8;
+	border			: 1 solid #8daab4;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_SearchBg:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f2f7f8;
+	border			: 1 solid #8daab4;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_SearchBg:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f2f7f8;
+	border			: 1 solid #8daab4;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_SearchBg:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f2f7f8;
+	border			: 1 solid #8daab4;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_WFBg
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f7f7f7;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_WFBg:mouseover
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f7f7f7;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_WFBg:focused
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f7f7f7;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+Div.div_WF_WFBg:disabled
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: #f7f7f7;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+	stepalign		: ;
+}
+
+
+/************************************ E ************************************/
+
+/* Edit */
+Edit.edt_WF_Search
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 9 0 9;
+	selectbackground	: #3da2df;
+	selectcolor		: #ffffff;
+	shadow			: ;
+}
+Edit.edt_WF_Search:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 9 0 9;
+	selectbackground	: #3da2df;
+	selectcolor		: #ffffff;
+	shadow			: ;
+}
+Edit.edt_WF_Search:focused
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 9 0 9;
+	selectbackground	: #3da2df;
+	selectcolor		: #ffffff;
+	shadow			: ;
+}
+Edit.edt_WF_Search:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #f3f3f3;
+	border			: 1 solid #bdbdbd;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 9 0 9;
+	selectbackground	: #3da2df;
+	selectcolor		: #ffffff;
+	shadow			: ;
+}
+
+
+/************************************ G ************************************/
+
+/* Grid */
+Grid.grd_WF_Tree
+{
+	accessibility		: ;
+	align			: center middle;
+	background		: transparent;
+	border			: 1 solid #a3a7b4;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	line			: ;
+	opacity			: ;
+	padding			: ;
+	selectline		: ;
+	selectlinetype		: ;
+	shadow			: ;
+	treeclosebuttonimage	: URL('img::img_WF_TreeClose.png');
+	treecollapseimage	: ;
+	treeexpandimage		: ;
+	treeitemimage		: URL('img::img_WF_TreeItem.png');
+	treeitemmargin		: ;
+	treelinetype		: ;
+	treeopenbuttonimage	: URL('img::img_WF_TreeOpen.png');
+}
+Grid.grd_WF_Tree>#body
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: #f8f8f9;
+	cellbackground2		: #f8f8f9;
+	cellcolor		: #333333;
+	cellcolor2		: #333333;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 1 solid #eaeaea;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 14;
+	gradation		: ;
+	selectbackground	: #f1f1ee;
+	selectborder		: 0 none;
+	selectcolor		: #333333;
+	selectfont		: ;
+	selectgradation		: ;
+	selectline		: ;
+	selectlinetype		: ;
+}
+Grid.grd_WF_Tree>#body:mouseover
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: #fdfbdd;
+	cellbackground2		: #fdfbdd;
+	cellcolor		: #333333;
+	cellcolor2		: #333333;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 1 solid #eaeaea;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: ;
+	gradation		: ;
+	selectbackground	: #f1f1ee;
+	selectborder		: 0 none;
+	selectcolor		: #333333;
+	selectfont		: ;
+	selectgradation		: ;
+	selectline		: ;
+	selectlinetype		: ;
+}
+
+Grid.grd_WF_Tree>#body:disabled
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 1 solid #a3a7b4;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: #ffffff;
+	cellbackground2		: #ffffff;
+	cellcolor		: #969696;
+	cellcolor2		: #969696;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 1 solid #eaeaea;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: ;
+	gradation		: ;
+	selectbackground	: #ffffff;
+	selectborder		: 0 none;
+	selectcolor		: #969696;
+	selectfont		: ;
+	selectgradation		: ;
+	selectline		: ;
+	selectlinetype		: ;
+}
+
+/* Grid Summ class */
+.Cellgrd_WF_sum01
+{
+	background		: #ffefd8;
+	font			: 9 Gulim;
+	
+}
+.Cellgrd_WF_sum02
+{
+	background		: #fefff2;
+	font			: 9 Gulim;
+}
+
+.Cellgrd_WF_sum03
+{
+	background		: #faf1ff;
+	font			: 9 Gulim;
+}
+
+
+/************************************ S ************************************/
+
+/* Static */
+Static.sta_WF_Title
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 10 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_Title:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 10 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_Title:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 10 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle1
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle1.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 13;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle1:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle1.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 13;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle1:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle1.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 13;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle2
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle2.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 10;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle2:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle2.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 10;
+	shadow			: ;
+}
+Static.sta_WF_SubTitle2:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::img_WF_Subtitle2.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: bold 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 0 0 0 10;
+	shadow			: ;
+}
+Static.sta_WF_SearchLabel
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_WF_SearchLabel.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_SearchLabel:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_WF_SearchLabel.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_SearchLabel:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_WF_SearchLabel.png') left middle;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel01
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #f7f7f7;
+	border			: 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel01:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #f7f7f7;
+	border			: 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel01:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #f7f7f7;
+	border			: 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: 4 0 0 9;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel02
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #e1dfdf;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel02:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #e1dfdf;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_DetailLabel02:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #ffffff;
+	border			: 1 solid #e1dfdf;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_DetailLine
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #444444;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_DetailLine:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #444444;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_WF_DetailLine:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #444444;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}

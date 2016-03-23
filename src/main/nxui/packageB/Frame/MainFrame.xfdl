@@ -1,0 +1,570 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="MainFrame" classname="MainFrame" left="0" top="0" width="1280" height="819" style="background:#edefeeff;" onload="MainFrame_onload" titletext="Main" onsize="MainFrame_onsize">
+    <Layouts>
+      <Layout>
+        <Div id="Div00" taborder="0" left="20" top="20" width="414" height="736" cssclass="div_MF_Article">
+          <Layouts>
+            <Layout>
+              <Static id="Static12" taborder="0" left="-4" top="531" width="416" height="203" cssclass="sta_MF_TodoArea"/>
+              <Static id="Static01" taborder="2" text="29" left="36" top="605" width="80" height="59" cssclass="sta_MF_SelectDay" usedecorate="true"/>
+              <Static id="Static00" taborder="1" left="22" top="553" width="127" height="20" cssclass="sta_MF_TodoTitle" text="To-do List"/>
+              <Combo id="Combo00" taborder="3" text="전체보기" left="269" top="551" width="124" height="21"/>
+              <Grid id="Grid00" taborder="5" useinputpanel="false" left="151" top="585" width="243" height="123" binddataset="TodoList" cssclass="grd_MF_TodoList">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="23"/>
+                      <Column size="174"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell displaytype="image" text="bind:Column0"/>
+                      <Cell col="1" displaytype="text" text="bind:Column1"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Button id="Button00" taborder="6" left="252" top="713" width="20" height="15" cssclass="btn_MF_TodoView"/>
+              <Static id="Static02" taborder="7" left="28" top="673" width="85" height="19" cssclass="sta_MF_Number" text="12"/>
+              <Static id="Static03" taborder="8" text="2015.07.01" left="123" top="97" width="161" height="47" cssclass="sta_MF_CalDate"/>
+              <Button id="Button01" taborder="9" left="92" top="109" width="24" height="24" cssclass="btn_MF_CalPrev"/>
+              <Button id="Button02" taborder="10" left="291" top="109" width="24" height="24" cssclass="btn_MF_CalNext"/>
+              <Static id="Static04" taborder="11" text="일" left="97" top="638" width="18" height="21" cssclass="sta_MF_Day"/>
+              <Grid id="Grid01" taborder="12" useinputpanel="false" left="20" top="138" width="373" height="376" cssclass="grd_MF_Cal" binddataset="CalSchedule" autofittype="col" selecttype="area">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                      <Column size="13"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="40" band="head"/>
+                      <Row size="16"/>
+                      <Row size="40"/>
+                    </Rows>
+                    <Band id="head">
+                      <Cell colspan="4" style="color:#f96362ff;color2:#f96362ff;" text="SUN"/>
+                      <Cell col="4" colspan="4" text="MON"/>
+                      <Cell col="8" colspan="4" text="TUE"/>
+                      <Cell col="12" colspan="4" text="WED"/>
+                      <Cell col="16" colspan="4" text="THU"/>
+                      <Cell col="20" colspan="4" text="FRI"/>
+                      <Cell col="24" colspan="4" style="color:#51b5baff;color2:#51b5baff;" text="SAT"/>
+                    </Band>
+                    <Band id="body">
+                      <Cell rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:SUNCON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:SUNCON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:SUNCON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080ff,1 solid #d8d8d8ff,0 none #808080ff,0 none #808080ff;" text="bind:SUNCON4"/>
+                        <Cell row="1" colspan="4" style="color:#f96362ff;color2:#f96362ff;" text="bind:SUN"/>
+                      </Cell>
+                      <Cell col="4" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:MONCON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:MONCON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:MONCON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080,1 solid #d8d8d8ff,0 none #808080,0 none #808080;" text="bind:MONCON4"/>
+                        <Cell row="1" colspan="4" style="padding: ;" text="bind:MON"/>
+                      </Cell>
+                      <Cell col="8" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:TUECON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:TUECON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:TUECON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080ff,1 solid #d8d8d8ff,0 none #808080ff,0 none #808080ff;" text="bind:TUECON4"/>
+                        <Cell row="1" colspan="4" text="bind:TUE"/>
+                      </Cell>
+                      <Cell col="12" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:WEDCON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:WEDCON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:WEDCON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080ff,1 solid #d8d8d8ff,0 none #808080ff,0 none #808080ff;" text="bind:WEDCON4"/>
+                        <Cell row="1" colspan="4" text="bind:WED"/>
+                      </Cell>
+                      <Cell col="16" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:THUCON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:THUCON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:THUCON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080ff,1 solid #d8d8d8ff,0 none #808080ff,0 none #808080ff;" text="bind:THUCON4"/>
+                        <Cell row="1" colspan="4" text="bind:THU"/>
+                      </Cell>
+                      <Cell col="20" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:FRICON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:FRICON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:FRICON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none #808080ff,1 solid #d8d8d8ff,0 none #808080ff,0 none #808080ff;" text="bind:FRICON4"/>
+                        <Cell row="1" colspan="4" text="bind:FRI"/>
+                      </Cell>
+                      <Cell col="24" rowspan="2" colspan="4">
+                        <Cell displaytype="image" style="line:0 none;" text="bind:SATCON1"/>
+                        <Cell col="1" displaytype="image" style="line:0 none;" text="bind:SATCON2"/>
+                        <Cell col="2" displaytype="image" style="line:0 none;" text="bind:SATCON3"/>
+                        <Cell col="3" displaytype="image" style="line:0 none,1 solid #d8d8d8,0 none,0 none;" text="bind:SATCON4"/>
+                        <Cell row="1" colspan="4" style="color:#51b5baff;color2:#51b5baff;" text="bind:SAT"/>
+                      </Cell>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static00" taborder="1" visible="false" left="20" top="0" height="20" style="background:#74cfdcff;color:red;" width="1260"/>
+        <Static id="Static02" taborder="2" visible="false" left="0" top="0" height="818" style="background:#74cfdcff;color:red;" width="20"/>
+        <Div id="Div01" taborder="3" left="444" top="20" height="238" cssclass="div_MF_Article" width="836">
+          <Layouts>
+            <Layout width="836" height="238">
+              <Static id="st_name" taborder="0" left="33" top="60" width="97" height="130" cssclass="sta_MF_Name" usedecorate="true"/>
+              <Static id="Static01" taborder="1" text="General Manager&#13;&#10;&lt;b v='true'&gt;C.C / Design Team&lt;/b&gt;" left="174" top="33" width="218" height="40" cssclass="sta_MF_Group" usedecorate="true"/>
+              <Static id="Static02" taborder="2" text="최근 접속일" left="169" top="109" width="110" height="21" cssclass="sta_MF_Label"/>
+              <Static id="Static03" taborder="3" text="쪽지" left="169" top="130" width="110" height="21" cssclass="sta_MF_Label"/>
+              <Static id="Static04" taborder="4" text="메일" left="169" top="151" width="110" height="21" cssclass="sta_MF_Label"/>
+              <Static id="Static05" taborder="5" text="TodoList" left="169" top="172" width="110" height="21" cssclass="sta_MF_Label"/>
+              <Static id="Static06" taborder="6" text="결재대기" left="169" top="193" width="110" height="21" cssclass="sta_MF_Label"/>
+              <Static id="Static07" taborder="7" text="&lt;b v='true'&gt;25&lt;/b&gt; 건" left="279" top="130" width="96" height="21" cssclass="sta_MF_Data" usedecorate="true" onclick="Div01_Static07_onclick"/>
+              <Static id="Static08" taborder="8" text="&lt;b v='true'&gt;4&lt;/b&gt; 건" left="279" top="151" width="96" height="21" cssclass="sta_MF_Data" usedecorate="true"/>
+              <Static id="Static09" taborder="9" text="&lt;b v='true'&gt;6&lt;/b&gt; 건" left="279" top="172" width="96" height="21" cssclass="sta_MF_Data" usedecorate="true"/>
+              <Static id="Static10" taborder="10" text="&lt;b v='true'&gt;1&lt;/b&gt; 건" left="279" top="193" width="96" height="21" cssclass="sta_MF_Data" usedecorate="true"/>
+              <Static id="Static11" taborder="11" text="&lt;b v='true'&gt;2015.12.29&lt;/b&gt;" left="279" top="109" width="96" height="21" cssclass="sta_MF_Data" usedecorate="true"/>
+              <Static id="Static12" taborder="12" left="51.68%" top="0" height="236" cssclass="sta_MF_SearchArea" onclick="Div01_Static12_onclick" right="10"/>
+              <Edit id="Edit00" taborder="14" top="16" height="30" cssclass="edi_MF_Search" right="13" left="52.88%"/>
+              <Static id="Static13" taborder="13" text="Member Search" top="16" height="30" cssclass="sta_MF_Search" width="112" left="52.88%"/>
+              <Button id="Button00" taborder="15" top="16" width="30" height="30" cssclass="btn_MF_Search" right="13"/>
+              <Grid id="Grid00" taborder="16" useinputpanel="false" left="53%" top="57" height="160" cssclass="grd_MF_Member" binddataset="Member" autofittype="col" width="375">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="55"/>
+                      <Column size="12"/>
+                      <Column size="90"/>
+                      <Column size="15"/>
+                      <Column size="90"/>
+                      <Column size="12"/>
+                      <Column size="105"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="24"/>
+                      <Row size="24"/>
+                      <Row size="5"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell rowspan="2" displaytype="image" text="bind:Column0"/>
+                      <Cell col="1" colspan="6" displaytype="text" cssclass="Cellgrd_MF_Belong" text="C.C / Design Team   홍길동 "/>
+                      <Cell row="1" col="1" style="padding: ;" cssclass="Cellgrd_MF_Info" text="T"/>
+                      <Cell row="1" col="2" displaytype="text" text="02.2214.1234"/>
+                      <Cell row="1" col="3" cssclass="Cellgrd_MF_Info" text="M"/>
+                      <Cell row="1" col="4" displaytype="text" text="010.4568.9101"/>
+                      <Cell row="1" col="5" cssclass="Cellgrd_MF_Info" text="E"/>
+                      <Cell row="1" col="6" displaytype="text" text="tobe@toce.com"/>
+                      <Cell row="2" colspan="7"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static14" taborder="17" left="174" top="93" width="206" height="10" cssclass="sta_MF_line"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div02" taborder="4" left="444" top="268" height="274" cssclass="div_MF_Article" width="413">
+          <Layouts>
+            <Layout width="413" height="274">
+              <Static id="Static12" taborder="0" left="0" top="8" height="39" cssclass="sta_MF_ChartTitle" text="Chart A" right="0"/>
+              <Static id="Static01" taborder="3" top="22.43%" height="66.91%" style="background:transparent URL('img::img_MF_ChartGraphA.png');" right="24" left="8.52%"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div03" taborder="5" left="866" top="268" height="274" cssclass="div_MF_Article" width="409">
+          <Layouts>
+            <Layout>
+              <Static id="Static12" taborder="0" left="0" top="0" height="39" cssclass="sta_MF_ChartTitle" text="Chart B" right="0"/>
+              <Static id="Static01" taborder="1" top="61" height="182" style="background:transparent URL('img::img_MF_ChartGraphB.png');" right="7.54%" left="6.81%"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Div id="Div04" taborder="6" left="444" top="552" height="204" cssclass="div_MF_Article" width="836">
+          <Layouts>
+            <Layout>
+              <Tab id="Tab00" taborder="0" left="-1" top="1" tabindex="0" scrollbars="autoboth" cssclass="tab_MF_Notice" right="0" bottom="0">
+                <Tabpages>
+                  <Tabpage id="tabpage1" text="tabpage1" left="0" top="34" width="807" height="146" style="background:#fafafaff;">
+                    <Layouts>
+                      <Layout>
+                        <Grid id="Grid00" taborder="0" useinputpanel="false" left="27" top="19" width="358" height="138" cssclass="grd_MF_Notice" binddataset="Notice" autofittype="col">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="262"/>
+                                <Column size="95"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="22" band="head"/>
+                                <Row size="22"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell colspan="2" displaytype="text" text="News"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell cssclass="Cellgrd_MF_Notice" text="bind:Column0"/>
+                                <Cell col="1" displaytype="date" cssclass="Cellgrd_MF_Right" text="bind:Column1"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                        <Grid id="Grid01" cssclass="grd_MF_Notice" taborder="1" binddataset="Notice" useinputpanel="false" autofittype="col" left="455" top="19" width="358" height="138">
+                          <Formats>
+                            <Format id="default">
+                              <Columns>
+                                <Column size="262"/>
+                                <Column size="95"/>
+                              </Columns>
+                              <Rows>
+                                <Row size="22" band="head"/>
+                                <Row size="22"/>
+                              </Rows>
+                              <Band id="head">
+                                <Cell colspan="2" displaytype="text" text="Notice"/>
+                              </Band>
+                              <Band id="body">
+                                <Cell cssclass="Cellgrd_MF_Notice" text="bind:Column0"/>
+                                <Cell col="1" displaytype="date" cssclass="Cellgrd_MF_Right" text="bind:Column1"/>
+                              </Band>
+                            </Format>
+                          </Formats>
+                        </Grid>
+                      </Layout>
+                    </Layouts>
+                  </Tabpage>
+                  <Tabpage id="tabpage2" text="tabpage2" style="background:#fafafaff;"/>
+                  <Tabpage id="tabpage3" text="tabpage3" style="background:#fafafaff;"/>
+                  <Tabpage id="tabpage4" text="tabpage4" style="background:#fafafaff;"/>
+                </Tabpages>
+              </Tab>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Static id="Static05" taborder="18" left="20" top="20" height="86" width="414" cssclass="sta_MF_ScheduleArea"/>
+        <Button id="Button00" taborder="19" left="125" top="36" height="54" width="54" cssclass="btn_MF_Cal"/>
+        <Static id="Static07" taborder="22" visible="false" left="1266" top="22" width="13" height="234" style="background:#74cfdcff;color:red;"/>
+        <Button id="Button01" taborder="20" left="200" top="36" height="54" cssclass="btn_MF_List" width="55"/>
+        <Button id="Button02" taborder="21" left="275" top="36" height="54" cssclass="btn_MF_New" width="54"/>
+        <Static id="Static01" taborder="35" text="1" left="57" top="988" width="54" height="56" style="background:#f1f1f1ff;border:1 solid #d8d8d8ff ;color:#c8c8c8ff;padding:25 0 0 0;align:center top;font:bold 9 Tahoma;" visible="false"/>
+        <Static id="Static10" taborder="36" visible="false" left="112" top="990" width="30" height="9" style="border:1 solid red,0 none #808080,0 none #808080,0 none #808080;"/>
+        <Static id="Static22" taborder="37" text="background: #f1f1f1&#13;&#10;border : 1 solid #d8d8d8" visible="false" left="150" top="979" width="155" height="42"/>
+        <Static id="Static03" taborder="38" text="font : bold 9 Tahoma&#13;&#10;color : #c8c8c8" visible="false" left="130" top="1042" width="140" height="42"/>
+        <Static id="Static19" taborder="40" visible="false" left="83" top="1030" width="30" height="24" style="border:0 none #808080,0 none #808080,1 solid red,1 solid red;"/>
+        <Static id="Static08" taborder="41" visible="false" left="380" top="993" width="30" height="9" style="border:1 solid red,0 none #808080,0 none #808080,0 none #808080;"/>
+        <Static id="Static14" taborder="45" text="1" left="325" top="987" width="54" height="56" style="background:#3586ccff;border:1 solid #d8d8d8ff ;color:#ffffffff;padding:25 0 0 0;align:center top;font:bold 9 Tahoma;" visible="false"/>
+        <Static id="Static13" taborder="44" visible="false" left="351" top="1030" width="30" height="24" style="border:0 none #808080,0 none #808080,1 solid red,1 solid red;"/>
+        <Static id="Static09" taborder="42" text="background: #3586cc&#13;&#10;border : 1 solid #d8d8d8" visible="false" left="418" top="979" width="155" height="42"/>
+        <Static id="Static11" taborder="43" text="font : bold 9 Tahoma&#13;&#10;color : #ffffff" visible="false" left="398" top="1042" width="140" height="42"/>
+        <Static id="Static15" taborder="46" text="Calendar_Disabled&#13;&#10;클래스 : Cellgrd_MF_disabled" left="60" top="947" width="183" height="28" visible="false" style="linespace:4;"/>
+        <Static id="Static16" taborder="47" text="Calendar_Selected" left="328" top="955" width="110" height="19" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="TodoList" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column1">가나다라마</Col>
+            <Col id="Column0">URL('img::icon_MF_List01.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column1">가나다라마바사</Col>
+            <Col id="Column0">URL('img::icon_MF_List02.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column1">가나다라마바사아</Col>
+            <Col id="Column0">URL('img::icon_MF_List01.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column1">가나다라마바사아자</Col>
+            <Col id="Column0">URL('img::icon_MF_List01.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column1">가나다라마</Col>
+            <Col id="Column0">URL('img::icon_MF_List03.png')</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Member" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+          <Column id="Column2" type="STRING" size="256"/>
+          <Column id="Column3" type="STRING" size="256"/>
+          <Column id="Column4" type="STRING" size="256"/>
+          <Column id="Column5" type="STRING" size="256"/>
+          <Column id="Column6" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">URL('img::img_MF_person.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column1"/>
+            <Col id="Column3"/>
+            <Col id="Column5"/>
+            <Col id="Column0">URL('img::img_MF_person.png')</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">URL('img::img_MF_person.png')</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Notice" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="Column1" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Column0">가나다라</Col>
+            <Col id="Column1">20151229</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다라마바</Col>
+            <Col id="Column1">20151229</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다라마바사아</Col>
+            <Col id="Column1">20151229</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다라마바</Col>
+            <Col id="Column1">20151229</Col>
+          </Row>
+          <Row>
+            <Col id="Column0">가나다라</Col>
+            <Col id="Column1">20151229</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="CalSchedule" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="SUN" type="STRING" size="256"/>
+          <Column id="MON" type="STRING" size="256"/>
+          <Column id="TUE" type="STRING" size="256"/>
+          <Column id="WED" type="STRING" size="256"/>
+          <Column id="THU" type="STRING" size="256"/>
+          <Column id="FRI" type="STRING" size="256"/>
+          <Column id="SAT" type="STRING" size="256"/>
+          <Column id="SUNCON1" type="STRING" size="256"/>
+          <Column id="MONCON1" type="STRING" size="256"/>
+          <Column id="TUECON1" type="STRING" size="256"/>
+          <Column id="WEDCON1" type="STRING" size="256"/>
+          <Column id="THUCON1" type="STRING" size="256"/>
+          <Column id="FRICON1" type="STRING" size="256"/>
+          <Column id="SATCON1" type="STRING" size="256"/>
+          <Column id="SUNCON2" type="STRING" size="256"/>
+          <Column id="MONCON2" type="STRING" size="256"/>
+          <Column id="TUECON2" type="STRING" size="256"/>
+          <Column id="WEDCON2" type="STRING" size="256"/>
+          <Column id="THUCON2" type="STRING" size="256"/>
+          <Column id="FRICON2" type="STRING" size="256"/>
+          <Column id="SATCON2" type="STRING" size="256"/>
+          <Column id="SUNCON3" type="STRING" size="256"/>
+          <Column id="MONCON3" type="STRING" size="256"/>
+          <Column id="TUECON3" type="STRING" size="256"/>
+          <Column id="WEDCON3" type="STRING" size="256"/>
+          <Column id="THUCON3" type="STRING" size="256"/>
+          <Column id="FRICON3" type="STRING" size="256"/>
+          <Column id="SATCON3" type="STRING" size="256"/>
+          <Column id="SUNCON4" type="STRING" size="256"/>
+          <Column id="MONCON4" type="STRING" size="256"/>
+          <Column id="TUECON4" type="STRING" size="256"/>
+          <Column id="WEDCON4" type="STRING" size="256"/>
+          <Column id="THUCON4" type="STRING" size="256"/>
+          <Column id="FRICON4" type="STRING" size="256"/>
+          <Column id="SATCON4" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="WED">1</Col>
+            <Col id="THU">2</Col>
+            <Col id="FRI">3</Col>
+            <Col id="SAT">4</Col>
+            <Col id="SUN">28</Col>
+            <Col id="MON">29</Col>
+            <Col id="TUE">30</Col>
+          </Row>
+          <Row>
+            <Col id="SAT">11</Col>
+            <Col id="SUN">5</Col>
+            <Col id="MON">6</Col>
+            <Col id="TUE">7</Col>
+            <Col id="WED">8</Col>
+            <Col id="THU">9</Col>
+            <Col id="FRI">10</Col>
+            <Col id="MONCON1">URL('img::icon_MF_GrdCon1.png')</Col>
+            <Col id="THUCON1">URL('img::icon_MF_GrdCon1.png')</Col>
+            <Col id="MONCON2">URL('img::icon_MF_GrdCon2.png')</Col>
+            <Col id="THUCON2">URL('img::icon_MF_GrdCon2.png')</Col>
+            <Col id="SUNCON3"/>
+            <Col id="MONCON4">URL('img::icon_MF_GrdConEtc.png')</Col>
+            <Col id="MONCON3">URL('img::icon_MF_GrdCon3.png')</Col>
+          </Row>
+          <Row>
+            <Col id="SAT">18</Col>
+            <Col id="SUN">12</Col>
+            <Col id="MON">13</Col>
+            <Col id="TUE">14</Col>
+            <Col id="WED">15</Col>
+            <Col id="THU">16</Col>
+            <Col id="FRI">17</Col>
+            <Col id="FRICON1">URL('img::icon_MF_GrdCon3.png')</Col>
+          </Row>
+          <Row>
+            <Col id="SAT">25</Col>
+            <Col id="SUN">19</Col>
+            <Col id="MON">20</Col>
+            <Col id="TUE">21</Col>
+            <Col id="WED">22</Col>
+            <Col id="THU">23</Col>
+            <Col id="FRI">24</Col>
+            <Col id="MONCON1">URL('img::icon_MF_GrdCon1.png')</Col>
+            <Col id="WEDCON1">URL('img::icon_MF_GrdCon1.png')</Col>
+            <Col id="WEDCON2">URL('img::icon_MF_GrdCon2.png')</Col>
+            <Col id="WEDCON3">URL('img::icon_MF_GrdCon3.png')</Col>
+            <Col id="MONCON2">URL('img::icon_MF_GrdCon3.png')</Col>
+            <Col id="WEDCON4">URL('img::icon_MF_GrdConEtc.png')</Col>
+          </Row>
+          <Row>
+            <Col id="SAT">1</Col>
+            <Col id="SUN">26</Col>
+            <Col id="MON">27</Col>
+            <Col id="TUE">28</Col>
+            <Col id="WED">29</Col>
+            <Col id="THU">30</Col>
+            <Col id="FRI">31</Col>
+          </Row>
+          <Row>
+            <Col id="SAT">8</Col>
+            <Col id="SUN">2</Col>
+            <Col id="MON">3</Col>
+            <Col id="TUE">4</Col>
+            <Col id="WED">5</Col>
+            <Col id="THU">6</Col>
+            <Col id="FRI">7</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Bind/>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : MainFrame.xfdl
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : MainFrame
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.MainFrame_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+this.on_size();
+}
+
+
+/**
+ * 사용자명 셋팅
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_set = function()
+{	
+	this.Div01.st_name.set_text(Iject.$["usernm"]);
+}
+
+this.MainFrame_onsize = function(obj:Form, e:nexacro.SizeEventInfo)
+{
+	//this.Div01.
+	this.on_size();
+	
+	
+}
+
+//mainframe onsize
+this.on_size = function()
+{
+   if(application.mainframe.width < 1303)
+	{
+	   this.Div01.set_width(840);
+	   this.Div02.set_width(417 + "px");
+	   this.Div03.set_left(866 + "px");	       
+	   this.Div03.set_width(417 + "px");
+	   this.Div04.set_width(840);
+	   
+	}
+	else
+	{
+	   this.Div01.set_right(14);
+	   this.Div02.set_right(33.05 + "%");
+	   this.Div03.set_left(67.66 + "%");
+	   this.Div03.set_right(15);
+	   this.Div04.set_right(15);
+	}
+}
+]]></Script>
+  </Form>
+</FDL>

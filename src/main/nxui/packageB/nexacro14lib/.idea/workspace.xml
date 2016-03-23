@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="754157d9-aa49-4d30-a369-921f6d2f343f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/StatusBar.js" afterPath="$PROJECT_DIR$/component/CompBase/StatusBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Grid.json" afterPath="$PROJECT_DIR$/component/Grid.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/ImageViewer.js" afterPath="$PROJECT_DIR$/component/ComComp/ImageViewer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Tab.js" afterPath="$PROJECT_DIR$/component/ComComp/Tab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/TitleBar.js" afterPath="$PROJECT_DIR$/component/CompBase/TitleBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Chart/ChartInfo.js" afterPath="$PROJECT_DIR$/component/Chart/ChartInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/DomObject.js" afterPath="$PROJECT_DIR$/component/ComComp/DomObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Sketch.js" afterPath="$PROJECT_DIR$/component/ComComp/Sketch.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/Plugin.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/Plugin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/CompBase.js" afterPath="$PROJECT_DIR$/component/CompBase/CompBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/ListBox.js" afterPath="$PROJECT_DIR$/component/ComComp/ListBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/FrameBase.js" afterPath="$PROJECT_DIR$/component/CompBase/FrameBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/DeviceObjs_Runtime.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/DeviceObjs_Runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/DatePicker.js" afterPath="$PROJECT_DIR$/component/ComComp/DatePicker.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Combo.js" afterPath="$PROJECT_DIR$/component/ComComp/Combo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Button.js" afterPath="$PROJECT_DIR$/component/ComComp/Button.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/GroupBox.js" afterPath="$PROJECT_DIR$/component/ComComp/GroupBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/MediaPlayer.js" afterPath="$PROJECT_DIR$/component/ComComp/MediaPlayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/PopupMenu.js" afterPath="$PROJECT_DIR$/component/ComComp/PopupMenu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/Element_HTML5.js" afterPath="$PROJECT_DIR$/component/CompBase/Element_HTML5.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Spin.js" afterPath="$PROJECT_DIR$/component/ComComp/Spin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI.json" afterPath="$PROJECT_DIR$/component/DeviceAPI.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/MaskEdit.js" afterPath="$PROJECT_DIR$/component/ComComp/MaskEdit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Grid/Grid.js" afterPath="$PROJECT_DIR$/component/Grid/Grid.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp.json" afterPath="$PROJECT_DIR$/component/ComComp.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/FlashPlayer.js" afterPath="$PROJECT_DIR$/component/ComComp/FlashPlayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Static.js" afterPath="$PROJECT_DIR$/component/ComComp/Static.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Chart/Chart.js" afterPath="$PROJECT_DIR$/component/Chart/Chart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Div.js" afterPath="$PROJECT_DIR$/component/ComComp/Div.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/TabFrame.js" afterPath="$PROJECT_DIR$/component/CompBase/TabFrame.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DesignComp/DesignForm.js" afterPath="$PROJECT_DIR$/component/DesignComp/DesignForm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/DeviceObjs.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/DeviceObjs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Tray.js" afterPath="$PROJECT_DIR$/component/ComComp/Tray.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Menu.js" afterPath="$PROJECT_DIR$/component/ComComp/Menu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase.json" afterPath="$PROJECT_DIR$/component/CompBase.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/ExportObject.js" afterPath="$PROJECT_DIR$/component/ComComp/ExportObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/EditBase.js" afterPath="$PROJECT_DIR$/component/CompBase/EditBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Grid/GridInfo.js" afterPath="$PROJECT_DIR$/component/Grid/GridInfo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/Element_Runtime.js" afterPath="$PROJECT_DIR$/component/CompBase/Element_Runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/Data.js" afterPath="$PROJECT_DIR$/component/CompBase/Data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/CheckBox.js" afterPath="$PROJECT_DIR$/component/ComComp/CheckBox.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/FileUpload.js" afterPath="$PROJECT_DIR$/component/ComComp/FileUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/SQLite.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/SQLite.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/FormBase.js" afterPath="$PROJECT_DIR$/component/CompBase/FormBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Map.js" afterPath="$PROJECT_DIR$/component/ComComp/Map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/ProgressBar.js" afterPath="$PROJECT_DIR$/component/ComComp/ProgressBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/WebBrowser.js" afterPath="$PROJECT_DIR$/component/ComComp/WebBrowser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/SQLite_Runtime.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/SQLite_Runtime.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/FileDownload.js" afterPath="$PROJECT_DIR$/component/ComComp/FileDownload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/DeviceAPI/Mobile.js" afterPath="$PROJECT_DIR$/component/DeviceAPI/Mobile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Edit.js" afterPath="$PROJECT_DIR$/component/ComComp/Edit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Calendar.js" afterPath="$PROJECT_DIR$/component/ComComp/Calendar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/ScrollBar.js" afterPath="$PROJECT_DIR$/component/CompBase/ScrollBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/TextArea.js" afterPath="$PROJECT_DIR$/component/ComComp/TextArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/ImportObject.js" afterPath="$PROJECT_DIR$/component/ComComp/ImportObject.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/PopupDiv.js" afterPath="$PROJECT_DIR$/component/ComComp/PopupDiv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/CompEventBase.js" afterPath="$PROJECT_DIR$/component/CompBase/CompEventBase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Dataset.js" afterPath="$PROJECT_DIR$/component/ComComp/Dataset.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/ComComp/Radio.js" afterPath="$PROJECT_DIR$/component/ComComp/Radio.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/CompBase/Step.js" afterPath="$PROJECT_DIR$/component/CompBase/Step.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/EcoLibrary.json" afterPath="$PROJECT_DIR$/component/EcoLibrary.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/component/Chart.json" afterPath="$PROJECT_DIR$/component/Chart.json" />
+    </list>
+    <ignored path="nexacro14lib.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="nexacro14lib" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Iject.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/IjectJS/Iject.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Style.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Style.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="39" column="46" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Util.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/component/IjectJS/Util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="8.5408">
+              <caret line="617" column="29" selection-start-line="617" selection-start-column="29" selection-end-line="617" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScrollBar.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/CompBase/ScrollBar.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Factory.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Factory.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="262" column="58" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FormBase.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/CompBase/FormBase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="108" column="52" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Element_HTML5.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/CompBase/Element_HTML5.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CompBase.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/CompBase/CompBase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/CompBase/Data.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13422" column="33" selection-start-line="13422" selection-start-column="33" selection-end-line="13422" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/EcoLibrary/array.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/component/IjectJS.json" />
+        <option value="$PROJECT_DIR$/component/NxModule/Module.js" />
+        <option value="$PROJECT_DIR$/component/Inject.json" />
+        <option value="$PROJECT_DIR$/component/Iject/Inject.js" />
+        <option value="$PROJECT_DIR$/component/Inject/global.js" />
+        <option value="$PROJECT_DIR$/component/Inject/mdi.js" />
+        <option value="$PROJECT_DIR$/component/Inject/module.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Module.js" />
+        <option value="$PROJECT_DIR$/component/Inject/controll.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Inject.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Controll.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Mdi.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Runtime.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Util.js" />
+        <option value="$PROJECT_DIR$/component/Inject/Html5.js" />
+        <option value="$PROJECT_DIR$/component/Iject.json" />
+        <option value="$PROJECT_DIR$/component/EcoLibrary/XComp.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Mdi.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Html5.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Runtime.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Controll.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Iject.js" />
+        <option value="$PROJECT_DIR$/component/IjectJS/Util.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="886" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="framework" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IjectJS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ExtComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DeviceAPI" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DesignComp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nexacro14lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="component" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CompBase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="nexacro14lib">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="component">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <subPane subId="Default">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="_String&#9;null&#9;null&#10;prototype&#9;null&#9;null&#10;transa&#9;null&#9;null&#10;isFun&#9;null&#9;null&#10;tran&#9;null&#9;null&#10;transac&#9;null&#9;null&#10;query&#9;null&#9;null&#10;_nexacrocon&#9;null&#9;null&#10;quer&#9;null&#9;null&#10;lookup&#9;null&#9;null&#10;_toString&#9;null&#9;null&#10;toString&#9;null&#9;null&#10;_toStrin&#9;null&#9;null&#10;showModal&#9;null&#9;null&#10;BrowserVer&#9;null&#9;null&#10;getter&#9;null&#9;null&#10;error&#9;null&#9;null&#10;Logger&#9;FILE&#9;file:///Volumes/C/eGovFrame-3.2/workspace/nexacroplatform/src/main/nuipackageB/nexacro14lib/component/EcoLibrary/Logger.js&#10;_convertToString&#9;null&#9;null&#10;_global&#9;null&#9;null&#10;_documentToXml&#9;null&#9;null&#10;JSon&#9;null&#9;null&#10;decode&#9;null&#9;null&#10;json&#9;FILE&#9;file:///Volumes/C/eGovFrame-3.2/workspace/nexacroplatform/src/main/nuipackageB/nexacro14lib/component/EcoLibrary/base/Json.js&#10;getGlobalContext&#9;null&#9;null&#10;getGlo&#9;null&#9;null&#10;getContex&#9;null&#9;null&#10;getITe&#9;null&#9;null&#10;getIt&#9;null&#9;null&#10;callbackL&#9;null&#9;null&#10;nexacro.call&#9;null&#9;null&#10;_callbac&#9;null&#9;null&#10;nexacro.callback&#9;null&#9;null&#10;callback&#9;null&#9;null&#10;nexacro.conte&#9;null&#9;null&#10;conte&#9;null&#9;null&#10;errorCode&#9;null&#9;null&#10;errorM&#9;null&#9;null&#10;errorCod&#9;null&#9;null&#10;nexacro.callbackLi&#9;null&#9;null&#10;nexacro.callb&#9;null&#9;null&#10;nexacro.callba&#9;null&#9;null&#10;_callback&#9;null&#9;null&#10;_callbackli&#9;null&#9;null&#10;_callbackLi&#9;null&#9;null&#10;callbackl&#9;null&#9;null" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="FullScreen" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.JavaScript" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\eGovFrame-3.2\workspace\nexacroplatform\src\main\nxui\packageB\nexacro14lib\component\IjectJS\ExtApi" />
+      <recent name="$PROJECT_DIR$/component/EffLibrary" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\wsjeong\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="754157d9-aa49-4d30-a369-921f6d2f343f" name="Default" comment="" />
+      <created>1442896001983</created>
+      <option name="number" value="Default" />
+      <updated>1442896001983</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14249524" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282636" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13870542" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22324967" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Namespace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/XComp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1119" column="13" selection-start-line="1119" selection-start-column="13" selection-end-line="1119" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/ListBox.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="712" column="14" selection-start-line="712" selection-start-column="14" selection-end-line="712" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Dataset.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/DatePicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/ErrorDefine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="274" column="47" selection-start-line="274" selection-start-column="47" selection-end-line="274" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/Platform_HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="4081" column="16" selection-start-line="4081" selection-start-column="16" selection-end-line="4081" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Radio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2010" column="12" selection-start-line="2010" selection-start-column="12" selection-end-line="2010" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/EditBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6001" column="25" selection-start-line="6001" selection-start-column="25" selection-end-line="6001" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/Device.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49609983">
+          <caret line="474" column="9" selection-start-line="474" selection-start-column="9" selection-end-line="474" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/SystemBase_Runtime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="9.24805">
+          <caret line="1909" column="48" selection-start-line="1909" selection-start-column="48" selection-end-line="1909" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/LocalStorage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/PositionSize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="89" column="74" selection-start-line="89" selection-start-column="74" selection-end-line="89" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="491" column="29" selection-start-line="491" selection-start-column="29" selection-end-line="491" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/class/ClassUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Color.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="702" column="8" selection-start-line="702" selection-start-column="8" selection-end-line="702" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Namespace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="49" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1407" column="73" selection-start-line="1407" selection-start-column="65" selection-end-line="1407" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/number.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/XComp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="937" column="0" selection-start-line="937" selection-start-column="0" selection-end-line="937" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ExtComp.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40823328">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Html5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24630542">
+          <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Runtime.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Json.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34318554">
+          <caret line="522" column="20" selection-start-line="522" selection-start-column="20" selection-end-line="522" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Mdi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="3" selection-start-line="204" selection-start-column="3" selection-end-line="207" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Eco.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="214" column="8" selection-start-line="214" selection-start-column="8" selection-end-line="214" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/Platform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1115" column="39" selection-start-line="1115" selection-start-column="22" selection-end-line="1115" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Controll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+          <folding>
+            <marker date="1447375743399" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447375743399" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447375743399" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1447375743399" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/class/History.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="16" selection-start-line="157" selection-start-column="16" selection-end-line="157" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/SystemBase_HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8564" column="8" selection-start-line="8564" selection-start-column="8" selection-end-line="8564" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/string.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="134.96428">
+          <caret line="197" column="12" selection-start-line="197" selection-start-column="12" selection-end-line="197" selection-end-column="12" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Button.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="48" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/SystemBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="204" column="8" selection-start-line="204" selection-start-column="8" selection-end-line="204" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Tray.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Tab.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ComComp/Static.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/BasicObjs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/ExtComp/ExtFileUpDownload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="40" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="185" column="34" selection-start-line="185" selection-start-column="34" selection-end-line="185" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Style.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="40" selection-end-line="39" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/EcoLibrary/Factory.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="262" column="58" selection-start-line="262" selection-start-column="12" selection-end-line="262" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/CompBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/Data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13422" column="33" selection-start-line="13422" selection-start-column="33" selection-end-line="13422" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/Element_HTML5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/FormBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="108" column="52" selection-start-line="108" selection-start-column="34" selection-end-line="108" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Iject.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="33" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/CompBase/ScrollBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/IjectJS/Util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="8.5408">
+          <caret line="617" column="29" selection-start-line="617" selection-start-column="29" selection-end-line="617" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

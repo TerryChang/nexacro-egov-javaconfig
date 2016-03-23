@@ -1,0 +1,15 @@
+1. nexacro14
+   - nexacro14_Library.zip
+     ==> Version : 14.0.0.500
+     
+   - nexacro14_SetupEngine.exe
+     ==> ProductCode : {212D7517-F389-406B-99CF-9AB3B35B428D}
+     ==> Version : 14.0.0.500
+     
+   - nexacro14_SetupEngine.cab
+     ==> CLSID : {6DB5422D-536F-4B80-B32C-16BEA0971512}
+     ==> Version : 2015,9,22,1
+
+   - nexacro14_Launcher.cab
+     ==> CLSID : {A7969122-0BB8-452A-93C9-72641B76CFB7}
+     ==> Version : 2015,9,22,1

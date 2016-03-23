@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="1.2">
+  <TypeDefinition url="default_typedef.xml"/>
+  <GlobalVariables url="globalvars.xml"/>
+  <Application id="packageB" codepage="utf-8" language="Korean" loginformurl="" loginformstyle="" windowopeneffect="" windowcloseeffect="" version="" tracemode="" themeid="default.xtheme" onload="application_onload" filesecurelevel="all" networksecurelevel="all">
+    <Layout>
+      <MainFrame id="mainframe" title="maintitle" defaultfont="" resizable="true" showtitlebar="true" showstatusbar="false" left="0" top="0" width="1302" height="875" titletext="Design Package BType" style="icon:URL('img::nexacro.ico');">
+        <VFrameSet id="VFrameSet" separatesize="0,*,42" keepseparatesizewhenswap="true">
+          <Frames>
+            <ChildFrame id="LoginFrame" showtitlebar="false" showcascadetitletext="true" showcascadestatustext="true" showtitleicon="false" openstatus="normal" formurl="Frame::Login.xfdl"/>
+            <HFrameSet id="HFrameSet" showtitleicon="false" separatesize="0,*" keepseparatesizewhenswap="true">
+              <Frames>
+                <ChildFrame id="LeftFrame" showtitlebar="false" dragmovetype="none" formurl="Frame::LeftFrame.xfdl"/>
+                <VFrameSet id="VFrameSet1" separatesize="30,*" keepseparatesizewhenswap="true" topmost="false">
+                  <Frames>
+                    <ChildFrame id="TopFrame" showtitlebar="false" dragmovetype="none" formurl="Frame::TopFrame.xfdl"/>
+                    <FrameSet id="WorkFrame" topmost="true" openstatus="normal" width="0" height="0">
+                      <Frames>
+                        <ChildFrame id="MainForm" topmost="false" visible="true" showtitlebar="false" showtitleicon="false" showcascadetitletext="false" showcascadestatustext="false" style="background:transparent;align:center top;" openstatus="maximize" formurl="Frame::MainFrame.xfdl"/>
+                      </Frames>
+                    </FrameSet>
+                  </Frames>
+                </VFrameSet>
+              </Frames>
+            </HFrameSet>
+            <ChildFrame id="MDIFrame" showtitlebar="false" dragmovetype="none" topmost="true" formurl="Frame::MDIFrame.xfdl"/>
+          </Frames>
+        </VFrameSet>
+      </MainFrame>
+    </Layout>
+    <ScreenInfo/>
+    <Style url="Css::Common.css"/>
+    <Style url="Css::MainFrame.css"/>
+    <Style url="Css::LeftFrame.css"/>
+    <Style url="Css::MDIFrame.css"/>
+    <Style url="Css::TopFrame.css"/>
+    <Style url="Css::WorkFrame.css"/>
+    <Style url="Css::Login.css"/>
+    <Script type="xscript5.0"/>
+  </Application>
+  <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : 
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/**
+ * Application 최초 로딩시 발생하는 이벤트 
+ * @return
+ * @example
+ * @memberOf Global
+ */
+this.application_onload = function(obj:Application, e:nexacro.LoadEventInfo)
+{
+   //초기 application onload setting
+    Iject.appOnload(obj);            
+}
+
+
+
+
+
+
+]]></Script>
+</ADL>

@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Guide01" classname="Guide01" left="0" top="0" width="1024" height="3789" titletext="New Form" cssclass="tab_bottom">
+    <Layouts>
+      <Layout>
+        <Static id="Static00" taborder="0" text="Component KIT" left="0" top="0" height="53" style="background:#2c4898ff;color:#ffffffff;align:center middle;font:bold 11 Gulim;" width="1024"/>
+        <Static id="Static01" taborder="1" text="Edit" left="0" top="313" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static02" taborder="2" left="110" top="313" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static03" taborder="3" text="normal" left="138" top="329" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static04" taborder="4" text="readonly" left="586" top="329" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static05" taborder="5" text="disabled" left="354" top="329" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static06" taborder="6" text="essential" left="822" top="329" width="80" height="21" style="color:#2c4898ff;"/>
+        <Edit id="Edit00" taborder="7" left="138" top="353" width="127" height="21" value="nexacro"/>
+        <Edit id="Edit01" taborder="9" value="nexacro" left="354" top="353" width="127" height="21" enable="false"/>
+        <Static id="Static09" taborder="11" left="586" top="354" width="10" height="19" style="background:#fb635e80;"/>
+        <Edit id="Edit02" taborder="12" value="nexacro" enable="true" left="586" top="353" width="127" height="21" cssclass="readonly" readonly="true"/>
+        <Edit id="Edit03" taborder="14" value="nexacro" cssclass="essential" left="822" top="353" width="127" height="21" enable="true"/>
+        <Static id="Static11" taborder="15" left="110" top="406" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static12" taborder="16" text="MaskEdit" left="0" top="406" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static13" taborder="17" text="normal" left="138" top="422" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static14" taborder="18" text="disabled" left="354" top="422" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static15" taborder="19" text="readonly" left="586" top="422" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static16" taborder="20" text="essential" left="822" top="422" width="80" height="21" style="color:#2c4898ff;"/>
+        <MaskEdit id="MaskEdit00" taborder="21" left="138" top="446" width="127" height="21" value="14.1"/>
+        <MaskEdit id="MaskEdit01" taborder="23" value="14.1" left="354" top="446" width="127" height="21" enable="false"/>
+        <MaskEdit id="MaskEdit02" taborder="25" value="14.1" left="586" top="446" width="127" height="21" cssclass="readonly" readonly="true"/>
+        <MaskEdit id="MaskEdit03" taborder="27" value="14.1" left="822" top="446" width="127" height="21" cssclass="essential"/>
+        <Static id="Static21" taborder="29" left="110" top="499" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static22" taborder="30" text="TextArea" left="0" top="499" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static23" taborder="31" text="normal" left="138" top="515" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static24" taborder="32" text="disabled" left="354" top="515" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static25" taborder="33" text="readonly" left="586" top="515" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static26" taborder="34" text="essential" left="822" top="515" width="80" height="21" style="color:#2c4898ff;"/>
+        <TextArea id="TextArea00" taborder="35" left="138" top="539" width="127" height="61" value="nexacro&#13;&#10;nexacro&#13;&#10;nexacro&#13;&#10;nexacro"/>
+        <TextArea id="TextArea01" taborder="38" value="nexacro&#13;&#10;nexacro&#13;&#10;nexacro&#13;&#10;nexacro" left="354" top="539" width="127" height="61" enable="false"/>
+        <TextArea id="TextArea02" taborder="41" value="nexacro&#13;&#10;nexacro&#13;&#10;nexacro&#13;&#10;nexacro" enable="true" left="586" top="539" width="127" height="61" cssclass="readonly" readonly="true"/>
+        <TextArea id="TextArea03" taborder="44" value="nexacro&#13;&#10;nexacro&#13;&#10;nexacro&#13;&#10;nexacro" readonly="false" cssclass="essential" left="822" top="539" width="127" height="61"/>
+        <Static id="Static28" taborder="45" text="padding 값이 스크롤에도 먹힘" left="1032" top="341" width="225" height="32" style="color:crimson;" visible="false"/>
+        <Static id="Static08" taborder="46" left="110" top="634" width="914" height="326" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;" onclick="Static08_onclick"/>
+        <Static id="Static10" taborder="47" text="Button&#13;&#10;/CRUD&#13;&#10;/Search&#13;&#10;/Shuttle" left="0" top="634" width="111" height="326" style="linespace:5;background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static18" taborder="48" text="normal" left="138" top="650" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static19" taborder="49" text="disabled" left="354" top="650" width="80" height="21" style="color:#2c4898ff;"/>
+        <Button id="Button00" taborder="52" text="버튼" left="138" top="674" width="36" height="21"/>
+        <Button id="Button01" taborder="53" text="버튼" left="354" top="674" width="36" height="21" enable="false"/>
+        <Button id="Button02" taborder="56" text="버튼" enable="false" left="354" top="725" width="45" height="25" cssclass="btn_WF_CRUD"/>
+        <Button id="Button03" taborder="57" text="버튼" left="138" top="725" width="45" height="25" cssclass="btn_WF_CRUD"/>
+        <Button id="Button04" taborder="60" text="조회" cssclass="btn_WF_Search" enable="false" left="354" top="780" width="58" height="25"/>
+        <Button id="Button05" taborder="61" text="조회" cssclass="btn_WF_Search" left="138" top="780" width="58" height="25"/>
+        <Edit id="Edit04" taborder="62" value="검색" left="138" top="835" width="52" height="21" cssclass="edt_WF_Search"/>
+        <Edit id="Edit05" taborder="64" value="검색" cssclass="edt_WF_Search" left="354" top="835" width="52" height="21" autoskip="false" enable="false"/>
+        <Button id="Button07" taborder="65" cssclass="btn_WF_SearchSmall" left="405" top="835" width="21" height="21" enable="false"/>
+        <Button id="Button08" taborder="66" left="138" top="886" width="29" height="29" cssclass="btn_WF_ShuttleL"/>
+        <Button id="Button10" taborder="68" cssclass="btn_WF_ShuttleR" left="170" top="886" width="29" height="29"/>
+        <Static id="Static20" taborder="70" left="110" top="959" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static29" taborder="71" text="Combo" left="0" top="959" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static30" taborder="72" text="normal" left="138" top="975" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static31" taborder="73" text="disabled" left="354" top="975" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static32" taborder="74" text="readonly" left="586" top="975" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static33" taborder="75" text="essential" left="822" top="975" width="80" height="21" style="color:#2c4898ff;"/>
+        <Combo id="Combo00" taborder="76" text="Combo01" left="138" top="999" width="127" height="21" codecolumn="codecolumn" datacolumn="datacolumn" value="1">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro14</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro14.1</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Combo id="Combo01" taborder="77" text="Combo01" left="354" top="999" width="127" height="21" visible="true" enable="false" codecolumn="codecolumn" datacolumn="datacolumn" value="1">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro14</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro14.1</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Combo id="Combo02" taborder="78" text="nexacro" left="586" top="999" width="127" height="21" readonly="true" cssclass="readonly" codecolumn="codecolumn" datacolumn="datacolumn" value="1">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro14</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro14.1</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Combo id="Combo03" taborder="79" text="nexacro" readonly="false" cssclass="essential" left="822" top="999" width="127" height="21" codecolumn="codecolumn" datacolumn="datacolumn" value="1">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro14</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro14.1</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Combo>
+        <Static id="Static34" taborder="80" left="110" top="1052" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static35" taborder="81" text="ListBox" left="0" top="1052" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static36" taborder="82" text="normal" left="138" top="1068" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static37" taborder="83" text="disabled" left="354" top="1068" width="80" height="21" style="color:#2c4898ff;"/>
+        <ListBox id="ListBox00" taborder="85" left="138" top="1092" width="127" height="61" value="null" codecolumn="codecolumn" datacolumn="datacolumn">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">3</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">4</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </ListBox>
+        <ListBox id="ListBox01" taborder="86" codecolumn="codecolumn" datacolumn="datacolumn" left="354" top="1092" width="127" height="61" enableevent="true" enable="false">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">2</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">3</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">4</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </ListBox>
+        <Static id="Static40" taborder="88" left="110" top="1187" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static41" taborder="89" text="Spin" left="0" top="1187" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static42" taborder="90" text="normal" left="138" top="1203" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static43" taborder="91" text="disabled" left="354" top="1203" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static44" taborder="92" text="readonly" left="586" top="1203" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static45" taborder="93" text="essential" left="822" top="1203" width="80" height="21" style="color:#2c4898ff;"/>
+        <Spin id="Spin00" taborder="94" value="1" left="138" top="1227" width="127" height="21"/>
+        <Spin id="Spin01" taborder="95" value="1" left="354" top="1227" width="127" height="21" enable="false"/>
+        <Spin id="Spin02" taborder="96" value="1" left="586" top="1227" width="127" height="21" readonly="true" cssclass="readonly"/>
+        <Spin id="Spin03" taborder="97" value="1" left="822" top="1227" width="127" height="21" cssclass="essential"/>
+        <Static id="Static47" taborder="99" left="110" top="52" width="914" height="262" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static48" taborder="100" text="Static" left="0" top="52" width="111" height="262" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static49" taborder="101" text="가나다라마바사&#13;&#10;ABCDEFGHIJKLMNOP&#13;&#10;0123456789" left="138" top="82" width="182" height="40"/>
+        <Static id="Static50" taborder="102" left="354" top="82" width="188" height="21" cssclass="sta_WF_Title" text="대타이틀"/>
+        <Static id="Static51" taborder="103" text="서브 타이틀1" cssclass="sta_WF_SubTitle1" left="586" top="82" width="188" height="21"/>
+        <Static id="Static52" taborder="104" text="서브 타이틀2" cssclass="sta_WF_SubTitle2" left="822" top="83" width="188" height="21"/>
+        <Static id="Static53" taborder="105" left="110" top="1280" width="914" height="374" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static54" taborder="106" text="Calendar" left="0" top="1280" width="111" height="374" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static55" taborder="107" text="normal" left="138" top="1296" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static56" taborder="108" text="disabled" left="354" top="1296" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static57" taborder="109" text="readonly" left="586" top="1296" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static58" taborder="110" text="essential" left="822" top="1296" width="80" height="21" style="color:#2c4898ff;"/>
+        <Calendar id="Calendar00" taborder="111" left="138" top="1320" width="127" height="21" value="20150707" dateformat="yyyy-MM-dd"/>
+        <Calendar id="Calendar01" taborder="112" left="354" top="1320" width="127" height="21" enable="false" value="20150707" dateformat="yyyy-MM-dd"/>
+        <Calendar id="Calendar02" taborder="113" enable="true" left="586" top="1320" width="127" height="21" readonly="true" cssclass="readonly" value="20150707" dateformat="yyyy-MM-dd"/>
+        <Calendar id="Calendar03" taborder="114" value="20150707" readonly="false" dateformat="yyyy-MM-dd" cssclass="essential" left="822" top="1320" width="127" height="21"/>
+        <Calendar id="Calendar04" taborder="115" value="20150707" dateformat="yyyy-MM-dd" left="138" top="1371" width="127" height="21" type="spin"/>
+        <Calendar id="Calendar05" taborder="116" value="20150707" type="spin" dateformat="yyyy-MM-dd" left="354" top="1371" width="127" height="21" enable="false"/>
+        <Calendar id="Calendar06" taborder="117" value="20150707" type="spin" dateformat="yyyy-MM-dd" left="586" top="1371" width="127" height="21" readonly="true" cssclass="readonly"/>
+        <Calendar id="Calendar07" taborder="118" value="20150707" type="spin" dateformat="yyyy-MM-dd" left="822" top="1371" width="127" height="21" cssclass="essential"/>
+        <Calendar id="Calendar08" taborder="119" value="20150707" dateformat="yyyy-MM-dd" left="138" top="1441" width="156" height="181" type="monthonly"/>
+        <Static id="Static59" taborder="120" left="110" top="1653" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static60" taborder="121" text="CheckBox" left="0" top="1653" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static61" taborder="122" text="normal" left="138" top="1669" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static62" taborder="123" text="disabled" left="354" top="1669" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static63" taborder="124" text="essential" left="586" top="1669" width="80" height="21" style="color:#2c4898ff;"/>
+        <CheckBox id="CheckBox00" taborder="128" text="nexacro" left="138" top="1693" width="127" height="21" value="true" enable="true"/>
+        <CheckBox id="CheckBox01" taborder="129" text="nexacro" value="true" left="354" top="1693" width="127" height="21" enable="false"/>
+        <CheckBox id="CheckBox02" taborder="130" text="nexacro" value="true" left="586" top="1693" width="127" height="21" cssclass="essential"/>
+        <Static id="Static64" taborder="131" left="110" top="1746" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static67" taborder="132" text="Div" left="0" top="1746" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static68" taborder="133" text="Div는 일반적으로 Form을 로드할 때 사용한다.&#13;&#10;디자인 요소가 필요 할 경우 Class로 지정해서 사용한다." left="138" top="1772" width="343" height="41" style="linespace:5;color:#2c4898ff;"/>
+        <Static id="Static69" taborder="134" left="110" top="1839" width="914" height="985" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static70" taborder="135" text="Grid" left="0" top="1839" width="111" height="985" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static71" taborder="136" left="110" top="2823" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static72" taborder="137" text="GroupBox" left="0" top="2823" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static73" taborder="138" text="normal" left="138" top="2839" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static74" taborder="139" text="disabled" left="354" top="2839" width="80" height="21" style="color:#2c4898ff;"/>
+        <GroupBox id="GroupBox00" text="그룹박스" taborder="140" left="138" top="2863" width="127" height="61"/>
+        <GroupBox id="GroupBox01" text="그룹박스" taborder="141" left="354" top="2863" width="127" height="61" enable="false"/>
+        <Static id="Static75" taborder="142" left="110" top="2958" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static76" taborder="143" text="ImageViewer" left="0" top="2958" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static77" taborder="144" text="normal" left="138" top="2974" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static78" taborder="145" text="disabled" left="354" top="2974" width="80" height="21" style="color:#2c4898ff;"/>
+        <ImageViewer id="ImageViewer00" taborder="146" left="138" top="2998" width="127" height="61"/>
+        <ImageViewer id="ImageViewer01" taborder="147" left="354" top="2998" width="127" height="61" enable="false"/>
+        <Static id="Static79" taborder="148" left="110" top="3093" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static80" taborder="149" text="Menu" left="0" top="3093" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Menu id="Menu00" taborder="150" left="138" top="3133" width="831" height="38" captioncolumn="Caption" idcolumn="Id" levelcolumn="Level" innerdataset="@Menu"/>
+        <Static id="Static81" taborder="151" left="110" top="3228" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static82" taborder="152" text="PopupDiv" left="0" top="3228" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static83" taborder="153" text="PopupDiv는 일반적으로 Form을 로드할 때 사용한다.&#13;&#10;디자인 요소가 필요 할 경우 Class로 지정해서 사용한다." left="138" top="3254" width="343" height="41" style="linespace:5;color:#2c4898ff;"/>
+        <Static id="Static84" taborder="154" left="110" top="3321" width="914" height="136" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static85" taborder="155" text="PopupMenu" left="0" top="3321" width="111" height="136" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static86" taborder="156" left="110" top="3456" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static87" taborder="157" text="ProgressBar" left="0" top="3456" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <ProgressBar id="ProgressBar00" taborder="158" left="138" top="3496" width="262" height="14" pos="50"/>
+        <Static id="Static88" taborder="159" text="normal" left="138" top="3472" width="80" height="21" style="color:#2c4898ff;"/>
+        <ProgressBar id="ProgressBar01" taborder="160" pos="50" left="586" top="3496" width="262" height="14" enable="false"/>
+        <Static id="Static89" taborder="161" text="disabled" left="586" top="3472" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static90" taborder="162" left="110" top="3549" width="914" height="94" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Static id="Static91" taborder="163" text="Radio" left="0" top="3549" width="111" height="94" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static92" taborder="164" text="normal" left="138" top="3565" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static93" taborder="165" text="disabled" left="354" top="3565" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static94" taborder="166" text="essential" left="586" top="3565" width="80" height="21" style="color:#2c4898ff;"/>
+        <Radio id="Radio00" taborder="167" left="138" top="3589" width="162" height="21" codecolumn="codecolumn" datacolumn="datacolumn" direction="vertical" value="0">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Radio id="Radio01" taborder="168" index="0" codecolumn="codecolumn" datacolumn="datacolumn" value="0" direction="vertical" left="354" top="3589" width="162" height="21" enable="false">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Radio id="Radio02" taborder="169" index="0" codecolumn="codecolumn" datacolumn="datacolumn" value="0" direction="vertical" left="586" top="3589" width="162" height="21" cssclass="essential">
+          <Dataset id="innerdataset">
+            <ColumnInfo>
+              <Column id="codecolumn" size="256"/>
+              <Column id="datacolumn" size="256"/>
+            </ColumnInfo>
+            <Rows>
+              <Row>
+                <Col id="codecolumn">0</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+              <Row>
+                <Col id="codecolumn">1</Col>
+                <Col id="datacolumn">nexacro</Col>
+              </Row>
+            </Rows>
+          </Dataset>
+        </Radio>
+        <Grid id="Grid00" taborder="170" useinputpanel="false" left="138" top="1889" width="844" height="145" binddataset="Grid" scrollbars="autoboth" autoenter="select">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="28"/>
+                <Column size="50"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="71"/>
+              </Columns>
+              <Rows>
+                <Row size="32" band="head"/>
+                <Row size="28"/>
+                <Row size="28" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell displaytype="checkbox" style="align:center middle;" text="Column0"/>
+                <Cell col="1" text="순번"/>
+                <Cell col="2" cssclass="CellEssential" text="Column01"/>
+                <Cell col="3" text="Column02"/>
+                <Cell col="4" text="Column03"/>
+                <Cell col="5" text="Column04"/>
+                <Cell col="6" text="Column05"/>
+                <Cell col="7" text="Column06"/>
+                <Cell col="8" text="Column07"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="bind:Column0"/>
+                <Cell col="1" style="align:center middle;" text="bind:순번"/>
+                <Cell col="2" displaytype="text" edittype="text" style="padding:3 3 3 3;" text="bind:Column01" editdisplay="display" expandshow="hide"/>
+                <Cell col="3" displaytype="combo" edittype="combo" style="padding:3 3 3 3;" text="bind:lev" combodataset="Combo" combocodecol="lev" combodatacol="txt" combodisplayrowcount="-1" combodisplay="display"/>
+                <Cell col="4" displaytype="date" edittype="date" style="padding:3 3 3 3;" text="bind:Column03" editdisplay="display" calendardisplay="display"/>
+                <Cell col="5" displaytype="text" edittype="expand" style="padding:3 0 3 2;" text="bind:Column04" editdisplay="display" expandshow="show" expandsize="21" expandimage="URL('img::img_WF_Expand.png')"/>
+                <Cell col="6" style="padding:0 9 0 9;" text="bind:Column05"/>
+                <Cell col="7" style="align:right middle;padding:0 9 0 9;" text="bind:Column06" mask="###,###,###"/>
+                <Cell col="8" displaytype="button" edittype="button" style="align:center middle;padding:3 3 3 3;" text="bind:Column07" editdisplay="edit"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="7" style="align:center middle;" text="합계"/>
+                <Cell col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" text="321456789" mask="###,###,###"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="Button12" taborder="171" text="Custom Button" left="576" top="1866" width="105" height="12" cssclass="btn_WF_Custom"/>
+        <Button id="Button13" taborder="172" text="행추가" left="681" top="1866" width="66" height="12" cssclass="btn_WF_Add"/>
+        <Button id="Button14" taborder="173" text="행삭제" left="747" top="1866" width="67" height="12" enable="true" cssclass="btn_WF_Delete"/>
+        <Button id="Button15" taborder="174" text="다운로드" left="814" top="1861" width="79" height="21" cssclass="btn_WF_Download" enable="true"/>
+        <Button id="Button16" taborder="175" text="업로드" cssclass="btn_WF_Upload" left="892" top="1861" width="67" height="21" enable="true"/>
+        <Grid id="Grid01" taborder="178" useinputpanel="false" left="138" top="2071" width="220" height="173" cssclass="grd_WF_Tree" binddataset="Tree" treeusecheckbox="false" treeuseexpandkey="false" treeuseline="false" fillareatype="none" treeinitstatus="expand,null">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="205"/>
+              </Columns>
+              <Rows>
+                <Row size="26"/>
+              </Rows>
+              <Band id="body" style="cellpadding: ;">
+                <Cell displaytype="tree" edittype="tree" text="bind:txt" treelevel="bind:lev"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static95" taborder="179" text="Tree Grid" left="138" top="2047" width="80" height="21" style="color:#2c4898ff;"/>
+        <Static id="Static97" taborder="182" text="Tab" left="0" top="3642" width="111" height="147" style="background:#f8f8f8ff;border:1 solid #767676ff ;color:#333333ff;align:center middle;font:bold 10 Gulim;"/>
+        <Static id="Static98" taborder="183" left="110" top="3642" width="914" height="147" style="border:1 solid #767676ff ;color:#2c4898ff;align:center middle;"/>
+        <Tab id="Tab00" taborder="184" left="138" top="3688" width="710" height="56" tabindex="0" scrollbars="autoboth">
+          <Tabpages>
+            <Tabpage id="tabpage1" text="Tab 01" left="1" top="31" width="325" height="24"/>
+            <Tabpage id="tabpage2" text="Tab 02"/>
+            <Tabpage id="tabpage3" text="Tab 03"/>
+          </Tabpages>
+        </Tab>
+        <Static id="Static99" taborder="185" text="TabButton : 각 면에 다른색 border안됨&#13;&#10;IE에서 border bottom나옴&#13;&#10;수도값에 bold 쓰면 짤림" visible="false" left="1040" top="3121" width="225" height="72" style="linespace:5;color:crimson;"/>
+        <Static id="Static100" taborder="186" text="monthly" left="138" top="1418" width="80" height="21" style="color:#2c4898ff;"/>
+        <Button id="Button17" taborder="187" cssclass="btn_WF_ShuttleT" left="202" top="886" height="29" width="29"/>
+        <Button id="Button18" taborder="188" cssclass="btn_WF_ShuttleB" left="234" top="886" height="29" width="29"/>
+        <Button id="Button06" taborder="193" cssclass="btn_WF_SearchSmall" left="189" top="835" height="21" width="21"/>
+        <Grid id="Grid03" taborder="203" binddataset="Grid" autoenter="select" useinputpanel="false" left="138" top="2298" width="844" height="162">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="28"/>
+                <Column size="50"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="86"/>
+              </Columns>
+              <Rows>
+                <Row size="32" band="head"/>
+                <Row size="32" band="head"/>
+                <Row size="28"/>
+                <Row size="28" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell rowspan="2" displaytype="checkbox" style="align:center middle;" text="Column0"/>
+                <Cell col="1" rowspan="2" text="순번"/>
+                <Cell col="2" colspan="7" cssclass="CellEssential" text="Component"/>
+                <Cell row="1" col="2" text="Edit"/>
+                <Cell row="1" col="3" text="Combo"/>
+                <Cell row="1" col="4" text="Calendar"/>
+                <Cell row="1" col="5" text="Edit+Expand"/>
+                <Cell row="1" col="6" text="Normal"/>
+                <Cell row="1" col="7" text="Mask"/>
+                <Cell row="1" col="8" text="Button"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="bind:Column0"/>
+                <Cell col="1" style="align:center middle;" text="bind:순번"/>
+                <Cell col="2" displaytype="text" edittype="text" style="padding:3 3 3 3;" text="bind:Column01" editdisplay="display" expandshow="hide"/>
+                <Cell col="3" displaytype="combo" edittype="combo" style="padding:3 3 3 3;" text="bind:lev" combodataset="Combo" combocodecol="lev" combodatacol="txt" combodisplayrowcount="-1" combodisplay="display"/>
+                <Cell col="4" displaytype="date" edittype="date" style="padding:3 3 3 3;" text="bind:Column03" editdisplay="display" calendardisplay="display"/>
+                <Cell col="5" displaytype="text" edittype="expand" style="padding:3 0 3 2;" text="bind:Column04" editdisplay="display" expandshow="show" expandsize="21" expandimage="URL('img::img_WF_Expand.png')"/>
+                <Cell col="6" style="padding:0 9 0 9;" text="bind:Column05"/>
+                <Cell col="7" style="align:right middle;padding:0 9 0 9;" text="bind:Column06" mask="###,###,###"/>
+                <Cell col="8" displaytype="button" edittype="button" style="align:center middle;padding:3 3 3 3;" text="bind:Column07" editdisplay="edit"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="7" style="align:center middle;" text="합계"/>
+                <Cell col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" text="321456789" mask="###,###,###"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static105" taborder="204" text="※ usedecorate =&quot;&lt;b v='true'&gt;true&lt;/b&gt;&quot;" usedecorate="true" left="140" top="148" width="255" height="15" class="sta_WF_Info_Orange" style="color:#e37a0cff;"/>
+        <TextArea id="TextArea04" taborder="205" value="fs 글자의 크기(fontsize)를 지정합니다.  ex)&lt;fs v='12'&gt;&lt;/fs&gt;&#13;&#10;fc 글자의 색상(fontcolor)를 지정합니다.  ex)&lt;fc v='red'&gt;&lt;/fc&gt;&lt;fc v='#FF00FF'&gt;&lt;/fc&gt;&#13;&#10;ff 글자의 종류(fontface)를 지정합니다.  ex)&lt;ff v='굴림'&gt;&lt;/ff&gt;&#13;&#10;b 굵은글씨를(bold)를 지정합니다. ex)&lt;b v='true'&gt;&lt;/b&gt;&#13;&#10;i 이텔릭체를 (italic)를 지정합니다.  ex)&lt;i v='true'&gt;&lt;/i&gt;&#13;&#10;u 언더라인을(underline)를 지정합니다.  ex)&lt;u v='true'&gt;&lt;/u&gt;&#13;&#10;s 취소선(strike)를 지정합니다.  ex)&lt;s v='true'&gt;&lt;/s&gt;" readonly="true" linespace="3" left="132" top="174" width="523" height="119" style="border:0 none #808080 ;color:#e37a0cff;"/>
+        <Static id="Static106" taborder="206" text="head 2단" left="138" top="2271" width="162" height="21" style="color:#2c4898ff;"/>
+        <Grid id="Grid04" taborder="207" binddataset="Grid" autoenter="select" useinputpanel="false" left="138" top="2514" width="844" height="266">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="28"/>
+                <Column size="50"/>
+                <Column size="100"/>
+                <Column size="100"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="120"/>
+                <Column size="86"/>
+              </Columns>
+              <Rows>
+                <Row size="32" band="head"/>
+                <Row size="32" band="head"/>
+                <Row size="28"/>
+                <Row size="28" band="summ"/>
+                <Row size="24" band="summ"/>
+                <Row size="24" band="summ"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell rowspan="2" displaytype="checkbox" style="align:center middle;" text="Column0"/>
+                <Cell col="1" rowspan="2" text="순번"/>
+                <Cell col="2" colspan="7" cssclass="CellEssential" text="Component"/>
+                <Cell row="1" col="2" text="Edit"/>
+                <Cell row="1" col="3" text="Combo"/>
+                <Cell row="1" col="4" text="Calendar"/>
+                <Cell row="1" col="5" text="Edit+Expand"/>
+                <Cell row="1" col="6" text="Normal"/>
+                <Cell row="1" col="7" text="Mask"/>
+                <Cell row="1" col="8" text="Button"/>
+              </Band>
+              <Band id="body">
+                <Cell displaytype="checkbox" edittype="checkbox" style="align:center middle;" text="bind:Column0"/>
+                <Cell col="1" style="align:center middle;" text="bind:순번"/>
+                <Cell col="2" displaytype="text" edittype="text" style="padding:3 3 3 3;" text="bind:Column01" editdisplay="display" expandshow="hide"/>
+                <Cell col="3" displaytype="combo" edittype="combo" style="padding:3 3 3 3;" text="bind:lev" combodataset="Combo" combocodecol="lev" combodatacol="txt" combodisplayrowcount="-1" combodisplay="display"/>
+                <Cell col="4" displaytype="date" edittype="date" style="padding:3 3 3 3;" text="bind:Column03" editdisplay="display" calendardisplay="display"/>
+                <Cell col="5" displaytype="text" edittype="expand" style="padding:3 0 3 2;" text="bind:Column04" editdisplay="display" expandshow="show" expandsize="21" expandimage="URL('img::img_WF_Expand.png')"/>
+                <Cell col="6" style="padding:0 9 0 9;" text="bind:Column05"/>
+                <Cell col="7" style="align:right middle;padding:0 9 0 9;" text="bind:Column06" mask="###,###,###"/>
+                <Cell col="8" displaytype="button" edittype="button" style="align:center middle;padding:3 3 3 3;" text="bind:Column07" editdisplay="edit"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="7" style="padding:0 9 0 9;" cssclass="Cellgrd_WF_sum03" text="소계03"/>
+                <Cell col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" cssclass="Cellgrd_WF_sum03" text="1,000,000,000" mask="###,###,###"/>
+                <Cell row="1" colspan="7" style="padding:0 9 0 9;" cssclass="Cellgrd_WF_sum" text="소계02"/>
+                <Cell row="1" col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" cssclass="Cellgrd_WF_sum" text="1,000,000,000"/>
+                <Cell row="2" colspan="7" style="padding:0 9 0 9;" cssclass="Cellgrd_WF_sum01" text="소계01"/>
+                <Cell row="2" col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" cssclass="Cellgrd_WF_sum01" text="1,000,000,000"/>
+                <Cell row="3" colspan="7" style="padding:0 9 0 9;" text="합계"/>
+                <Cell row="3" col="7" colspan="2" style="align:right middle;padding:0 9 0 9;" text="1,000,000,000"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static107" taborder="208" text="summ" left="138" top="2487" width="162" height="21" style="color:#2c4898ff;"/>
+        <Button id="Button21" taborder="209" left="961" top="1861" height="21" cssclass="btn_WF_Extend" width="21"/>
+        <Button id="Button22" taborder="210" cssclass="btn_WF_Downsize" left="1048" top="1861" height="21" visible="false" width="21"/>
+        <Button id="Button09" taborder="211" cssclass="btn_WF_ShuttleL" left="354" top="886" height="29" enable="false" width="29"/>
+        <Button id="Button11" taborder="212" cssclass="btn_WF_ShuttleR" left="386" top="886" height="29" enable="false" width="29"/>
+        <Button id="Button19" taborder="213" cssclass="btn_WF_ShuttleT" left="418" top="886" height="29" enable="false" width="29"/>
+        <Button id="Button20" taborder="214" cssclass="btn_WF_ShuttleB" left="450" top="886" height="29" enable="false" width="29"/>
+        <PopupMenu id="PopupMenu01" innerdataset="@PopupMenu" idcolumn="idx" captioncolumn="Caption" levelcolumn="lev" enablecolumn="enable" userdatacolumn="UserData" onmenuclick="PopupMenu00_onmenuclick" left="13.48%" top="3351" right="74.41%" height="97"/>
+        <Button id="Button23" taborder="215" text="PopupMenu" left="13.48%" top="3330" right="76.76%" height="21"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Menu" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Caption" type="STRING" size="256"/>
+          <Column id="Id" type="STRING" size="256"/>
+          <Column id="Level" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="Caption">2depth Menu01</Col>
+            <Col id="Id">00001</Col>
+            <Col id="Level">0</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu01</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00002</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu02</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00003</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu03</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00004</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu04</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00005</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu05</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00006</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu06</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00007</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">2depth Menu02</Col>
+            <Col id="Id">00008</Col>
+            <Col id="Level">0</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu01</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00009</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu02</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00010</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu03</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00011</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu04</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00012</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu05</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00013</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu06</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00014</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">2depth Menu03</Col>
+            <Col id="Id">00015</Col>
+            <Col id="Level">0</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu01</Col>
+            <Col id="Id">00016</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu02</Col>
+            <Col id="Id">00017</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu03</Col>
+            <Col id="Id">00018</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu04</Col>
+            <Col id="Id">00019</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu05</Col>
+            <Col id="Id">00020</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu06</Col>
+            <Col id="Id">00021</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">2depth Menu04</Col>
+            <Col id="Id">00022</Col>
+            <Col id="Level">0</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu01</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00023</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu02</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00024</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu03</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00025</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu04</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00026</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu05</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00027</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">3depth Menu06</Col>
+            <Col id="Level">1</Col>
+            <Col id="Id">00028</Col>
+          </Row>
+          <Row>
+            <Col id="Caption">2depth Menu05</Col>
+            <Col id="Id">00029</Col>
+            <Col id="Level">0</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu01</Col>
+            <Col id="Id">00030</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu02</Col>
+            <Col id="Id">00031</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu03</Col>
+            <Col id="Id">00032</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu04</Col>
+            <Col id="Id">00033</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu05</Col>
+            <Col id="Id">00034</Col>
+          </Row>
+          <Row>
+            <Col id="Level">1</Col>
+            <Col id="Caption">3depth Menu06</Col>
+            <Col id="Id">00035</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Grid" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="Column0" type="STRING" size="256"/>
+          <Column id="순번" type="STRING" size="256"/>
+          <Column id="Column01" type="STRING" size="256"/>
+          <Column id="Column02" type="STRING" size="256"/>
+          <Column id="Column03" type="STRING" size="256"/>
+          <Column id="Column04" type="STRING" size="256"/>
+          <Column id="Column05" type="STRING" size="256"/>
+          <Column id="Column06" type="STRING" size="256"/>
+          <Column id="Column07" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="순번">1</Col>
+            <Col id="Column05">가</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">전체</Col>
+            <Col id="lev">0</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">2</Col>
+            <Col id="Column05">가나</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">가</Col>
+            <Col id="lev">0</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">3</Col>
+            <Col id="Column05">가나다</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">가나</Col>
+            <Col id="lev">0</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">4</Col>
+            <Col id="Column05">가나다라</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column02">가나다</Col>
+            <Col id="lev">0</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">5</Col>
+            <Col id="Column05">가나다라마</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">6</Col>
+            <Col id="Column05">가나다라마바</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">7</Col>
+            <Col id="Column05">가나다라마바사</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">8</Col>
+            <Col id="Column05">가나다라마바사아</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">9</Col>
+            <Col id="Column05">가나다라마바사아자</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+          <Row>
+            <Col id="순번">10</Col>
+            <Col id="Column05">가나다라마바사아자차</Col>
+            <Col id="Column06">1234567890</Col>
+            <Col id="Column01">가나다라마바사아자차</Col>
+            <Col id="Column04">expand</Col>
+            <Col id="Column07">버튼</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Combo" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="txt" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="txt">전체</Col>
+            <Col id="lev">0</Col>
+          </Row>
+          <Row>
+            <Col id="txt">가</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">가나</Col>
+            <Col id="lev">2</Col>
+          </Row>
+          <Row>
+            <Col id="txt">가나다</Col>
+            <Col id="lev">3</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Tree" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="txt" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="txt">1 Depth Menu</Col>
+            <Col id="lev">0</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">1 Depth Menu</Col>
+            <Col id="lev">0</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">1 Depth Menu</Col>
+            <Col id="lev">0</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+          <Row>
+            <Col id="txt">2 Depth Menu</Col>
+            <Col id="lev">1</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="PopupMenu" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="idx" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+          <Column id="UserData" type="STRING" size="256"/>
+          <Column id="Caption" type="STRING" size="256"/>
+          <Column id="enable" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="lev">0</Col>
+            <Col id="UserData">PopupMenu01</Col>
+            <Col id="Caption">PopupMenu01</Col>
+            <Col id="idx">1000</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu02</Col>
+            <Col id="Caption">PopupMenu02</Col>
+            <Col id="lev">0</Col>
+            <Col id="idx">1001</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu01</Col>
+            <Col id="Caption">PopupMenu01</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1002</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu02</Col>
+            <Col id="Caption">PopupMenu02</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1003</Col>
+            <Col id="enable">0</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu03</Col>
+            <Col id="Caption">PopupMenu03</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1004</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu04</Col>
+            <Col id="Caption">PopupMenu04</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1005</Col>
+            <Col id="enable">0</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu05</Col>
+            <Col id="Caption">PopupMenu05</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1006</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu03</Col>
+            <Col id="Caption">PopupMenu03</Col>
+            <Col id="lev">0</Col>
+            <Col id="idx">1007</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu04</Col>
+            <Col id="Caption">PopupMenu04</Col>
+            <Col id="lev">0</Col>
+            <Col id="idx">1008</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu01</Col>
+            <Col id="Caption">PopupMenu01</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1009</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu02</Col>
+            <Col id="Caption">PopupMenu02</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1010</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu03</Col>
+            <Col id="Caption">PopupMenu03</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1011</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu04</Col>
+            <Col id="Caption">PopupMenu04</Col>
+            <Col id="lev">1</Col>
+            <Col id="idx">1012</Col>
+            <Col id="enable">1</Col>
+          </Row>
+          <Row>
+            <Col id="UserData">PopupMenu05</Col>
+            <Col id="Caption">PopupMenu05</Col>
+            <Col id="lev">0</Col>
+            <Col id="idx">1013</Col>
+            <Col id="enable">1</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : 
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */]]></Script>
+  </Form>
+</FDL>

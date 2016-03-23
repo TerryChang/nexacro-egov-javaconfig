@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Sample">
+
+   	<typeAlias  alias="searchVO" type="nexacro.sample.vo.DefaultVO"/>
+    <typeAlias  alias="userVO" type="nexacro.sample.vo.UserVO"/>
+
+    <!-- Sample resultObject -->
+    <resultMap id="user" class="userVO">
+        <result property="userId" column="USER_ID" />
+        <result property="userName" column="USER_NAME" />
+        <result property="enName" column="EN_NAME" />
+        <result property="compPhone" column="COMP_PHONE" />
+        <result property="phone" column="PHONE" />
+        <result property="cellPhone" column="CELL_PHONE" />
+        <result property="company" column="COMPANY" />
+        <result property="jobPosition" column="JOB_POSITION" />
+        <result property="assignment" column="ASSIGNMENT" />
+        <result property="officerYn" column="OFFICER_YN" />
+        <result property="fax" column="FAX" />
+        <result property="zipCode" column="ZIP_CODE" />
+        <result property="address" column="ADDRESS" />
+        <result property="compZipCode" column="COMP_ZIP_CODE" />
+        <result property="compAddress" column="COMP_ADDRESS" />
+        <result property="email" column="EMAIL" />
+        <result property="deptId" column="DEPT_ID" />
+        <result property="password" column="PASSWORD" />
+    </resultMap>
+    
+     <select id="selectUserVOList" parameterClass="userVO" resultMap="user">
+            SELECT
+                USER_ID ,
+                USER_NAME,
+                EN_NAME,
+                COMP_PHONE,
+                PHONE,
+                CELL_PHONE,
+                COMPANY,
+                JOB_POSITION,
+                ASSIGNMENT,
+                OFFICER_YN,
+                FAX,
+                ZIP_CODE,
+                ADDRESS,
+                COMP_ZIP_CODE,
+                COMP_ADDRESS,
+                EMAIL,
+                DEPT_ID,
+                PASSWORD
+            FROM TB_USER
+            WHERE 1=2
+            <dynamic>
+                <isNotNull property="searchKeyword">
+                    <isEqual prepend=" OR " property="searchCondition" compareValue="NAME">
+                     USER_NAME LIKE '%' || #searchKeyword# || '%'
+                    </isEqual>
+                    <isEqual prepend=" OR " property="searchCondition" compareValue="ID">
+                     USER_ID LIKE '%' || #searchKeyword# || '%' 
+                    </isEqual>
+                </isNotNull>
+            </dynamic>
+            
+    </select>
+    
+    <insert id="insertUserVO" parameterClass="userVO">
+        <![CDATA[
+            INSERT INTO TB_USER (
+                USER_ID,
+                PASSWORD,
+                USER_NAME,
+                EN_NAME,
+                COMP_PHONE,
+                EMAIL,
+                PHONE,
+                CELL_PHONE,
+                ZIP_CODE
+            ) VALUES (
+                #userId#,
+                #password#,
+                #userName#,
+                #enName#,
+                #compPhone#,
+                #email#,
+                #phone#,
+                #cellPhone#,
+                #zipCode#
+            )
+        ]]>
+    </insert>
+    
+      <update id="updateUserVO" parameterClass="userVO">
+        <![CDATA[
+            UPDATE TB_USER 
+            SET USER_NAME=#userName#
+                , EN_NAME=#enName#
+            WHERE USER_ID=#userId#
+        ]]>
+    </update>
+    
+    <delete id="deleteUserVO" parameterClass="userVO">
+        <![CDATA[
+            DELETE FROM TB_USER 
+            WHERE USER_ID=#userId#
+        ]]>
+    </delete>
+    
+</sqlMap>

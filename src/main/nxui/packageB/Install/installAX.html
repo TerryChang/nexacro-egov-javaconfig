@@ -1,0 +1,163 @@
+<HTML>
+<HEAD>
+<TITLE>nexacro Install Page</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
+<SCRIPT LANGUAGE="JavaScript"> 
+var pKey = "packageB";
+var Server_Path = "http://" + window.location.host + "/nexacro-sample";	//사용하는 서버 주소
+var prj_url     = Server_Path + "/packageB";
+var NEXACRO_CAB_VER = "2015,9,22,1";
+var bOnError = false;
+
+function fn_objectOnError() {
+
+	bOnError = true;
+}
+
+function fn_load()
+{
+
+	
+	if(bOnError == false) {  
+		
+	     nexacrolauncherax14.key = pKey;
+		 //nexacrolauncherax14.xadl = Server_Path+"/nexacro/nexacro.xadl.js";
+	     nexacrolauncherax14.bjson = prj_url + "/start.json";
+	   
+	 //   nexacrolauncherax14.onlyone = "true";
+	     //nexacrolauncherax14.makeshortcut(pKey, Server_Path+"/Install/img/xicon2.ico", "desktop","0");
+	     nexacrolauncherax14.splashimage = Server_Path+"/Install/img/loading_img.gif";
+	     nexacrolauncherax14.launch();
+	     //fn_close();
+		 
+	}
+	
+}
+
+function fn_close()
+{
+
+  if(navigator.appVersion.indexOf("MSIE 7.") >= 0 || navigator.appVersion.indexOf("MSIE 8.") >= 0  ||
+	  navigator.appVersion.indexOf("MSIE 9.") >= 0 || navigator.appVersion.indexOf("MSIE 10.") >=0  || 
+	  navigator.appVersion.indexOf("Trident") >= 0  ) {
+	    
+	    window.open('about:blank','_self').close();
+  } else {
+		
+		  window.opener = self;
+	    self.close();
+		
+	}
+}
+
+
+</SCRIPT> 
+</HEAD>
+<BODY onload ="fn_load();">
+
+<OBJECT ID="nexacrolauncherax14" CLASSID="CLSID:A7969122-0BB8-452A-93C9-72641B76CFB7" 
+        width="0" height="0" CODEBASE="./Download/nexacro14_Launcher.cab#version='+NEXACRO_CAB_VER+'" 
+        onError="fn_objectOnError()">	
+</OBJECT>
+<OBJECT ID="nexacroax14" CLASSID="CLSID:6DB5422D-536F-4B80-B32C-16BEA0971512" 
+        width="0" height="0" CODEBASE="./Download/nexacro14_SetupEngine.cab#version='+NEXACRO_CAB_VER+'"
+        onError="fn_objectOnError()">
+</OBJECT>
+ 
+
+
+
+<table id="ins_tbl" align="center" border=0 width="600">
+  <tr>
+    <td><table width="637" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="10"></td> 
+      </tr>
+      <tr>
+        <td><img src="./img/insu_down_listbg1.gif" width="721" height="12"></td>
+      </tr>
+      <tr>
+        <td height="37" bgcolor="#EEEEEE"><table width="607" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="15"></td>
+          </tr>
+          <tr>
+            <td><table width="590" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tr>
+                <td width="10" rowspan="3"><img src="./img/insu_down_img.gif" width="150" height="90"></td>
+                <td width="590" height="35"><img src="./img/insu_down_title.gif" width="204" height="27"></td>
+              </tr>
+              <!--tr>
+                <td height="45"><img src="./img/insu_down_title2.gif" width="329" height="32"></td>
+              </tr-->
+            </table></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td><table width="607" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="12" height="12"><img src="./img/insu_down_listbg_sub1.gif" width="12" height="12"></td>
+                <td width="583" height="12" bgcolor="#FFFFFF"></td>
+                <td width="12" height="12"><img src="./img/insu_down_listbg_sub2.gif" width="12" height="12"></td>
+              </tr>
+              <tr>
+                <td rowspan="5" bgcolor="#FFFFFF">&nbsp;</td>
+                <td bgcolor="#FFFFFF"><table width="570" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="10" valign="top"><img src="./img/insu_down_list_icon1.gif" width="8" height="11"></td>
+                    <td width="570">암호화 프로그램 설치여부를 묻는 보안경고창이 나타나면 반드시
+                      "<strong><font color="#FF7200">예</font></strong>"를
+                      선택하여주시기 바랍니다.<br>
+                      "아니오"를 선택하시면 보안을 위해 사용이 제한됩니다.</td>
+                  </tr>
+                </table></td>
+                <td rowspan="5" bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF"><table width="570" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="10" valign="top"><img src="./img/insu_down_list_icon1.gif" width="8" height="11"></td>
+                    <td width="570">윈도우 XP 서비스팩2 사용자께서는 주소 표시줄 아래 경고문구
+                      " <img src="./img/insu_down_list_icon2.gif" width="15" height="15" align="absmiddle">이
+                      사이트에서...여기를 클릭하십시오" 를 선택하시어, Active X컨트롤을 설치하시기 바랍니다.</td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF">&nbsp;</td>
+              </tr>
+              <tr>
+                <td bgcolor="#FFFFFF"><table width="570" border="0" align="center" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td width="10" valign="top"><img src="./img/insu_down_list_icon1.gif" width="8" height="11"></td>
+                    <td width="570">프로그램 설치가 정상적이지 않을 경우에는 문의하기</font></strong>를 통해 질문
+                      하시면 신속히 답변을 드리겠습니다.</td>
+                  </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td width="12" height="12"><img src="./img/insu_down_listbg_sub3.gif" width="12" height="12"></td>
+                <td bgcolor="#FFFFFF"></td>
+                <td width="12" height="12"><img src="./img/insu_down_listbg_sub4.gif" width="12" height="12"></td>
+              </tr>
+            </table></td>
+          </tr>
+        </table></td>
+      </tr>
+      <tr>
+        <td><img src="./img/insu_down_listbg2.gif" width="720" height="11"></td>
+      </tr>
+      <tr>
+        <td height="5"></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+</BODY>
+</HTML>

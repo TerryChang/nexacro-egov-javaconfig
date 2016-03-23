@@ -1,0 +1,1127 @@
+﻿/************************************ B ************************************/
+
+/* Button */
+Button.btn_LF_Menu
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #96a4b7;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #96a4b7;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #96a4b7;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #96a4b7;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #96a4b7;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #4b5764;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Menu_S:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Menu_S.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_P.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuOpen:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuOpen_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_P.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_RecentMenuClose:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_RecentMenuClose_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_N.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search:mouseover
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search:focused
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search:selected
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search:pushed
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_O.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Button.btn_LF_Search:disabled
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::btn_LF_Search_D.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #ffffff;
+	cursor			: hand;
+	font			: bold 10 Tahoma;
+	gradation		: ;
+	image			: ;
+	imagealign		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+
+
+/************************************ E ************************************/
+
+/************************************ E ************************************/
+
+
+/* Edit */
+Edit.edt_LF_Search
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::edt_LF_Search_N.png') stretch 3,3;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #718298;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 25 0 13;
+	selectbackground	: #e8e9ea;
+	selectcolor		: #161e2a;
+	shadow			: ;
+}
+Edit.edt_LF_Search:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::edt_LF_Search_S.png') stretch 3,3;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #718298;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 25 0 13;
+	selectbackground	: #e8e9ea;
+	selectcolor		: #161e2a;
+	shadow			: ;
+}
+Edit.edt_LF_Search:pushed
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::edt_LF_Search_S.png') stretch 3,3;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #718298;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 25 0 13;
+	selectbackground	: #e8e9ea;
+	selectcolor		: #161e2a;
+	shadow			: ;
+}
+Edit.edt_LF_Search:focused
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::edt_LF_Search_S.png') stretch 3,3;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #718298;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 25 0 13;
+	selectbackground	: #e8e9ea;
+	selectcolor		: #161e2a;
+	shadow			: ;
+}
+Edit.edt_LF_Search:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: transparent URL('img::edt_LF_Search_D.png') stretch 3,3;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #718298;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	opacity			: ;
+	padding			: 0 25 0 13;
+	selectbackground	: #e8e9ea;
+	selectcolor		: #161e2a;
+	shadow			: ;
+}
+
+
+/************************************ G ************************************/
+
+/* Grid */
+/*
+Grid.grd_LF_Tree
+{
+	accessibility		: ;
+	align			: ;
+	background		: #4b5b6e;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	line			: 0 none;
+	opacity			: ;
+	padding			: ;
+	selectline		: ;
+	selectlinetype		: ;
+	shadow			: ;
+	treeclosebuttonimage	: URL('img::grd_LF_CloseBtn.png');
+	treecollapseimage	: ;
+	treeexpandimage		: ;
+	treeitemimage		: URL('img::grd_LF_Item.png');
+	treeitemmargin		: ;
+	treelinetype		: ;
+	treeopenbuttonimage	: URL('img::grd_LF_OpenBtn.png');
+}
+Grid.grd_LF_Tree>#head
+{
+	accessibility		: ;
+	background		: #4b5b6e;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	cellalign		: ;
+	cellbackground		: @gradation;
+	cellbackground2		: @gradation;
+	cellcolor		: ;
+	cellcolor2		: ;
+	cellfont		: bold 9 Gulim;
+	cellgradation		: linear 0,0 #ffffff 0,100 #ededed;
+	cellgradation2		: linear 0,0 #ffffff 0,100 #ededed;
+	cellline		: 1 solid #eaeaea;
+	celllinespace		: 0 none;
+	celllinetype		: ;
+	cellpadding		: ;
+	gradation		: ;
+	selectbackground	: ;
+	selectborder		: ;
+	selectcolor		: ;
+	selectfont		: ;
+	selectgradation		: ;
+	selectline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_Tree>#body
+{
+	accessibility		: ;
+	background		: #4b5b6e;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: bold 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: bold 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+
+Grid.grd_LF_Tree>#body:mouseover
+{
+	accessibility		: ;
+	background		: #eff1fa;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellcolor		: #092d97;
+	cellcolor2		: #092d97;
+	cellfont		: bold 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg_O.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: bold 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+
+Grid.grd_LF_Tree>#body:mouseover,Grid.grd_LF_Tree>#body:pushed
+{
+	cellbackground		: #eff1fa;
+	cellcolor		: #092d97;
+}
+Grid.grd_LF_Tree>#body:disabled
+{
+	accessibility		: ;
+	background		: #4b5b6e;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: bold 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: bold 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+*/
+Grid.grd_LF_Tree
+{
+	accessibility		: ;
+	align			: ;
+	background		: #4b5b6e;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	line			: 0 none;
+	opacity			: ;
+	padding			: ;
+	selectline		: ;
+	selectlinetype		: ;
+	shadow			: ;
+	treeclosebuttonimage	: URL('img::grd_LF_CloseBtn.png');
+	treecollapseimage	: ;
+	treeexpandimage		: ;
+	treeitemimage		: URL('img::grd_LF_Item.png');
+	treeitemmargin		: ;
+	treelinetype		: ;
+	treeopenbuttonimage	: URL('img::grd_LF_OpenBtn.png');
+}
+Grid.grd_LF_Tree>#body
+{
+	accessibility		: ;
+	background		: #4b5b6e;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg.png') stretch 15,15;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: bold 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectborder		: 0 none;
+	selectcolor		: #0077e7;
+	selectfont		: bold 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_Tree>#body:mouseover,Grid.grd_LF_Tree>#body:pushed
+{
+	cellbackground		: #eff1fa;
+	cellcolor		: #092d97;
+}
+Grid.grd_LF_Tree>#body:disabled
+{
+	cellbackground		: #ffffff;
+	cellcolor		: #b2b2b2;
+}
+Grid.grd_LF_TreeMy
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	line			: ;
+	opacity			: ;
+	padding			: ;
+	selectline		: ;
+	selectlinetype		: ;
+	shadow			: ;
+	treeclosebuttonimage	: URL('img::grd_LF_CloseBtn.png');
+	treecollapseimage	: ;
+	treeexpandimage		: ;
+	treeitemimage		: URL('img::grd_LF_Item.png');
+	treeitemmargin		: ;
+	treelinetype		: ;
+	treeopenbuttonimage	: URL('img::grd_LF_OpenBtn.png');
+}
+Grid.grd_LF_TreeMy>#body 
+{
+	accessibility		: ;
+	background		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellcolor		: #8192aa;
+	cellcolor2		: #8192aa;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg_O.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_TreeMy>#body:mouseover
+{
+	accessibility		: ;
+	background		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg_O.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_TreeMy>#body:disabled
+{
+	accessibility		: ;
+	background		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellbackground2		: URL('img::grd_LF_TreeBg2.png') stretch 15,15;
+	cellcolor		: #8192aa;
+	cellcolor2		: #8192aa;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 8;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_TreeBg_O.png') stretch 15,15;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_TreeRecentMenu
+{
+	accessibility		: ;
+	align			: ;
+	background		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: ;
+	gradation		: ;
+	line			: ;
+	opacity			: ;
+	padding			: ;
+	selectline		: ;
+	selectlinetype		: ;
+	shadow			: ;
+	treeclosebuttonimage	: URL('img::grd_LF_CloseBtn.png');
+	treecollapseimage	: ;
+	treeexpandimage		: ;
+	treeitemimage		: URL('img::grd_LF_Item.png');
+	treeitemmargin		: ;
+	treelinetype		: ;
+	treeopenbuttonimage	: URL('img::grd_LF_OpenBtn.png');
+}
+Grid.grd_LF_TreeRecentMenu>#body 
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellbackground2		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 0;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_ResentMenuBgS.png') stretch 20,20;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+Grid.grd_LF_TreeRecentMenu>#body:mouseover
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellbackground2		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 0;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_ResentMenuBgS.png') stretch 20,20;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;	
+}
+Grid.grd_LF_TreeRecentMenu>#body:disabled
+{
+	accessibility		: ;
+	background		: #ffffff;
+	border			: 1 solid #e1e1e1, 0 none, 0 none, 1 solid #c9c9c9;
+	bordertype		: normal 0 0;
+	cellalign		: left middle;
+	cellbackground		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellbackground2		: URL('img::grd_LF_ResentMenuBg.png') stretch 20,20;
+	cellcolor		: #ffffff;
+	cellcolor2		: #ffffff;
+	cellfont		: 9 Gulim;
+	cellgradation		: ;
+	cellgradation2		: ;
+	cellline		: 0 none;
+	celllinespace		: ;
+	celllinetype		: exhor;
+	cellpadding		: 0 0 0 0;
+	gradation		: ;
+	selectbackground	: URL('img::grd_LF_ResentMenuBgS.png') stretch 20,20;
+	selectborder		: 0 none;
+	selectcolor		: #ffffff;
+	selectfont		: 9 Gulim;
+	selectgradation		: ;
+	cellline		: 0 none;
+	selectlinetype		: ;
+}
+
+
+/************************************ S ************************************/
+
+/*Static*/
+Static.sta_LF_Logo
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_LF_Logo.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_LF_Logo:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_LF_Logo.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_LF_Logo:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: URL('img::sta_LF_Logo.png');
+	border			: 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: hand;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_LF_SearchBg
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #2c3949;
+	border			: 0 none, 0 none, 1 double #212b39 #3a4757, 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_LF_SearchBg:mouseover
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #2c3949;
+	border			: 0 none, 0 none, 1 double #212b39 #3a4757, 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}
+Static.sta_LF_SearchBg:disabled
+{
+	accessibility		: ;
+	align			: left middle;
+	background		: #2c3949;
+	border			: 0 none, 0 none, 1 double #212b39 #3a4757, 0 none;
+	bordertype		: normal 0 0;
+	color			: #333333;
+	cursor			: ;
+	font			: 9 Gulim;
+	gradation		: ;
+	linespace		: ;
+	opacity			: ;
+	padding			: ;
+	shadow			: ;
+}

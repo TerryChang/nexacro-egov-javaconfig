@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="Login" classname="Login" left="0" top="0" width="450" height="290" onload="form_onload" style="background:transparent;" onsize="Login_onsize" titletext="Login" scrollbars="none">
+    <Layouts>
+      <Layout>
+        <Div id="div_login" taborder="0" left="0" top="0" width="450" height="291" style="background:transparent URL('img::Login_bg.png');" scrollbars="none">
+          <Layouts>
+            <Layout width="553" height="321">
+              <Button id="Button00" taborder="15" onclick="fn_close" left="88.24%" top="7" right="1.76%" height="30" style="background:transparent;border:0 none #999999ff ;"/>
+              <Edit id="txt_userId" taborder="16" displaynulltext="User ID" left="103" top="136" width="193" height="35" value="admin"/>
+              <Edit id="txt_userPwd" taborder="17" displaynulltext="Password" left="103" top="170" width="193" height="35" value="123" password="true"/>
+              <CheckBox id="CheckBox00" taborder="18" text="아이디저장" left="23.11%" top="211" right="43.56%" height="20" cssclass="chk_Login_Id"/>
+              <Button id="btn_login" taborder="19" top="136" right="90" width="60" height="69" cssclass="btn_Login_Login" onclick="btn_login_onclick" onkeyup="div_login_btn_login_onkeyup"/>
+              <Button id="btn_close" taborder="20" onclick="fn_close" visible="false" top="15" right="15" width="17" height="17" cssclass="btn_Login_Close"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsLogin" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="USER_ID" type="STRING" size="256"/>
+          <Column id="PASSWORD" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="USER_ID">test</Col>
+            <Col id="PASSWORD">test123</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsService" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="SVC_ID" type="STRING" size="100"/>
+          <Column id="QUERY_LIST" type="STRING" size="256"/>
+          <Column id="SERVICE" type="STRING" size="100"/>
+          <Column id="IN_DATASET_LIST" type="STRING" size="256"/>
+          <Column id="OUT_DATASET_LIST" type="STRING" size="256"/>
+          <Column id="CONTROLLER" type="STRING" size="512"/>
+          <Column id="CALLBACK" type="STRING" size="100"/>
+          <Column id="SYNC_YN" type="STRING" size="1"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="SVC_ID">login</Col>
+            <Col id="IN_DATASET_LIST">inDataset=dsLogin</Col>
+            <Col id="OUT_DATASET_LIST">gdsUser=gdsUser</Col>
+            <Col id="CONTROLLER">xpQueryLogin.do</Col>
+            <Col id="CALLBACK">fn_callBack</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_user" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="GROUP_ID" type="STRING" size="256"/>
+          <Column id="USER_ID" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : Login.xfdl
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 로그인 화면
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.form_onload = function (obj:Form, e:LoadEventInfo)
+{
+	if(nexacro.Browser == "Runtime") this.div_login.btn_close.set_visible(true);
+
+	Iject.formOnload(obj);
+	this.form_onsize();
+}
+
+ 
+/***********************************************************************************
+* User Function
+***********************************************************************************/
+
+/**
+* form onsize
+* @return 
+* @example
+* @memberOf public
+*/ 
+this.form_onsize = function()
+{
+  	if(nexacro.Browser == "Runtime") return;
+
+  	var nLeft = (application.mainframe.width / 2) - Math.round((this.div_login.getOffsetWidth()) / 2);
+  	var nTop = (application.mainframe.height / 2) - Math.round((this.div_login.getOffsetHeight()) / 2);
+
+	if(nLeft <= 0)
+	{
+		this.div_login.setOffsetLeft(0);
+	}
+	else
+	{
+    	this.div_login.setOffsetLeft(nLeft);
+		this.div_login.setOffsetTop(nTop);
+	}
+}
+
+
+/***********************************************************************************
+* Component Event
+***********************************************************************************/
+this.btn_login_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+    this.fn_login();
+}
+
+
+//login function
+this.fn_login = function()
+{
+      application.gds_userInfo.setColumn(0,"USER_ID",this.div_login.txt_userId.value);
+ 	 application.gds_userInfo.setColumn(0,"USER_NM","관리자");
+	
+	
+	if(nexacro.Browser == "Runtime")
+	{
+		var oArgs = "close";
+    	Iject.popClose(this,oArgs);
+
+	}
+	else
+	{
+	    Iject.setSeprateFrame();
+	}
+}
+
+
+/**
+* 프레임 open
+* @return 
+* @example
+* @memberOf public
+*/ 
+
+this.fn_menuOpen = function()
+{
+    gv_vFrameSet.set_separatesize("0,*,42");
+    gv_workFrame.frames["MainForm"].setFocus();
+}
+
+
+this.Login_onsize = function(obj:Form, e:nexacro.SizeEventInfo)
+{
+     this.form_onsize(e.cx, e.cy);
+}
+
+this.fn_close = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	application.exit();
+}
+
+this.div_login_btn_login_onkeyup = function(obj:Button, e:nexacro.KeyEventInfo)
+{
+	if(e.keycode == 13)
+	{
+		this.fn_login();
+	}
+}
+]]></Script>
+  </Form>
+</FDL>

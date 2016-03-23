@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Sample">
+
+    <typeAlias  alias="searchVO" type="nexacro.sample.vo.DefaultVO"/>
+    <typeAlias  alias="sampleVO" type="nexacro.sample.vo.SampleVO"/>
+
+    <!-- Sample resultObject -->
+    <resultMap id="sample" class="sampleVO">
+        <result property="title" column="TITLE" />
+        <result property="regId" column="REG_ID" />
+        <result property="regDate" column="REG_DATE" />
+        <result property="postId" column="POST_ID" />
+        <result property="contents" column="CONTENTS" />
+        <result property="communityId" column="COMMUNITY_ID" />
+        <result property="hitCount" column="HIT_COUNT" />
+    </resultMap>
+    
+     <resultMap id="sampleMap" class="java.util.HashMap">
+        <result property="title" column="TITLE" />
+        <result property="regId" column="REG_ID" />
+        <result property="regDate" column="REG_DATE" />
+        <result property="postId" column="POST_ID" />
+        <result property="contents" column="CONTENTS" />
+        <result property="communityId" column="COMMUNITY_ID" />
+        <result property="hitCount" column="HIT_COUNT" />
+    </resultMap>
+    
+ 	<select id="sampleDAO.selectSampleVOList" parameterClass="sampleVO" resultMap="sample">
+            SELECT
+                A.TITLE AS TITLE, 
+                A.REG_ID AS REG_ID, 
+                A.REG_DATE AS REG_DATE, 
+                A.POST_ID AS POST_ID, 
+                A.CONTENTS AS CONTENTS, 
+                A.COMMUNITY_ID AS COMMUNITY_ID,
+                A.HIT_COUNT AS HIT_COUNT
+            FROM TB_BOARD A
+            WHERE 1=1
+            <dynamic>
+                <isNotNull property="searchKeyword">
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="TITLE">
+                        TITLE LIKE '%' || #searchKeyword# || '%'
+                    </isEqual>
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="CONTENTS">
+                        CONTENTS LIKE '%' || #searchKeyword# || '%' 
+                    </isEqual>
+                </isNotNull>
+            </dynamic>
+            
+    </select>
+    
+    <select id="sampleDAO.selectSampleMapList" parameterClass="sampleVO" resultMap="sampleMap">
+            SELECT
+                A.TITLE AS TITLE, 
+                A.REG_ID AS REG_ID, 
+                A.REG_DATE AS REG_DATE, 
+                A.POST_ID AS POST_ID, 
+                A.CONTENTS AS CONTENTS, 
+                A.COMMUNITY_ID AS COMMUNITY_ID,
+                A.HIT_COUNT AS HIT_COUNT
+            FROM TB_BOARD A
+            WHERE 1=1
+            <dynamic>
+                <isNotNull prepend=" AND " property="title">
+                	TITLE LIKE '%' || #title# || '%'
+                </isNotNull>
+            </dynamic>
+            
+    </select>
+    
+    <select id="sampleDAO.selectSampleCount" parameterClass="sampleVO" resultClass="int">
+            SELECT
+                COUNT(*) as totalCount
+            FROM TB_BOARD A
+            WHERE 1=1
+            <dynamic>
+                <isNotNull property="searchKeyword">
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="TITLE">
+                        TITLE LIKE '%' || #searchKeyword# || '%'
+                    </isEqual>
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="CONTENTS">
+                        CONTENTS LIKE '%' || #searchKeyword# || '%' 
+                    </isEqual>
+                </isNotNull>
+            </dynamic>
+    </select>
+    
+	<select id="sampleDAO.selectSamplePaging" parameterClass="sampleVO" resultMap="sample">
+            SELECT
+                A.TITLE AS TITLE, 
+                A.REG_ID AS REG_ID, 
+                A.REG_DATE AS REG_DATE, 
+                A.POST_ID AS POST_ID, 
+                A.CONTENTS AS CONTENTS, 
+                A.COMMUNITY_ID AS COMMUNITY_ID,
+                A.HIT_COUNT AS HIT_COUNT
+            FROM TB_BOARD A
+            WHERE 1=1
+            <dynamic>
+                <isNotNull property="searchKeyword">
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="TITLE">
+                        TITLE LIKE '%' || #searchKeyword# || '%'
+                    </isEqual>
+                    <isEqual prepend=" AND " property="searchCondition" compareValue="CONTENTS">
+                        CONTENTS LIKE '%' || #searchKeyword# || '%' 
+                    </isEqual>
+                </isNotNull>
+            </dynamic>
+            ORDER BY A.REG_ID DESC 
+            LIMIT #recordCountPerPage# OFFSET #firstIndex#
+    </select>
+    
+    <insert id="sampleDAO.insertSampleVO" parameterClass="sampleVO">
+        <![CDATA[
+            INSERT INTO TB_BOARD (
+                TITLE,
+                REG_ID,
+                CONTENTS,
+                COMMUNITY_ID
+            ) VALUES (
+                #title#,
+                #regId#,
+                #contents#,
+                #communityId#
+            )
+        ]]>
+    </insert>
+    
+      <update id="sampleDAO.updateSampleVO" parameterClass="sampleVO">
+        <![CDATA[
+            UPDATE TB_BOARD 
+            SET TITLE=#title#
+                , REG_ID=#regId#
+                , CONTENTS=#contents#
+                , COMMUNITY_ID=#communityId#
+            WHERE POST_ID=#postId#
+        ]]>
+    </update>
+    
+    <delete id="sampleDAO.deleteSampleVO" parameterClass="sampleVO">
+        <![CDATA[
+            DELETE FROM TB_BOARD 
+            WHERE POST_ID=#postId#
+        ]]>
+    </delete>
+    
+</sqlMap>

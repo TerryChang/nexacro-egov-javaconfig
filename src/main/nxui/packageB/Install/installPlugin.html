@@ -1,0 +1,74 @@
+<HTML>
+<HEAD>
+<TITLE>XPLATFORM Install Page</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
+<SCRIPT LANGUAGE="JavaScript"> 
+var pKey = "packageB";
+var Server_Path = "http://" + window.location.host + "/nexacro-sample";	//사용하는 서버 주소
+var prj_url     = Server_Path + "/packageB";
+
+function fn_load()
+{  
+	var bInstallXLauncherPlugin = false;
+	var bInstallXPlatformPlugin = false;
+	
+	for (var i=0; i<navigator.plugins.length; i++)
+	{
+
+//window.console.log(navigator.plugins[i].name + ":" + navigator.plugins[i].filename + ":" + navigator.plugins[i][0].type.toLowerCase());
+
+		if (navigator.plugins[i].name == "nexacro platform 14")
+		{
+		//window.console.log(navigator.plugins[i].name + ":" + navigator.plugins[i].filename + ":" + navigator.plugins[i][0].type.toLowerCase());
+				
+				
+		//alert(navigator.userAgent.indexOf("Opera"));
+				if (navigator.plugins[i].filename == "npnexacrolauncher14.dll")
+				{
+					bInstallXLauncherPlugin = true;
+				}
+//alert(navigator.plugins[i][0].type.toLowerCase());
+				if (navigator.plugins[i][0].type.toLowerCase() == "application/nexacro14-plugin")
+				{
+				//alert(2);
+					bInstallXPlatformPlugin = true;
+				}			
+		
+		}
+	}
+
+
+	if (!(bInstallXLauncherPlugin && bInstallXPlatformPlugin))
+	{
+		alert("Please install XPLATFORM Plugin and restart browser");
+		location.href = "./Download/nexacro14_SetupEngine.exe";
+	}
+	else
+	{
+		
+			fn_launchX();
+		
+	
+	}
+}
+
+function fn_launchX()
+{  
+	nexacrolauncherax14.key = sKey;	
+	//nexacrolauncherax14.xadl = Server_Path + "/hisis/hisis.xadl.js"; // xadl 경로 지정	
+	nexacrolauncherax14.bjson = prj_url + "/start.json"; // xadl 경로 지정	
+	//nexacrolauncherax14.makeshortcut(pKey, Server_Path + "/Install/img/nexacro.ico", "desktop"); // 단축아이콘 생성
+	nexacrolauncherax14.splashimage = Server_Path + "/Install/img/loading_img.gif"; // 로딩 이미지 지정
+	nexacrolauncherax14.onlyone = false; // 프로젝트를 한개 이상 실행하게 할지 여부 설정
+	nexacrolauncherax14.launch(); // 전용브라우저 실행
+}
+
+</SCRIPT> 
+</HEAD>
+<BODY onload="fn_load()">
+<SCRIPT LANGUAGE="JavaScript">
+//XPLATFORM Launcher
+document.write('<embed ID="nexacrolauncherax14" type="application/nexacrolauncher14-plugin" width="100" height="100"></embed>');
+</SCRIPT>
+</BODY>
+</HTML>

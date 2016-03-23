@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MetaInfo version="1.0">
+	<Object id="nexacro.ExtFileDownload">
+		<ObjectInfo
+			inheritance=""
+			typename="nexacro.ExtFileDownload"
+			csstypename="ExtFileDownload"
+			csscontrolname="ExtFileDownload"
+			group="UIComponent"
+			csspseudo="true"
+			container="false"
+			composite="true"
+			tabstop="true"
+			cssstyle="true"
+			contents="true"
+			formats="false"
+			contentseditor="auto"
+			defaultwidth="100"
+			defaultheight="100"
+			requirement="Runtime,HTML5"
+			description="ExtFileDownload"/>
+			
+			
+		<PseudoInfo>
+			<Pseudo name="disabled" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="focused" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="mouseover" control="true" deprecated="false" unused="true"/>
+			<Pseudo name="selected" control="true" deprecated="false" unused="true"/>
+		</PseudoInfo>			
+		
+		<PropertyInfo>
+			<Property
+			name="downloadurl"
+			group="Appearance"
+			type="String"
+			defaultvalue=""
+			readonly="false"
+			initonly="false"
+			hidden="false"
+			control="false"
+			style="false"
+			expr="false"
+			deprecated="false"
+			unused="false"
+			objectinfo=""
+			enuminfo=""
+			unitinfo=""
+			requirement="Runtime,HTML5"
+			description="File 을 Download 하기위한 url 을 지정하는 Property 입니다."
+			/>		
+		
+
+			<Property
+			name="visible"
+			group="Action"
+			type="Boolean"
+			defaultvalue="false"
+			readonly="false"
+			initonly="false"
+			hidden="true"
+			control="false"
+			style="false"
+			expr="false"
+			deprecated="false"
+			unused="false"
+			objectinfo=""
+			enuminfo=""
+			unitinfo=""
+			requirement="Runtime,HTML5"
+			description="화면에 보여질지 여부를 설정하는 속성입니다."
+			/>					
+			
+			<Property name="hotkey" group="Action" unused="true"/>
+			<Property name="taborder" group="Action" unused="true"/>
+			<Property name="tabstop" group="Action" unused="true"/>
+			<Property name="tooltiptext" group="Action" unused="true"/>
+			<Property name="tooltiptype" group="Action" unused="true"/>
+
+			<Property name="expr" group="" unused="true"/>
+			<Property name="text" group="" unused="true"/>
+			<Property name="wordwrap" group="" unused="true"/>
+			<Property name="cssclass" group="" unused="true"/>
+			<Property name="usedecorate" group="Misc" unused="true"/>
+			
+	
+		</PropertyInfo>	
+		
+		
+			
+		<MethodInfo>
+			<Method
+			name="download"
+			group=""
+			async="false"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file download."
+			>
+				<Syntax
+				text = "download(url, filename)"
+				>
+					<Return/>
+					<Arguments>
+						<Argument
+						name="url"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="다운로드 url"
+						/>
+						
+						<Argument
+						name="filename"
+						type="String"
+						in="true"
+						out="false"
+						option="false"
+						variable="false"
+						description="저장시 file name.(지원가능한 브라우저만 적용됨. 런타임 미지원)"
+						/>					
+					</Arguments>
+				</Syntax>
+			</Method>			
+
+		
+			
+			
+		</MethodInfo>			
+			
+			
+			
+		<EventHandlerInfo>
+			<!-- define event -->
+			<EventHandler
+			name="onsuccess"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 다운로드 성공시 발생하는 event"
+			>
+				<Syntax
+				text="onsuccess(obj:nexacro.ExtFileDownload, e:nexacro.ExtFileLoadEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileDownload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileLoadEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>		
+
+			<EventHandler
+			name="onerror"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="Runtime,HTML5"
+			description="file 다운로드 실패시 발생하는 event"
+			>
+				<Syntax
+				text="onerror(obj:nexacro.ExtFileDownload, e:nexacro.ExtFileErrorEventInfo)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileDownload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileErrorEventInfo"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>
+			
+			<EventHandler
+			name="onprogress"
+			group="Event"
+			deprecated="false"
+			unused="false"
+			requirement="HTML5"
+			description="file 전송시 progress event."
+			>
+				<Syntax
+				text="onprogress(obj:nexacro.ExtFileDownload, e:nexacro.ExtFileProgress)"
+				>
+				<Return/>
+					<Arguments>
+					<Argument
+					name="obj"
+					type="nexacro.ExtFileDownload"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Source Object"
+					/>
+					<Argument
+					name="e"
+					type="nexacro.ExtFileProgress"
+					in="true"
+					out="false"
+					option="false"
+					variable="false"
+					description="Event Information Object"
+					/>
+					</Arguments>			
+				</Syntax>
+			</EventHandler>			
+			
+				
+
+
+			<EventHandler name="ondragenter" unused="true"/>
+			<EventHandler name="ondragleave" unused="true"/>
+			<EventHandler name="ondragmove" unused="true"/>
+			<EventHandler name="ondrag" unused="true"/>
+			<EventHandler name="ondrop" unused="true"/>
+			
+			<EventHandler name="onfling" unused="true"/>
+			<EventHandler name="onflingend" unused="true"/>
+			<EventHandler name="onflingstart" unused="true"/>
+			
+			<EventHandler name="onlbuttondown" unused="true"/>
+			<EventHandler name="onlbuttonup" unused="true"/>
+			<EventHandler name="onlongpress" unused="true"/>
+			
+			<EventHandler name="onmouseenter" unused="true"/>
+			<EventHandler name="onmouseleave" unused="true"/>
+			<EventHandler name="onmousemove" unused="true"/>
+			<EventHandler name="onmove" unused="true"/>
+			<EventHandler name="onpinch" unused="true"/>
+			
+			<EventHandler name="onpinchend" unused="true"/>
+			<EventHandler name="onpinchstart" unused="true"/>
+			<EventHandler name="onsize" unused="true"/>
+			<EventHandler name="onslide" unused="true"/>
+			<EventHandler name="onslideend" unused="true"/>			
+			<EventHandler name="onslidestart" unused="true"/>
+			<EventHandler name="ontouchend" unused="true"/>
+			<EventHandler name="ontouchmove" unused="true"/>			
+			<EventHandler name="ontouchstart" unused="true"/>
+
+		</EventHandlerInfo>			
+			
+	</Object>
+</MetaInfo>

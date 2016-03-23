@@ -1,0 +1,30 @@
+Static
+{
+	background: #ECECECFF;
+}
+
+Static:mouseover
+{
+	color: #0000FFFF;
+}
+
+#sta_title
+{
+	font: dotum, 14, bold;
+}
+
+Div>#sta_title
+{
+	align: center middle;
+}
+
+Static.sub_title
+{
+	border: 1px solid #C1C1C1FF;
+	bordertype: round 4 4;
+}
+
+MaskEdit [type="number"]
+{
+	align: right middle;
+}

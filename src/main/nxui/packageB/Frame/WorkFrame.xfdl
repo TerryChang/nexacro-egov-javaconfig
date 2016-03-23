@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="WorkFrame" classname="WorkFrame" left="0" top="0" width="1050" height="818" onload="fn_onload" style="background:white;" onactivate="workFrame_onactivate" onclose="workFrame_onclose" onsize="WorkFrame_onsize">
+    <Layouts>
+      <Layout>
+        <Static id="Static02" taborder="0" visible="false" left="0" top="0" width="20" height="818" style="background:#74cfdcff;color:red;"/>
+        <Static id="Static03" taborder="2" text="h16" visible="false" left="1063" top="-1" width="33" height="22" style="color:red;"/>
+        <Static id="Static01" taborder="3" text="w20" visible="false" left="0" top="939" width="33" height="22" style="color:red;"/>
+        <Div id="div_WorkTitle" taborder="4" left="20" top="16" right="0" height="36"/>
+        <Div id="div_Work" taborder="5" left="20" top="52" right="10" bottom="0" style="background:transparent;" scrollbars="none"/>
+        <Static id="Static04" taborder="6" visible="false" left="98.48%" top="0" right="0%" height="818" style="background:#ff7272ff;"/>
+        <Static id="Static05" taborder="7" visible="false" left="2%" top="1008" right="1.43%" height="20" style="background:#ff7272ff;"/>
+        <Div id="div_title" taborder="8" left="20" top="16" right="11" url="Frame::WorkTitle.xfdl" height="36"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : WorkFrame.xfdl
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : WorkFrame
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+	//넘어온 아규먼트 셋팅
+	Iject.Mdi.setOwnFrameArgu(this);
+	// form로딩시 화면에 표시할 page URL 설정
+	this.div_Work.set_url(Iject.$["w_pageurl"]);
+	this.div_Work.resetScroll();
+	 this.fn_onsize();
+}
+
+/**
+ * workFrame_onactivate event
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.workFrame_onactivate = function(obj:Form, e:nexacro.ActivateEventInfo)
+{
+ 	var winKey = Iject.$["workFrame"].getActiveFrame().name; 	
+   	    Iject.$["workFrame"].frames[winKey].setFocus();
+	var gRow = application.gds_openMenu.findRow('WIN_ID', winKey);
+	var menuId = application.gds_openMenu.getColumn(gRow, "MENU_ID");
+	var lRow = Iject.$["leftFrame"].form.ds_menu.findRow("MENU_ID", menuId);	
+    var sTitle = application.gds_openMenu.getColumn(gRow, "TITLE");  
+    this.div_title.Static50.set_text(sTitle);
+    
+	Iject.$["leftFrame"].form.ds_menu.set_enableevent(false);
+	Iject.$["leftFrame"].form.ds_menu.set_rowposition(lRow);
+	Iject.$["leftFrame"].form.ds_menu.set_enableevent(true);
+	Iject.$["gds_openmenu"].set_rowposition(gRow);
+    this.div_Work.resetScroll();
+}
+
+/**
+ * workFrame_onclose event
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.workFrame_onclose = function(obj:Form, e:TOBE.CloseEventInfo)
+{
+   var winId = Iject.$["workFrame"].getActiveFrame().name; 
+    Iject.$["workFrame"].frames[winId].destroy();
+}
+
+/**
+ * work resize function
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_onsize = function()
+{
+    //width size resize
+    if(this.width > 1066)
+    {
+         this.div_Work.set_right(10);
+    }  
+    else
+    {
+       this.div_Work.set_width(1067);
+    }
+    
+    //height size resize
+    if(this.height > 774)
+    {
+        this.div_Work.set_bottom(0);
+    }  
+    else
+    {
+        this.div_Work.set_height(774);
+    }
+    
+    this.resetScroll();
+    this.div_Work.resetScroll();
+}
+
+/**
+ * work resize event
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.WorkFrame_onsize = function(obj:Form, e:nexacro.SizeEventInfo)
+{
+	this.fn_onsize();
+}
+]]></Script>
+  </Form>
+</FDL>

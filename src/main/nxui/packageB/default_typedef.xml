@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefinition version="1.2">
+  <Modules>
+    <Module url="CompBase.json"/>
+    <Module url="ComComp.json"/>
+    <Module url="Grid.json"/>
+    <Module url="DeviceAPI.json"/>
+    <Module url="EcoLibrary.json"/>
+    <Module url="IjectJS.json"/>
+    <Module url="ExtComp.json"/>
+  </Modules>
+  <Components>
+    <Component type="JavaScript" id="Div" classname="nexacro.Div"/>
+    <Component type="JavaScript" id="Button" classname="nexacro.Button"/>
+    <Component type="JavaScript" id="PopupDiv" classname="nexacro.PopupDiv"/>
+    <Component type="JavaScript" id="Combo" classname="nexacro.Combo"/>
+    <Component type="JavaScript" id="CheckBox" classname="nexacro.CheckBox"/>
+    <Component type="JavaScript" id="ListBox" classname="nexacro.ListBox"/>
+    <Component type="JavaScript" id="Edit" classname="nexacro.Edit"/>
+    <Component type="JavaScript" id="MaskEdit" classname="nexacro.MaskEdit"/>
+    <Component type="JavaScript" id="TextArea" classname="nexacro.TextArea"/>
+    <Component type="JavaScript" id="Menu" classname="nexacro.Menu"/>
+    <Component type="JavaScript" id="Tab" classname="nexacro.Tab"/>
+    <Component type="JavaScript" id="ImageViewer" classname="nexacro.ImageViewer"/>
+    <Component type="JavaScript" id="Radio" classname="nexacro.Radio"/>
+    <Component type="JavaScript" id="Calendar" classname="nexacro.Calendar"/>
+    <Component type="JavaScript" id="Static" classname="nexacro.Static"/>
+    <Component type="JavaScript" id="Grid" classname="nexacro.Grid"/>
+    <Component type="JavaScript" id="Spin" classname="nexacro.Spin"/>
+    <Component type="JavaScript" id="PopupMenu" classname="nexacro.PopupMenu"/>
+    <Component type="JavaScript" id="GroupBox" classname="nexacro.GroupBox"/>
+    <Component type="JavaScript" id="ProgressBar" classname="nexacro.ProgressBar"/>
+    <Component type="JavaScript" id="Plugin" classname="nexacro.Plugin"/>
+    <Component type="JavaScript" id="Dataset" classname="nexacro.NormalDataset"/>
+    <Component type="JavaScript" id="FileUpload" classname="nexacro.FileUpload"/>
+    <Component type="JavaScript" id="ExtFileUpload" classname="nexacro.ExtFileUpload"/>
+    <Component type="JavaScript" id="ExtFileDownload" classname="nexacro.ExtFileDownload"/>
+  </Components>
+  <Services>
+    <Service prefixid="IjectJS" type="file" url="./nexacro14lib/component/IjectJS" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="nexacro14lib.component" type="file" url="./nexacro14lib/component" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="nexacro14lib.framework" type="file" url="./nexacro14lib/framework/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="nexacro14lib.resources" type="file" url="./nexacro14lib/resources/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="svcurl" type="JSP" url="http://localhost:8080/nexacro-egov/" cachelevel="none" version="0" communicationversion="0"/>
+    <Service prefixid="Css" type="file" url="./Css/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="img" type="file" url="./img/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Frame" type="form" url="./Frame/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Lib" type="js" url="./Lib/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Install" type="file" url="./Install/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Template" type="form" url="./Template/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Sample" type="form" url="./Sample/" cachelevel="dynamic" version="0" communicationversion="0"/>
+    <Service prefixid="Test" type="form" url="./Test/" cachelevel="session" version="0" communicationversion="0"/>
+    <Service prefixid="Pattern" type="form" url="./Pattern/" cachelevel="dynamic" version="0" communicationversion="0"/>
+  </Services>
+  <Update>
+    <Item systemtype="Windows" url="http://localhost:8080/nexacro-sample/packageB">
+      <Os type="default" url="" engineurl="" enginesetupkey="" engineversion="">
+        <Device type="default" url="" engineurl="" enginesetupkey="" engineversion="" desc="">
+          <Resource type="File" file="./Install/Component/ExtCommonV13.dll" targetpath="%Component%" version="14.0.0.27"/>
+        </Device>
+      </Os>
+    </Item>
+  </Update>
+  <Protocols/>
+</TypeDefinition>

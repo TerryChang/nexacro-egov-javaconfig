@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="TopFrame" classname="TopFrame" left="0" top="0" width="1050" height="30" onload="fn_onload">
+    <Layouts>
+      <Layout>
+        <Static id="Static00" taborder="0" left="0" top="0" height="30" cssclass="sta_TF_TopBg" right="0"/>
+        <Button id="btn_leftMenuOpen" taborder="1" cssclass="btn_TF_LeftMenuOpen" left="0" top="0" width="34" height="29" onclick="btn_leftMenuOpen_onclick"/>
+        <Button id="Button02" taborder="3" cssclass="btn_TF_Logout" top="0" height="29" text="Log-out" right="45" width="67" onclick="fn_logout"/>
+        <Button id="Button03" taborder="4" text="Help" cssclass="btn_TF_Admin" top="0" height="29" right="0" width="45"/>
+        <Static id="stNm" taborder="5" top="0" height="29" cssclass="sta_TF_Admin" usedecorate="true" right="112" width="157"/>
+        <Static id="Static03" taborder="6" text="&lt;---- Left Menu Open Button (class : btn_TF_LeftMenuOpen)" visible="false" left="44" top="53" width="406" height="22" style="color:red;"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : TopFrame.xfdl
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : TopFrame
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{  
+}
+
+
+//left 펼침 접힘 실행
+this.btn_leftMenuOpen_onclick = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+   Iject.Mdi.leftMenuAction(this,obj);
+   
+}
+
+//logout
+this.fn_logout = function(obj:Button,  e:nexacro.ClickEventInfo)
+{
+	Iject.logout();
+}
+
+this.fn_set = function()
+{
+
+   this.stNm.set_text(Iject.$["usernm"] + " <b v='false'>님 환영합니다.</b>");
+}
+]]></Script>
+  </Form>
+</FDL>

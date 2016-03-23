@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:jee="http://www.springframework.org/schema/jee"
+    xmlns:util="http://www.springframework.org/schema/util"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+        http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.1.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">   
+    <!-- ENV -->
+    <!-- hsql 메모리 DBMS -->
+    <jee:jndi-lookup id="dataSource" jndi-name="jndiname" resource-ref="true"/>
+    
+    <!-- oracle -->
+    <jee:jndi-lookup id="dataSourceOracle" jndi-name="jndiname" resource-ref="true"/>
+
+    <!-- mssql 
+    <jee:jndi-lookup id="dataSourceMssql" jndi-name="jndiname" resource-ref="true"/>
+    -->
+
+	<!-- mysql 
+    <jee:jndi-lookup id="dataSourceMysql" jndi-name="jndiname" resource-ref="true"/>
+    -->
+</beans>

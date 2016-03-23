@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="LeftFrame" classname="LeftFrame" left="0" top="0" width="230" height="958" onload="fn_onload">
+    <Layouts>
+      <Layout>
+        <Div id="div_left" taborder="2" text="Div00" left="0" top="0" width="230" bottom="0" scrollbars="none">
+          <Layouts>
+            <Layout>
+              <Grid id="grd_tree" cssclass="grd_LF_Tree" taborder="0" binddataset="ds_menu" scrollbars="autovert" useinputpanel="false" treeuseline="false" treeusecheckbox="false" top="248" left="-1" width="231" bottom="0" autofittype="col" treeinitstatus="expand,null" oncellclick="fn_treeClick" style="background:transparent;">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="230"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="37"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell displaytype="tree" edittype="tree" style="padding:EXPR(lev=='1'?&quot;0 0 0 -5&quot;:&quot;&quot;);background:EXPR(lev=='1'?&quot;URL('img::grd_LF_TreeBg2.png') stretch 15,15&quot;:&quot;&quot;);background2:EXPR(lev=='1'?&quot;URL('img::grd_LF_TreeBg2.png') stretch 15,15&quot;:&quot;&quot;);color:EXPR(lev=='1'?&quot;#8192aaff&quot;:&quot;&quot;);color2:EXPR(lev=='1'?&quot;#8192aaff&quot;:&quot;&quot;);font:EXPR(lev=='1'?&quot;9 Gulim&quot;:&quot;&quot;);selectbackground:EXPR(lev=='1'?&quot;URL('img::grd_LF_TreeBg_O.png') stretch 15,15&quot;:&quot;&quot;);selectfont:EXPR(lev=='1'?&quot;9 Gulim&quot;:&quot;&quot;);" text="bind:MENU_NAME" treestartlevel="1" treelevel="bind:MENU_LEVEL"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="st_nexa" taborder="1" left="0" top="0" height="173" cssclass="sta_LF_Logo" width="230" onclick="fn_main"/>
+              <Button id="Button00" taborder="2" left="0" top="173" height="36" cssclass="btn_LF_Menu_S" width="115" text="Menu"/>
+              <Button id="Button01" taborder="3" cssclass="btn_LF_Menu" left="115" top="173" width="115" height="36" text="My Menu"/>
+              <Static id="Static01" taborder="4" cssclass="sta_LF_SearchBg" left="0" top="209" width="230" height="40"/>
+              <Edit id="Edit00" taborder="5" left="6" top="216" width="218" height="26" cssclass="edt_LF_Search"/>
+              <Button id="Button02" taborder="6" left="195" top="216" width="29" height="25" cssclass="btn_LF_Search"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <Button id="Button00" taborder="3" cssclass="btn_LF_RecentMenuOpen" left="21" width="230" height="51" bottom="-130" onclick="Button00_onclick" visible="false"/>
+        <Div id="Div01" taborder="10" text="Div01" left="399" top="173" width="230" height="746" visible="false">
+          <Layouts>
+            <Layout>
+              <Grid id="Grid02" cssclass="grd_LF_TreeMy" taborder="5" binddataset="Tree_MyMenu" scrollbars="none" useinputpanel="false" treeuseline="false" treeusecheckbox="false" left="0" top="75" width="230" visible="false" height="671">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="230"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="37"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell displaytype="tree" edittype="tree" style="background:EXPR(lev=='0'?&quot;URL('img::grd_LF_TreeBg.png') stretch 20,20&quot;:&quot;&quot;);background2:EXPR(lev=='0'?&quot;URL('img::grd_LF_TreeBg.png') stretch 20,20&quot;:&quot;&quot;);selectbackground:EXPR(lev=='0'?&quot;URL('img::grd_LF_TreeBg_O.png') stretch 20,20&quot;:&quot;&quot;);selectfont:EXPR(lev=='0'?&quot;bold 9 Gulim&quot;:&quot;&quot;);controlfont:EXPR(lev=='0'?&quot;bold 9 Gulim&quot;:&quot;&quot;);" text="bind:txt" treelevel="bind:lev"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Static id="Static01" taborder="4" cssclass="sta_LF_SearchBg" left="0" top="36" width="230" height="40" visible="false"/>
+              <Button id="Button02" taborder="0" cssclass="btn_LF_Menu" left="0" top="0" width="115" height="36" visible="false" text="Menu"/>
+              <Button id="Button01" taborder="1" cssclass="btn_LF_Menu_S" left="115" top="0" width="115" height="36" visible="false" text="My Menu"/>
+              <Edit id="Edit00" taborder="3" cssclass="edt_LF_Search" left="6" top="43" width="218" height="26" visible="false"/>
+              <Button id="Button03" taborder="2" cssclass="btn_LF_Search" left="195" top="43" width="29" height="25" visible="false"/>
+            </Layout>
+          </Layouts>
+        </Div>
+        <PopupDiv id="PopupDiv00" text="PopupDiv00" left="771" top="564" width="230" height="394" visible="false">
+          <Layouts>
+            <Layout>
+              <Grid id="Grid02" cssclass="grd_LF_TreeRecentMenu" taborder="1" binddataset="Tree_RecentMenu" scrollbars="none" useinputpanel="false" treeuseline="false" treeusecheckbox="false" visible="false" left="0" top="50" bottom="0" width="230">
+                <Formats>
+                  <Format id="default">
+                    <Columns>
+                      <Column size="230"/>
+                    </Columns>
+                    <Rows>
+                      <Row size="37"/>
+                    </Rows>
+                    <Band id="body">
+                      <Cell displaytype="tree" edittype="tree" style="controlfont: ;" text="bind:txt" treelevel="bind:lev"/>
+                    </Band>
+                  </Format>
+                </Formats>
+              </Grid>
+              <Button id="Button01" taborder="0" cssclass="btn_LF_RecentMenuClose" visible="false" left="0" top="0" width="230" height="51"/>
+            </Layout>
+          </Layouts>
+        </PopupDiv>
+        <Static id="Static00" taborder="14" text="* MyMenu활성화 시&#13;&#10;-----------------------&gt; &#13;&#10;" left="244" top="165" width="156" height="55" style="color:red;" visible="false"/>
+        <Static id="Static01" taborder="15" text="* RecentMenu활성화 시&#13;&#10;------------------------------------------------------------------------------------&gt; &#13;&#10;" left="240" top="915" width="517" height="55" style="color:red;" visible="false"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Tree_MyMenu" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="txt" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="txt">My Menu01</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu02</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu03</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu04</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu05</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu06</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu07</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu08</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu09</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu10</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu11</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu12</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">My Menu13</Col>
+            <Col id="lev"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="Tree_RecentMenu" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="txt" type="STRING" size="256"/>
+          <Column id="lev" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="txt">Recent Menu01</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu02</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu03</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu04</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu05</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu06</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu07</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu08</Col>
+            <Col id="lev"/>
+          </Row>
+          <Row>
+            <Col id="txt">Recent Menu09</Col>
+            <Col id="lev"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_menu" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="MENU_NAME" type="string" size="32" prop=""/>
+          <Column id="MENU_SEQ" type="int" size="4" prop=""/>
+          <Column id="MENU_OPTP" type="string" size="32" prop=""/>
+          <Column id="PAGE_URL" type="string" size="32" prop=""/>
+          <Column id="MENU_TOP" type="string" size="32" prop=""/>
+          <Column id="MENU_ID" type="string" size="32" prop=""/>
+          <Column id="MENU_GRP" type="string" size="32" prop=""/>
+          <Column id="CREATE_DT" type="string" size="32" prop=""/>
+          <Column id="MENU_LEVEL" type="int" size="4" prop=""/>
+          <Column id="PAGE_ID" type="string" size="32" prop=""/>
+          <Column id="PAGE_NAME" type="string" size="32" prop=""/>
+          <Column id="MENU_ARGS" type="string" size="32" prop=""/>
+          <Column id="MENU_STAT" type="string" size="32" prop=""/>
+          <Column id="CREATE_USER" type="string" size="32" prop=""/>
+          <Column id="UPDATE_DT" type="string" size="32" prop=""/>
+          <Column id="UPDATE_USER" type="string" size="32" prop=""/>
+          <Column id="MENU_DESC" type="string" size="32" prop=""/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************************
+* SYSTEM      : 넥사크로플랫폼 PackageB
+* BUSINESS    : 넥사크로플랫폼 PackageB
+* FILE NAME   : LeftFrame.xfdl
+* PROGRAMMER  : 
+* DATE        : 
+* DESCRIPTION : 좌측 트리메뉴
+*------------------------------------------------------------------
+* MODIFY DATE   PROGRAMMER			DESCRIPTION
+*------------------------------------------------------------------
+* 
+*------------------------------------------------------------------
+***********************************************************************************/
+
+/***********************************************************************************
+* Common Library
+***********************************************************************************/
+include "Lib::Comm.xjs";
+
+
+/***********************************************************************************
+* Global/Local Variable
+***********************************************************************************/
+
+
+/***********************************************************************************
+* Form Event
+***********************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+  // LeftFrame 로딩여부 체크
+  //임시
+    this.ds_menu.assign(application.gds_menu);
+}
+
+
+/**
+ * left menu click 시  발생되는 event
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_treeClick = function(obj:Grid, e:nexacro.GridClickEventInfo)
+{
+    /*
+    *@param {object} this Form
+    *@param {object} 생성할 dataset명
+    */
+    var oObj = {
+          ds    : this.ds_menu,   // 메뉴 dataset 
+          nRow  : e.row,          // 선택된 
+          oArgs : []              //넘길 argument
+    };
+    
+    Iject.Mdi.call(this,oObj);
+
+}
+
+
+/**
+ * home key 실행시 발생되는 event
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.fn_main = function(obj:Static,  e:nexacro.ClickEventInfo)
+{
+	Iject.$["mdiFrame"].form.fn_ArrangeWin("closeAll");
+}
+]]></Script>
+  </Form>
+</FDL>

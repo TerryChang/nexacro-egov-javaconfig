@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd 
+    	http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd			
+    	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+    <!-- SqlMap setup for iBATIS Database Layer (org.springframework.orm.ibatis.SqlMapClientFactoryBean)-->
+    <!--  <bean id="sqlMapClient" class="org.springframework.orm.ibatis.SqlMapClientFactoryBean"> -->
+    <bean id="sqlMapClient" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
+        <!-- config path -->
+        <property name="configLocation" value="classpath:/sqlmap/config/hsql/sql-map-config.xml"/>
+        <!-- sqlmap list -->
+        <property name="mappingLocations" value="classpath:/sqlmap/sqlmaps/**/*_hsql.xml" />
+        <!-- datasource in context-datasource.xml -->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <!-- Oracle -->
+    <!-- AbstractDAO를 확장하여 sqlMapClientOracle을 받을 수 있는 DAO를 추가하여 사용하여야 한다.
+	<bean id="sqlMapClientOracle" class="egovframework.rte.psl.orm.ibatis.SqlMapClientFactoryBean">
+        <property name="configLocation" value="classpath:/sqlmap/config/oracle/sql-map-config.xml"/>
+		<property name="mappingLocations" value="classpath:/sqlmap/sqlmaps/**/*_oracle.xml" />
+        <property name="dataSource" ref="dataSourceOracle"/>
+    </bean>
+    -->
+</beans>

@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="1.5">
+  <TypeDefinition url="..\default_typedef.xml"/>
+  <Form id="sample009" classname="excelExportImport" left="0" top="0" width="800" height="400" titletext="엑셀 Import / Export" onload="form_onload">
+    <Layouts>
+      <Layout>
+        <Grid id="grd_list" taborder="0" useinputpanel="false" left="0" top="38" height="170" binddataset="ds_excel" right="0">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+              </Columns>
+              <Rows>
+                <Row band="head" size="24"/>
+                <Row band="body" size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell col="0" disptype="normal" text="dept_code"/>
+                <Cell col="1" disptype="normal" text="dept_name"/>
+                <Cell col="2" disptype="normal" text="employee"/>
+                <Cell col="3" disptype="normal" text="telno"/>
+                <Cell col="4" disptype="normal" text="address"/>
+                <Cell col="5" disptype="normal" text="age"/>
+              </Band>
+              <Band id="body">
+                <Cell col="0" disptype="normal" text="bind:dept_code"/>
+                <Cell col="1" disptype="normal" text="bind:dept_name"/>
+                <Cell col="2" disptype="normal" text="bind:employee"/>
+                <Cell col="3" disptype="normal" text="bind:telno"/>
+                <Cell col="4" disptype="normal" text="bind:address"/>
+                <Cell col="5" disptype="normal" text="bind:age"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="Button00" taborder="1" text="Export" onclick="Button00_onclick" height="29" right="0" width="90" top="8"/>
+        <Button id="Button01" taborder="2" text="Import" height="28" onclick="Button01_onclick" right="0" width="90" top="217"/>
+        <Grid id="Grid00" taborder="3" useinputpanel="false" left="0" top="246" binddataset="ds_out" right="0" bottom="0">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+                <Col size="80"/>
+              </Columns>
+              <Rows>
+                <Row band="head" size="24"/>
+                <Row band="body" size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell col="0" disptype="normal" text="dept_code"/>
+                <Cell col="1" disptype="normal" text="dept_name"/>
+                <Cell col="2" disptype="normal" text="employee"/>
+                <Cell col="3" disptype="normal" text="telno"/>
+                <Cell col="4" disptype="normal" text="address"/>
+                <Cell col="5" disptype="normal" text="age"/>
+              </Band>
+              <Band id="body">
+                <Cell col="0" disptype="normal" text="bind:dept_code"/>
+                <Cell col="1" disptype="normal" text="bind:dept_name"/>
+                <Cell col="2" disptype="normal" text="bind:employee"/>
+                <Cell col="3" disptype="normal" text="bind:telno"/>
+                <Cell col="4" disptype="normal" text="bind:address"/>
+                <Cell col="5" disptype="normal" text="bind:age"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Static id="Static01" taborder="4" text="1.엑셀익스포트" cssclass="sta_WF_title" left="4" top="8" width="140" height="36"/>
+        <Static id="Static00" taborder="5" text="2.엑셀임포트" cssclass="sta_WF_title" left="6" top="216" width="332" height="36"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds_excel" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="dept_code" type="STRING" size="256"/>
+          <Column id="dept_name" type="STRING" size="256"/>
+          <Column id="employee" type="STRING" size="256"/>
+          <Column id="telno" type="STRING" size="256"/>
+          <Column id="address" type="STRING" size="256"/>
+          <Column id="age" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="dept_code">100</Col>
+            <Col id="dept_name">Technical Support Group</Col>
+            <Col id="employee">Gil-Dong Hong</Col>
+            <Col id="telno">02-1234-5678</Col>
+            <Col id="address">Seoul Korea</Col>
+            <Col id="age">100</Col>
+          </Row>
+          <Row>
+            <Col id="dept_code">200</Col>
+            <Col id="dept_name">Technical Support Group</Col>
+            <Col id="employee">Sun-Sin Lee</Col>
+            <Col id="telno">02-2345-6789</Col>
+            <Col id="address">Pusan Korea</Col>
+            <Col id="age">200</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds_out" firefirstcount="0" firenextcount="0" useclientlayout="false" updatecontrol="true" enableevent="true" loadkeymode="keep" loadfiltermode="keep" reversesubsum="false">
+        <ColumnInfo>
+          <Column id="dept_code" type="STRING" size="256"/>
+          <Column id="dept_name" type="STRING" size="256"/>
+          <Column id="employee" type="STRING" size="256"/>
+          <Column id="telno" type="STRING" size="256"/>
+          <Column id="address" type="STRING" size="256"/>
+          <Column id="age" type="STRING" size="256"/>
+        </ColumnInfo>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.0"><![CDATA[/***********************************************************************
+ * 01. 업무구분 : Excel Export&Import
+ * 02. 화면명   : Pattern_04.xfdl
+ * 03. 그룹설명 : 
+ * 04. 작성일   :
+ * 05. 작성자   :
+ * 06. 수정이력 :
+ ***********************************************************************
+ *     수정일     작성자   내용
+ ***********************************************************************
+ *
+ ***********************************************************************
+*/
+
+/***********************************************************************
+ * Script Include 
+ ***********************************************************************/
+
+/***********************************************************************
+ form 변수 선언
+************************************************************************/
+/**
+ * form onload 함수
+ * @return 
+ * @example
+ *
+ * @memberOf this
+ */
+this.form_onload = function(obj:Form, e:nexacro.LoadEventInfo)
+{
+	Iject.formOnload(obj);
+	
+}
+
+//ExcelExport 실행
+this.Button00_onclick = function(obj:Button,  e:TOBE.ClickEventInfo)
+{
+	
+   this.exportExcel();
+
+}
+
+this.exportExcel = function()
+{
+	var oGrid = this.grd_list;
+	var dToday = new Date();
+	var sSvcUrl = application.services["svcurl"].url+"XExportImport.do";
+	var strSheet = "sheet";
+	var strExportFileName =   dToday.getTime() + "_" + this.name;
+
+	var exportObj = new ExcelExportObject();
+
+	exportObj.clear();
+	exportObj.addEventHandler("onsuccess", this.exportEnd,  this);
+	exportObj.addEventHandler("onerror", this.exportEnd,  this);
+	exportObj.set_exporttype(nexacro.ExportTypes.EXCEL2007);
+	exportObj.set_exportuitype("exportprogress") // set
+	exportObj.set_exporturl(sSvcUrl);
+	exportObj.set_exportfilename(strExportFileName);
+	
+		oGrid = oGrid;
+		sSheetName = strSheet+"1";
+		exportObj.addExportItem(nexacro.ExportItemTypes.GRID, oGrid,  sSheetName + "!A1","allband","allrecord","suppress","allstyle","background","font", "both");
+
+	
+
+	exportObj.exportData();
+
+}
+
+
+
+
+
+this.importExcel = function()
+{
+   
+	//  var sSvcUrl = "http://localhost:9090/nexacro-xeni/XImport";
+	//var sSvcUrl =  "http://172.10.13.75:9090/Say_main/XImport" ;
+	var sSvcUrl = application.services["svcurl"].url+"XExportImport.do" ;
+	//trace(" sSvcUrl : " + sSvcUrl);
+	var importObj = new nexacro.ExcelImportObject("importExcel",this);
+	var sSheet = "head=sheet1!A1:F1;body=sheet1!A1;";  
+	var ds = "ds_out";
+	
+	importObj.set_importtype(nexacro.ImportTypes.EXCEL);
+	importObj.addEventHandler("onsuccess",  this.importEnd_onsuccess,  this);
+	importObj.addEventHandler("onerror",  this.importEnd_onerror,  this);
+	importObj.set_importurl(sSvcUrl);
+
+	importObj.importData("", "[command=getsheetdata;output=outDs;" + sSheet +"]", "["+ds+"=outDs]");
+}
+
+
+this.exportEnd = function(obj,e)
+{
+
+}
+
+this.importEnd_onsuccess = function(obj,e)
+{
+     trace("importError e.onsuccess : " + e.fromobject);
+}
+
+this.importEnd_onerror = function(obj,e)
+{
+    var res = "=========== onerror event start============"
+           +  "\n e.eventid: " + e.eventid
+           + "\n e.fromobject: " + e.fromobject
+           + "\n e.fromobject: " + e.fromobject
+           + "\n e.errorcode: " +  e.errorcode
+           +  "\ne.errormsg: " + e.errorms
+   trace(res);
+
+}
+
+
+
+this.Button01_onclick = function(obj:Button,  e:TOBE.ClickEventInfo)
+{
+   
+	this.importExcel();
+
+}
+]]></Script>
+  </Form>
+</FDL>

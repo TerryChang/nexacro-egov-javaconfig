@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:p="http://www.springframework.org/schema/p" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	   http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+	
+	<!-- configuration bean. xml|properties| -->
+	<bean id="projectConfiguration" class="org.apache.commons.configuration.XMLConfiguration">
+		<constructor-arg type="java.lang.String">
+			<value>config/project-configuration.xml</value>
+		</constructor-arg>
+	</bean>
+
+	<!-- composite configuration -->
+	<bean id="compositeConfiguration" class="org.apache.commons.configuration.CompositeConfiguration">
+        <constructor-arg>
+            <list>
+                <ref bean="projectConfiguration"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+	<bean id="propertyPlaceholderConfigurer" class="org.jasypt.spring3.properties.EncryptablePropertyPlaceholderConfigurer">
+        <constructor-arg ref="configurationEncryptor" />
+		<property name="properties">
+            <bean class="org.springmodules.commons.configuration.CommonsConfigurationFactoryBean">
+               <property name="configurations">
+                    <list>
+                         <ref bean="compositeConfiguration"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+    </bean>
+
+	<!-- encryptor config -->
+    <bean id="configurationEncryptor" class="org.jasypt.encryption.pbe.StandardPBEStringEncryptor">
+        <property name="config" ref="environmentVariablesConfiguration" />
+        <!-- 테스트시에만 password를 사용하여 처리 한다.
+         environmentVariablesConfiguration passwordEnvName로 환경변수로 사용하여 처리.-->
+        <property name="password" value="7cxna10re0o" />
+    </bean>       
+
+    <bean id="environmentVariablesConfiguration" class="org.jasypt.encryption.pbe.config.EnvironmentStringPBEConfig">
+        <property name="algorithm" value="PBEWithMD5AndDES" />
+        <property name="passwordEnvName" value="APP_ENCRYPTION_PASSWORD" />
+    </bean>       
+
+</beans>
